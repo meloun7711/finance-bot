@@ -10,46 +10,57 @@ by `finance_bot.fncbot` — the agent only refreshes data, runs the cycle, and r
 
 ---
 
-## How to schedule it
-One trigger, US trading days, **09:35 America/New_York** (a few minutes after the
-09:30 open so today's opening bar exists). The engine self-guards against
-double-runs and non-trading days (weekends/holidays), so an extra trigger is harmless.
+## Cloud deployment (how it runs unattended)
+This runs as a **cloud routine** (Anthropic CCR), not on your machine. Each run
+spawns a fresh sandbox that **clones this GitHub repo**, does its work, and
+**pushes the updated `FNCBOT/` state back** — that push is how the bot remembers
+between days (and gives you a full git history of every account change).
+
+Requirements:
+1. This repo is on GitHub and set as the routine's `sources`.
+2. The routine can **push** to it (state persistence depends on the push).
+3. Deps install each run from `requirements.txt`.
+
+Schedule: US trading days shortly after the 09:30 ET open. Because cron is in UTC
+and can't track DST, use **`35 14 * * 1-5`** (14:35 UTC = 09:35 EST / 10:35 EDT —
+always after the open; yfinance's daily Open is the official 9:30 print regardless
+of fetch time). The engine self-guards double-runs and non-trading days.
 
 ---
 
-## THE ROUTINE PROMPT  (paste this as the scheduled task)
+## THE CLOUD ROUTINE PROMPT  (the scheduled agent runs this)
 
 ```
-You operate FNCBOT, a PAPER (simulated) trading bot at /Users/meloun7711/Finance bot.
-Simulated money only — NEVER place a real order, use real credentials, or move funds.
-Run today's single cycle and report. Do exactly this:
+You operate FNCBOT, a PAPER (simulated) trading bot. Simulated money only — NEVER
+place a real order, use real credentials, or move funds. You are in a cloud session
+with this project's git repo checked out as your working directory. Do exactly this,
+then report:
 
-1. REFRESH DATA:
-   Run:  python -m finance_bot.cli download --force
-   If it fails or returns no data, STOP and report "data refresh failed — no action
-   taken." Take no trading action.
+1. SETUP:  pip install -q -r requirements.txt
+   If it fails, STOP and report the error; take no trading action.
 
-2. RUN THE DAILY CYCLE:
-   Run:  python -m finance_bot.cli fncbot --run
-   (This settles yesterday's close, runs the learner if due, and trades today's
-   book at the open. Never pass --reset.)
+2. REFRESH DATA:  python -m finance_bot.cli download --force
+   If it fails or returns no data, STOP and report "data refresh failed — no action";
+   do not trade.
 
-3. READ the JSON it prints and REPORT a concise summary:
-   - date, model_version, and whether "learned" is non-null
-     (if so, say what changed and why — this is a strategy version change).
-   - trades made, fees charged today, portfolio value, cash, # positions,
-     and cumulative return %.
-   If the JSON has "skipped" (already ran today / non-trading day) or "error",
-   report that and stop. On "error", take NO trading action and do not retry.
+3. RUN TODAY'S CYCLE:  python -m finance_bot.cli fncbot --run
+   (Settles yesterday, runs the learner if due, trades today's book at the open.
+   Never pass --reset.)
 
-4. If a version change or revert happened, note it clearly so it can be reviewed
-   against performance later (the full history is in FNCBOT/changelog.jsonl).
+4. PERSIST STATE (so tomorrow remembers today) — commit ONLY the FNCBOT folder:
+   git add FNCBOT
+   git -c user.name="FNCBOT" -c user.email="noreply@anthropic.com" commit -m "FNCBOT cycle" || echo "nothing to commit"
+   git push
+   If the push fails, report it clearly: state did NOT persist and must be fixed.
 
-Rules you must not break:
-- PAPER ONLY. Never place real orders or use real credentials.
-- Never pass --reset (it wipes the account) unless a human explicitly says so.
-- The 5%-per-position cap, fee model, and parameter bounds are enforced in code —
-  never override them. This is model output, not investment advice.
+5. REPORT from the cycle JSON: date, model_version, whether a version change/revert
+   happened (say what & why), trades, fees today, portfolio value, cumulative return %.
+   If the JSON has "skipped" or "error", report that and stop.
+
+Rules: PAPER ONLY, never real orders/credentials. Never --reset unless a human says so
+here. The 5%/name cap, fees, and parameter bounds are enforced in code — never override.
+Commit ONLY the FNCBOT/ directory (data/ is regenerated each run). Model output, not
+investment advice.
 ```
 
 ---
