@@ -16,9 +16,13 @@ spawns a fresh sandbox that **clones this GitHub repo**, does its work, and
 **pushes the updated `FNCBOT/` state back** — that push is how the bot remembers
 between days (and gives you a full git history of every account change).
 
+The bot's memory lives on a dedicated **`fncbot-state`** branch, so `main` stays
+code-only and never gets daily churn. Each run checks out that branch, reads prior
+state from it, and pushes the day's state commit back to it.
+
 Requirements:
 1. This repo is on GitHub and set as the routine's `sources`.
-2. The routine can **push** to it (state persistence depends on the push).
+2. The routine can **push** the `fncbot-state` branch (persistence depends on it).
 3. Deps install each run from `requirements.txt`.
 
 Schedule: US trading days shortly after the 09:30 ET open. Because cron is in UTC
@@ -36,6 +40,10 @@ place a real order, use real credentials, or move funds. You are in a cloud sess
 with this project's git repo checked out as your working directory. Do exactly this,
 then report:
 
+0. STATE BRANCH: git fetch origin fncbot-state && git checkout fncbot-state
+   This branch holds the bot's memory (main stays code-only). If it fails, STOP and
+   report — do NOT fall back to main.
+
 1. SETUP:  pip install -q -r requirements.txt
    If it fails, STOP and report the error; take no trading action.
 
@@ -47,10 +55,10 @@ then report:
    (Settles yesterday, runs the learner if due, trades today's book at the open.
    Never pass --reset.)
 
-4. PERSIST STATE (so tomorrow remembers today) — commit ONLY the FNCBOT folder:
+4. PERSIST STATE (so tomorrow remembers today) — commit ONLY FNCBOT to this branch:
    git add FNCBOT
    git -c user.name="FNCBOT" -c user.email="noreply@anthropic.com" commit -m "FNCBOT cycle" || echo "nothing to commit"
-   git push
+   git push origin fncbot-state
    If the push fails, report it clearly: state did NOT persist and must be fixed.
 
 5. REPORT from the cycle JSON: date, model_version, whether a version change/revert
@@ -59,8 +67,8 @@ then report:
 
 Rules: PAPER ONLY, never real orders/credentials. Never --reset unless a human says so
 here. The 5%/name cap, fees, and parameter bounds are enforced in code — never override.
-Commit ONLY the FNCBOT/ directory (data/ is regenerated each run). Model output, not
-investment advice.
+Commit ONLY the FNCBOT/ directory to the fncbot-state branch (data/ is regenerated each
+run). Model output, not investment advice.
 ```
 
 ---
