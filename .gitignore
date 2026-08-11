@@ -1,0 +1,20 @@
+# Data (large, regenerable) — never commit price/news dumps
+data/
+*.parquet
+*.csv
+
+# ...BUT persist the FNCBOT paper-bot memory (state + version control) so a
+# cloud routine can carry it between daily runs. Must come AFTER *.csv above.
+!FNCBOT/
+!FNCBOT/**
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
