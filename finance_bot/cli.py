@@ -25,12 +25,18 @@ def _cmd_universe(args: argparse.Namespace) -> int:
 
 
 def _cmd_download(args: argparse.Namespace) -> int:
-    from finance_bot.ingest.prices import download_universe
+    from finance_bot.ingest.prices import download_universe, download_batch
     from finance_bot.universe import all_tickers
     if args.sample:
         tickers = ["PLTR", "NVDA", "LMT", "IONQ", "XOM", "TSM", "AAPL", "COIN"]
     else:
         tickers = all_tickers()
+    if args.fast:
+        period = args.period or "2y"
+        print(f"Fast batch download: {len(tickers)} tickers (period={period}) …\n")
+        n = download_batch(tickers, period=period)
+        print(f"\nWrote {n}/{len(tickers)} tickers.")
+        return 0 if n > len(tickers) * 0.8 else 1
     print(f"Downloading {len(tickers)} tickers "
           f"(period={args.period or 'default'}, force={args.force}) …\n")
     status = download_universe(tickers, period=args.period, force=args.force)
@@ -180,6 +186,8 @@ def main(argv: list[str] | None = None) -> int:
                    help="re-download even if a fresh cache exists")
     d.add_argument("--period", default=None,
                    help="yfinance period (e.g. 5y, 10y, max)")
+    d.add_argument("--fast", action="store_true",
+                   help="batched download of recent history (default 2y) — for cloud runs")
 
     sub.add_parser("graph", help="Step 2: build the correlation/lead-lag mind")
 

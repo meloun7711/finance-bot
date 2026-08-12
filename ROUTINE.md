@@ -47,9 +47,9 @@ then report:
 1. SETUP:  pip install -q -r requirements.txt
    If it fails, STOP and report the error; take no trading action.
 
-2. REFRESH DATA:  python -m finance_bot.cli download --force
-   If it fails or returns no data, STOP and report "data refresh failed — no action";
-   do not trade.
+2. REFRESH DATA:  python -m finance_bot.cli download --fast
+   (fast batched ~2y pull, ~20s — a fresh clone has no price data). If it fails or
+   returns no data, STOP and report "data refresh failed — no action"; do not trade.
 
 3. RUN TODAY'S CYCLE:  python -m finance_bot.cli fncbot --run
    (Settles yesterday, runs the learner if due, trades today's book at the open.
