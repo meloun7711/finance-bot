@@ -36,6 +36,22 @@ def _keys() -> tuple[str | None, str | None]:
     return kid, sec
 
 
+def _proxies() -> dict | None:
+    """In a CCR cloud sandbox, egress is forced through a local proxy. `requests`
+    doesn't pick it up automatically (no HTTP(S)_PROXY set), so a direct call is
+    firewalled with an nginx 401. Route through the CCR proxy explicitly when it's
+    present; locally (no CCR) return None for a normal direct connection."""
+    for var in ("HTTPS_PROXY", "https_proxy", "HTTP_PROXY", "http_proxy"):
+        if os.environ.get(var):
+            u = os.environ[var]
+            return {"http": u, "https": u}
+    port = os.environ.get("CLOUDSDK_PROXY_PORT")
+    if port and os.environ.get("CCR_AGENT_PROXY_ENABLED"):
+        u = f"http://127.0.0.1:{port}"
+        return {"http": u, "https": u}
+    return None
+
+
 def download_alpaca(tickers: list[str] | None = None, years: float = 2.0,
                     feed: str = "iex", chunk: int = 100) -> int:
     """Fetch ~`years` of daily bars from Alpaca and write parquet per ticker.
@@ -52,6 +68,7 @@ def download_alpaca(tickers: list[str] | None = None, years: float = 2.0,
     start = (datetime.now(timezone.utc)
              - timedelta(days=int(365 * years) + 45)).strftime("%Y-%m-%d")
     headers = {"APCA-API-KEY-ID": kid, "APCA-API-SECRET-KEY": sec}
+    proxies = _proxies()
     written = 0
 
     for i in range(0, len(tickers), chunk):
@@ -65,7 +82,8 @@ def download_alpaca(tickers: list[str] | None = None, years: float = 2.0,
             if page_token:
                 params["page_token"] = page_token
             try:
-                r = requests.get(BARS_URL, headers=headers, params=params, timeout=30)
+                r = requests.get(BARS_URL, headers=headers, params=params,
+                                 timeout=30, proxies=proxies)
             except Exception as exc:
                 print(f"  ! chunk {i//chunk + 1}: {type(exc).__name__}: {exc}")
                 break
