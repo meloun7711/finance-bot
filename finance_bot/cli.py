@@ -31,6 +31,12 @@ def _cmd_download(args: argparse.Namespace) -> int:
         tickers = ["PLTR", "NVDA", "LMT", "IONQ", "XOM", "TSM", "AAPL", "COIN"]
     else:
         tickers = all_tickers()
+    if args.source == "alpaca":
+        from finance_bot.ingest.alpaca import download_alpaca
+        print(f"Alpaca download: {len(tickers)} tickers (~2y daily, IEX feed) …\n")
+        n = download_alpaca(tickers)
+        print(f"\nWrote {n}/{len(tickers)} tickers.")
+        return 0 if n > len(tickers) * 0.6 else 1
     if args.fast:
         period = args.period or "2y"
         print(f"Fast batch download: {len(tickers)} tickers (period={period}) …\n")
@@ -188,6 +194,8 @@ def main(argv: list[str] | None = None) -> int:
                    help="yfinance period (e.g. 5y, 10y, max)")
     d.add_argument("--fast", action="store_true",
                    help="batched download of recent history (default 2y) — for cloud runs")
+    d.add_argument("--source", choices=["yahoo", "alpaca"], default="yahoo",
+                   help="data source; 'alpaca' is datacenter-friendly (needs APCA_* env keys)")
 
     sub.add_parser("graph", help="Step 2: build the correlation/lead-lag mind")
 
