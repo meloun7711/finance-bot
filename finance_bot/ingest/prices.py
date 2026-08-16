@@ -74,41 +74,54 @@ def download_one(ticker: str, period: str | None = None,
 
 
 def download_batch(tickers: list[str] | None = None, period: str = "2y",
-                   chunk: int = 60) -> int:
-    """Fast path: batch-download recent history in chunks (one request per chunk).
+                   chunk: int = 12, pause: float = 1.2,
+                   max_retries: int = 4) -> int:
+    """Batch-download recent history — GENTLE, for rate-limited/proxied envs.
 
-    Built for the cloud routine — a fresh clone has no price data, so each run
-    must fetch enough history for the ~252-day signal lookback. `period="2y"`
-    covers that with buffer, and batching ~60 tickers per yfinance call is far
-    faster and less rate-limit-prone than 250 sequential single-ticker pulls.
+    A fresh cloud clone has no price data, so each run must fetch enough history
+    for the ~252-day signal lookback (`period="2y"`). Datacenter IPs get 429'd /
+    connection-reset by Yahoo when hit hard, so this path is deliberately polite:
+    small chunks, NO parallelism (threads=False — parallel connections through
+    the CCR proxy trigger resets), a pause between chunks, and exponential
+    backoff retry on a failed/empty chunk. Slower, but survives rate limits.
     Returns the number of tickers written.
     """
+    import time
     tickers = tickers or all_tickers()
     interval = config.PRICE_INTERVAL
     written = 0
     for i in range(0, len(tickers), chunk):
         grp = tickers[i:i + chunk]
-        try:
-            raw = yf.download(grp, period=period, interval=interval,
-                              auto_adjust=True, progress=False, threads=True,
-                              group_by="ticker")
-        except Exception as exc:
-            print(f"  ! batch {i//chunk}: {type(exc).__name__}: {exc}")
-            continue
-        for tk in grp:
+        got = 0
+        for attempt in range(1, max_retries + 1):
             try:
-                sub = raw[tk] if len(grp) > 1 else raw
-                sub = sub.dropna(how="all")
-                if sub.empty:
-                    continue
-                sub = sub.rename(columns=str).copy()
-                sub.index.name = "date"
-                sub["ticker"] = tk
-                sub.to_parquet(_parquet_path(tk))
-                written += 1
-            except Exception:
+                raw = yf.download(grp, period=period, interval=interval,
+                                  auto_adjust=True, progress=False,
+                                  threads=False, group_by="ticker")
+            except Exception as exc:
+                print(f"  ! batch {i//chunk + 1} attempt {attempt}: "
+                      f"{type(exc).__name__}: {exc}")
+                time.sleep(pause * (2 ** attempt))       # backoff on hard failure
                 continue
-        print(f"  batch {i//chunk + 1}: {written}/{len(tickers)} written so far")
+            for tk in grp:
+                try:
+                    sub = raw[tk] if len(grp) > 1 else raw
+                    sub = sub.dropna(how="all")
+                    if sub.empty:
+                        continue
+                    sub = sub.rename(columns=str).copy()
+                    sub.index.name = "date"
+                    sub["ticker"] = tk
+                    sub.to_parquet(_parquet_path(tk))
+                    got += 1
+                except Exception:
+                    continue
+            if got:
+                break                                    # chunk succeeded
+            time.sleep(pause * (2 ** attempt))           # empty (rate-limited) -> back off
+        written += got
+        print(f"  batch {i//chunk + 1}: +{got} ({written}/{len(tickers)})")
+        time.sleep(pause)                                # be polite between chunks
     return written
 
 
