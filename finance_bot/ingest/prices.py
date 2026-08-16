@@ -74,8 +74,8 @@ def download_one(ticker: str, period: str | None = None,
 
 
 def download_batch(tickers: list[str] | None = None, period: str = "2y",
-                   chunk: int = 12, pause: float = 1.2,
-                   max_retries: int = 4) -> int:
+                   chunk: int = 8, pause: float = 1.5,
+                   max_retries: int = 5) -> int:
     """Batch-download recent history — GENTLE, for rate-limited/proxied envs.
 
     A fresh cloud clone has no price data, so each run must fetch enough history

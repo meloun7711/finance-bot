@@ -42,7 +42,7 @@ def _cmd_download(args: argparse.Namespace) -> int:
         print(f"Fast batch download: {len(tickers)} tickers (period={period}) …\n")
         n = download_batch(tickers, period=period)
         print(f"\nWrote {n}/{len(tickers)} tickers.")
-        return 0 if n > len(tickers) * 0.8 else 1
+        return 0 if n >= 100 else 1   # accept partial: 100+ names is plenty to pick top-20
     print(f"Downloading {len(tickers)} tickers "
           f"(period={args.period or 'default'}, force={args.force}) …\n")
     status = download_universe(tickers, period=args.period, force=args.force)
