@@ -140,6 +140,13 @@ def _cmd_decide(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_account(args: argparse.Namespace) -> int:
+    import json
+    from finance_bot import broker_alpaca
+    print(json.dumps(broker_alpaca.summary(), indent=2))
+    return 0
+
+
 def _cmd_trade_paper(args: argparse.Namespace) -> int:
     import json
     from finance_bot.analyze.decide import target_book
@@ -238,6 +245,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("export-market", help="Box: dump market/close.parquet for the routine")
     sub.add_parser("decide", help="Routine: read market data (+news tilt) -> reports/latest.md")
     sub.add_parser("trade-paper", help="Place the predicted book as Alpaca PAPER orders (no real money)")
+    sub.add_parser("account", help="Show the Alpaca PAPER account holdings + P&L")
 
     sc = sub.add_parser("screen", help="Find strong long-term names currently dipping")
     sc.add_argument("--top", type=int, default=20, help="how many candidates to print")
@@ -278,6 +286,7 @@ def main(argv: list[str] | None = None) -> int:
         "export-market": _cmd_export_market,
         "decide": _cmd_decide,
         "trade-paper": _cmd_trade_paper,
+        "account": _cmd_account,
     }[args.command](args)
 
 
