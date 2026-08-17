@@ -16,6 +16,7 @@ git fetch origin fncbot-state && git checkout fncbot-state && git pull --ff-only
 
 python3 -m finance_bot.cli download --source alpaca
 python3 -m finance_bot.cli export-market
+python3 -m finance_bot.cli trade-paper || true   # place predicted book as Alpaca PAPER orders
 python3 -m finance_bot.cli fncbot --run
 
 git add FNCBOT market
