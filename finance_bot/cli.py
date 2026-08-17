@@ -140,6 +140,20 @@ def _cmd_decide(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_trade_paper(args: argparse.Namespace) -> int:
+    import json
+    from finance_bot.analyze.decide import target_book
+    from finance_bot import broker_alpaca
+    targets, asof = target_book()
+    print(f"Target book from bot predictions (as-of {asof}): {len(targets)} names @ "
+          f"{list(targets.values())[0]*100:.1f}% each" if targets else "no target names")
+    if not targets:
+        return 0
+    result = broker_alpaca.rebalance(targets)          # PAPER endpoint, hard-locked
+    print(json.dumps(result, indent=2))
+    return 0 if result.get("errors", 0) == 0 else 1
+
+
 def _cmd_screen(args: argparse.Namespace) -> int:
     from finance_bot.analyze.screen import dip_in_uptrend
     df = dip_in_uptrend()
@@ -223,6 +237,7 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("export-market", help="Box: dump market/close.parquet for the routine")
     sub.add_parser("decide", help="Routine: read market data (+news tilt) -> reports/latest.md")
+    sub.add_parser("trade-paper", help="Place the predicted book as Alpaca PAPER orders (no real money)")
 
     sc = sub.add_parser("screen", help="Find strong long-term names currently dipping")
     sc.add_argument("--top", type=int, default=20, help="how many candidates to print")
@@ -262,6 +277,7 @@ def main(argv: list[str] | None = None) -> int:
         "fncbot": _cmd_fncbot,
         "export-market": _cmd_export_market,
         "decide": _cmd_decide,
+        "trade-paper": _cmd_trade_paper,
     }[args.command](args)
 
 

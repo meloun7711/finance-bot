@@ -50,6 +50,37 @@ def export_market() -> str:
     return f"exported market/close.parquet — {C.shape[1]} tickers through {C.index[-1].date()}"
 
 
+def _decision_scores():
+    """Return (df sorted by news-adjusted decision desc, as_of). The bot's predictions."""
+    C = pd.read_parquet(MARKET_DIR / "close.parquet")
+    bench = set(all_tickers()) - set(all_tickers(include_benchmarks=False))
+    tradable = [c for c in C.columns if c not in bench]
+    scores = score_matrix(C[tradable]).iloc[-1].dropna()
+    themes = (_load_news_tilt().get("themes", {}) or {})
+    rows = []
+    for tk, s in scores.items():
+        tl = max((float(themes.get(t, 0.0)) for t in theme_of(tk)), default=0.0)
+        rows.append((tk, float(s), float(np.clip(s + NEWS_WEIGHT * tl, -1, 1)), tl))
+    df = pd.DataFrame(rows, columns=["ticker", "structural", "decision", "news_tilt"])
+    return df.sort_values("decision", ascending=False), str(C.index[-1].date()), C
+
+
+def target_book(top_n: int = 20, cap: float = 0.05) -> tuple[dict, str]:
+    """The paper trade targets FROM THE BOT'S PREDICTIONS: top-N news-adjusted
+    names scoring >= gate, equal-weight at the cap x the model's exposure."""
+    df, asof, _ = _decision_scores()
+    exposure = 1.0
+    mp = config.ROOT / "FNCBOT" / "model.json"
+    if mp.exists():
+        try:
+            exposure = float(json.loads(mp.read_text())["params"].get("exposure", 1.0))
+        except Exception:
+            pass
+    picks = df[df.decision >= UP_GATE].head(top_n)
+    w = cap * exposure
+    return {r.ticker: w for r in picks.itertuples()}, asof
+
+
 def _load_news_tilt() -> dict:
     if NEWS_TILT.exists():
         try:
