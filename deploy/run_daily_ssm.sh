@@ -15,8 +15,9 @@ git remote set-url origin "https://${GH_PAT}@github.com/meloun7711/finance-bot.g
 git fetch origin fncbot-state && git checkout fncbot-state && git pull --ff-only origin fncbot-state || true
 
 python3 -m finance_bot.cli download --source alpaca
+python3 -m finance_bot.cli export-market
 python3 -m finance_bot.cli fncbot --run
 
-git add FNCBOT
+git add FNCBOT market
 git -c user.name=FNCBOT -c user.email=noreply@anthropic.com commit -m "FNCBOT cycle $(date -u +%F)" || true
 git push origin fncbot-state
