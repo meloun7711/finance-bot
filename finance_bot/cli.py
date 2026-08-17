@@ -128,6 +128,18 @@ def _cmd_paper(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_export_market(args: argparse.Namespace) -> int:
+    from finance_bot.analyze.decide import export_market
+    print(export_market())
+    return 0
+
+
+def _cmd_decide(args: argparse.Namespace) -> int:
+    from finance_bot.analyze.decide import decide
+    print(decide())
+    return 0
+
+
 def _cmd_screen(args: argparse.Namespace) -> int:
     from finance_bot.analyze.screen import dip_in_uptrend
     df = dip_in_uptrend()
@@ -209,6 +221,9 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("profile", help="Step 5: build long-term index profiles")
 
+    sub.add_parser("export-market", help="Box: dump market/close.parquet for the routine")
+    sub.add_parser("decide", help="Routine: read market data (+news tilt) -> reports/latest.md")
+
     sc = sub.add_parser("screen", help="Find strong long-term names currently dipping")
     sc.add_argument("--top", type=int, default=20, help="how many candidates to print")
 
@@ -245,6 +260,8 @@ def main(argv: list[str] | None = None) -> int:
         "screen": _cmd_screen,
         "paper": _cmd_paper,
         "fncbot": _cmd_fncbot,
+        "export-market": _cmd_export_market,
+        "decide": _cmd_decide,
     }[args.command](args)
 
 

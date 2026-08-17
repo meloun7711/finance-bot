@@ -8,6 +8,12 @@ data/
 !FNCBOT/
 !FNCBOT/**
 
+# ...and the courier market data + decision reports the routine reads/writes
+!market/
+!market/**
+!reports/
+!reports/**
+
 # Python
 __pycache__/
 *.py[cod]
