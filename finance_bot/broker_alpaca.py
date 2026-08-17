@@ -113,6 +113,25 @@ def rebalance(targets: dict[str, float]) -> dict:
             "errors": len(errs), "error_samples": errs[:3]}
 
 
+def summary() -> dict:
+    """Readable snapshot of the PAPER account: equity, P&L, and positions."""
+    a = account()
+    equity = float(a["equity"])
+    last = float(a.get("last_equity", equity))
+    pos = []
+    for p in positions():
+        pos.append({"symbol": p["symbol"], "qty": round(float(p["qty"]), 3),
+                    "value": round(float(p["market_value"]), 2),
+                    "unreal_pnl": round(float(p["unrealized_pl"]), 2),
+                    "unreal_pct": round(float(p["unrealized_plpc"]) * 100, 2)})
+    pos.sort(key=lambda x: -x["value"])
+    return {"endpoint": "PAPER", "status": a.get("status"),
+            "equity": round(equity, 2), "cash": round(float(a["cash"]), 2),
+            "day_pnl": round(equity - last, 2),
+            "total_return_pct": round((equity / 100_000 - 1) * 100, 2),
+            "positions": len(pos), "holdings": pos}
+
+
 if __name__ == "__main__":
     import json
-    print(json.dumps(account(), indent=2)[:400])
+    print(json.dumps(summary(), indent=2))
