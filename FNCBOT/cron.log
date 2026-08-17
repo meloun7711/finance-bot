@@ -1,0 +1,33 @@
+From https://github.com/meloun7711/finance-bot
+ * branch            fncbot-state -> FETCH_HEAD
+Already on 'fncbot-state'
+M	deploy/run_daily_ssm.sh
+Your branch is up to date with 'origin/fncbot-state'.
+From https://github.com/meloun7711/finance-bot
+ * branch            fncbot-state -> FETCH_HEAD
+Already up to date.
+Alpaca download: 257 tickers (~2y daily, IEX feed) …
+
+  alpaca chunk 1: 100/257 written
+  alpaca chunk 2: 200/257 written
+  alpaca chunk 3: 257/257 written
+
+Wrote 257/257 tickers.
+{
+  "date": "2026-08-17",
+  "model_version": 1,
+  "learned": null,
+  "params": {
+    "gate": 0.33,
+    "max_positions": 20,
+    "exposure": 1.0
+  },
+  "trades": 4,
+  "fees_today": 0.23,
+  "cash": -226.75,
+  "positions": 20,
+  "portfolio_value": 99018.94,
+  "prior_close_equity": 98782.32,
+  "cum_return_pct": -1.22,
+  "fees_paid_todate": 0.23
+}
