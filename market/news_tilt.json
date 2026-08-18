@@ -2,53 +2,41 @@
   "themes": {
     "defense": 0.5,
     "energy": 0.5,
-    "materials": 0.4,
-    "ai": 0.35,
+    "materials": 0.35,
+    "ai": 0.4,
     "semis": 0.5,
-    "financials": -0.3
+    "financials": -0.35
   },
   "events": [
     {
-      "headline": "US reimposes naval blockade near Strait of Hormuz as Iran ceasefire collapses; tanker traffic plunges",
+      "headline": "60-day US-Iran negotiation deadline expires Aug 18 with no deal; Kushner says Iran 'not showing any interest', raising risk of Iran shifting to fully offensive posture in the Gulf",
       "themes": ["defense", "energy"],
-      "source": "cnn.com",
-      "url": "https://www.cnn.com/2026/08/16/world/live-news/iran-war-trump"
+      "source": "thestreet.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-18-2026"
     },
     {
-      "headline": "Brent crude jumps to ~$90.87/bbl, WTI to ~$84.50, as Strait of Hormuz disruption drives war-risk premium",
-      "themes": ["energy"],
-      "source": "oilprice.com",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-OPEC-and-IEA-Slash-2026-Demand-Outlooks.html"
-    },
-    {
-      "headline": "OPEC and IEA cut 2026 oil demand growth forecasts, citing Hormuz closure fallout even as prices stay elevated on supply risk",
+      "headline": "Brent crude rises to ~$89.19/bbl and WTI to ~$82.85/bbl as Gulf supply risk persists, with 8.3 mb/d of Gulf output still shut in",
       "themes": ["energy"],
       "source": "iea.org",
       "url": "https://www.iea.org/reports/oil-market-report-august-2026"
     },
     {
-      "headline": "China widens rare-earth export controls to more US and EU firms; NdPr alloy benchmark up 21% in a month",
+      "headline": "Niche rare-earth prices jump on fears of renewed Chinese export controls; US Defense Logistics Agency cancelled a $300M lithium tender Aug 4",
       "themes": ["materials"],
-      "source": "china-briefing.com",
-      "url": "https://www.china-briefing.com/news/chinas-rare-earth-export-controls-impacts-on-businesses/"
+      "source": "investornews.com",
+      "url": "https://investornews.com/critical-minerals-rare-earths/critical-minerals-report-08-16-2026-the-critical-minerals-bull-market-is-here-as-china-puts-its-arsenal-back-in-play/"
     },
     {
-      "headline": "Global semiconductor sales hit record $120.6B in May, 15th straight monthly record; AMD, Broadcom, Micron guide sharply higher on AI demand",
+      "headline": "Global semiconductor sales hit $403.3B in Q2 2026, up 35.1% q/q; AMD data-center revenue more than doubles on AI demand; TSMC commits $64B, Intel raises $15B for AI chip capacity",
       "themes": ["ai", "semis"],
       "source": "distillintelligence.com",
       "url": "https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-08-14"
     },
     {
-      "headline": "TSMC to invest $64B, Intel raising $15B for capacity expansion amid AI chip demand surge",
-      "themes": ["semis"],
-      "source": "distillintelligence.com",
-      "url": "https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-08-07"
-    },
-    {
-      "headline": "Markets now price ~65% odds of a September Fed rate hike as energy-driven inflation reverses earlier rate-cut expectations",
+      "headline": "Core PCE inflation accelerated to 3.3% in June as Gulf-driven energy prices feed through; markets now price meaningful odds of a Fed rate hike rather than the cuts expected earlier in 2026",
       "themes": ["financials"],
-      "source": "chase.com",
-      "url": "https://www.chase.com/personal/investments/learning-and-insights/article/september-2026-rate-hike-now-expected-amid-energy-shocks"
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/economy/policy/articles/federal-just-released-august-inflation-232824554.html"
     }
   ]
 }

@@ -6,18 +6,16 @@ _Model output, not advice. Data through 2026-08-17; 243 names. Paper/research si
 - **defense**: +0.50
 - **energy**: +0.50
 - **semis**: +0.50
-- **materials**: +0.40
-- **ai**: +0.35
-- **financials**: -0.30
+- **ai**: +0.40
+- **materials**: +0.35
+- **financials**: -0.35
 
 **Events driving the tilt:**
-- US reimposes naval blockade near Strait of Hormuz as Iran ceasefire collapses; tanker traffic plunges → _defense, energy_ (cnn.com)
-- Brent crude jumps to ~$90.87/bbl, WTI to ~$84.50, as Strait of Hormuz disruption drives war-risk premium → _energy_ (oilprice.com)
-- OPEC and IEA cut 2026 oil demand growth forecasts, citing Hormuz closure fallout even as prices stay elevated on supply risk → _energy_ (iea.org)
-- China widens rare-earth export controls to more US and EU firms; NdPr alloy benchmark up 21% in a month → _materials_ (china-briefing.com)
-- Global semiconductor sales hit record $120.6B in May, 15th straight monthly record; AMD, Broadcom, Micron guide sharply higher on AI demand → _ai, semis_ (distillintelligence.com)
-- TSMC to invest $64B, Intel raising $15B for capacity expansion amid AI chip demand surge → _semis_ (distillintelligence.com)
-- Markets now price ~65% odds of a September Fed rate hike as energy-driven inflation reverses earlier rate-cut expectations → _financials_ (chase.com)
+- 60-day US-Iran negotiation deadline expires Aug 18 with no deal; Kushner says Iran 'not showing any interest', raising risk of Iran shifting to fully offensive posture in the Gulf → _defense, energy_ (thestreet.com)
+- Brent crude rises to ~$89.19/bbl and WTI to ~$82.85/bbl as Gulf supply risk persists, with 8.3 mb/d of Gulf output still shut in → _energy_ (iea.org)
+- Niche rare-earth prices jump on fears of renewed Chinese export controls; US Defense Logistics Agency cancelled a $300M lithium tender Aug 4 → _materials_ (investornews.com)
+- Global semiconductor sales hit $403.3B in Q2 2026, up 35.1% q/q; AMD data-center revenue more than doubles on AI demand; TSMC commits $64B, Intel raises $15B for AI chip capacity → _ai, semis_ (distillintelligence.com)
+- Core PCE inflation accelerated to 3.3% in June as Gulf-driven energy prices feed through; markets now price meaningful odds of a Fed rate hike rather than the cuts expected earlier in 2026 → _financials_ (finance.yahoo.com)
 
 ## Top 15 — likely UP (news-adjusted)
 | # | Ticker | Decision | Structural | News | Themes |
@@ -29,14 +27,14 @@ _Model output, not advice. Data through 2026-08-17; 243 names. Paper/research si
 | 5 | **AIR** | +0.73 | +0.65 | +0.50 | defense |
 | 6 | **TRGP** | +0.72 | +0.65 | +0.50 | energy |
 | 7 | **ONTO** | +0.71 | +0.64 | +0.50 | semis |
-| 8 | **TER** | +0.70 | +0.63 | +0.50 | semis |
-| 9 | **DELL** | +0.70 | +0.65 | +0.35 | ai |
-| 10 | **NUE** | +0.70 | +0.64 | +0.40 | materials |
+| 8 | **DELL** | +0.71 | +0.65 | +0.40 | ai |
+| 9 | **TER** | +0.70 | +0.63 | +0.50 | semis |
+| 10 | **NUE** | +0.69 | +0.64 | +0.35 | materials |
 | 11 | **AMD** | +0.69 | +0.61 | +0.50 | ai,semis |
-| 12 | **FORM** | +0.68 | +0.61 | +0.50 | semis |
-| 13 | **LRCX** | +0.68 | +0.61 | +0.50 | semis |
-| 14 | **MU** | +0.68 | +0.61 | +0.50 | semis |
-| 15 | **LSCC** | +0.68 | +0.61 | +0.50 | semis |
+| 12 | **TWLO** | +0.68 | +0.62 | +0.40 | ai |
+| 13 | **FORM** | +0.68 | +0.61 | +0.50 | semis |
+| 14 | **LRCX** | +0.68 | +0.61 | +0.50 | semis |
+| 15 | **MU** | +0.68 | +0.61 | +0.50 | semis |
 
 ## Bottom 8 — likely DOWN
 - MSTR -0.81 (crypto)
@@ -46,7 +44,7 @@ _Model output, not advice. Data through 2026-08-17; 243 names. Paper/research si
 - HUBS -0.75 (tech)
 - BSX -0.75 (healthcare)
 - ACHR -0.75 (space)
-- SOUN -0.74 (ai)
+- QUBT -0.74 (quantum)
 
 ## Dip-in-uptrend (strong long-term, pulling back now)
 - **POWI** — 20d -12.7%, -28.9% off recent high
