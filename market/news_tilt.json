@@ -1,42 +1,35 @@
 {
   "themes": {
     "defense": 0.5,
-    "energy": 0.5,
-    "materials": 0.35,
-    "ai": 0.4,
-    "semis": 0.5,
-    "financials": -0.35
+    "energy": 0.45,
+    "financials": -0.45,
+    "semis": 0.15,
+    "ai": 0.15
   },
   "events": [
     {
-      "headline": "60-day US-Iran negotiation deadline expires Aug 18 with no deal; Kushner says Iran 'not showing any interest', raising risk of Iran shifting to fully offensive posture in the Gulf",
+      "headline": "US-Iran 60-day truce deadline expired Aug 17 with no deal; Trump says he will not try to revive it, raising risk of Iran shifting to an offensive posture in the Gulf/Strait of Hormuz",
       "themes": ["defense", "energy"],
       "source": "thestreet.com",
       "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-18-2026"
     },
     {
-      "headline": "Brent crude rises to ~$89.19/bbl and WTI to ~$82.85/bbl as Gulf supply risk persists, with 8.3 mb/d of Gulf output still shut in",
+      "headline": "Crude climbs for a third straight session on Gulf supply risk: Brent ~$89/bbl, WTI ~$83-85/bbl, with roughly 8.3 mb/d of Gulf output still shut in",
       "themes": ["energy"],
       "source": "iea.org",
       "url": "https://www.iea.org/reports/oil-market-report-august-2026"
     },
     {
-      "headline": "Niche rare-earth prices jump on fears of renewed Chinese export controls; US Defense Logistics Agency cancelled a $300M lithium tender Aug 4",
-      "themes": ["materials"],
-      "source": "investornews.com",
-      "url": "https://investornews.com/critical-minerals-rare-earths/critical-minerals-report-08-16-2026-the-critical-minerals-bull-market-is-here-as-china-puts-its-arsenal-back-in-play/"
-    },
-    {
-      "headline": "Global semiconductor sales hit $403.3B in Q2 2026, up 35.1% q/q; AMD data-center revenue more than doubles on AI demand; TSMC commits $64B, Intel raises $15B for AI chip capacity",
-      "themes": ["ai", "semis"],
-      "source": "distillintelligence.com",
-      "url": "https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-08-14"
-    },
-    {
-      "headline": "Core PCE inflation accelerated to 3.3% in June as Gulf-driven energy prices feed through; markets now price meaningful odds of a Fed rate hike rather than the cuts expected earlier in 2026",
+      "headline": "30-year US Treasury yield hit ~5.31-5.33%, a 19-year high (highest since 2007), on worsening fiscal deficit outlook and inflation stuck above the Fed's target; markets now price possible 2026 rate hikes rather than cuts",
       "themes": ["financials"],
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/economy/policy/articles/federal-just-released-august-inflation-232824554.html"
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/08/18/treasury-yields-.html"
+    },
+    {
+      "headline": "Broad tech/chip selloff pressured Nasdaq on Aug 19 (capital rotating out of high-growth names, TSMC trading well above fair-value estimates) even as underlying AI chip demand stays strong (Micron launches $250M AI investment fund; chip supply chain tightness seen persisting through year-end)",
+      "themes": ["semis", "ai"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/08/18/stock-market-today-live-updates.html"
     }
   ]
 }
