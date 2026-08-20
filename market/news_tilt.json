@@ -1,35 +1,42 @@
 {
   "themes": {
     "defense": 0.5,
-    "energy": 0.45,
-    "financials": -0.45,
-    "semis": 0.15,
-    "ai": 0.15
+    "energy": 0.5,
+    "financials": 0.2,
+    "semis": -0.35,
+    "ai": 0.1,
+    "healthcare": 0.5
   },
   "events": [
     {
-      "headline": "US-Iran 60-day truce deadline expired Aug 17 with no deal; Trump says he will not try to revive it, raising risk of Iran shifting to an offensive posture in the Gulf/Strait of Hormuz",
+      "headline": "UAE announced a total trade and financial embargo on Iran following a call from Trump; Iran's FM called it a diversion amid US debt/fiscal strain. Comes after the US-Iran 60-day truce deadline lapsed Aug 17 with no deal, raising Gulf tension risk",
       "themes": ["defense", "energy"],
-      "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-18-2026"
+      "source": "justsecurity.org",
+      "url": "https://www.justsecurity.org/154606/early-edition-august-20-2026/"
     },
     {
-      "headline": "Crude climbs for a third straight session on Gulf supply risk: Brent ~$89/bbl, WTI ~$83-85/bbl, with roughly 8.3 mb/d of Gulf output still shut in",
+      "headline": "Brent crude rose to roughly $93-95/bbl (up over 1.5% on the day) on Gulf supply risk tied to escalating Iran tensions",
       "themes": ["energy"],
-      "source": "iea.org",
-      "url": "https://www.iea.org/reports/oil-market-report-august-2026"
+      "source": "tradingeconomics.com",
+      "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
     },
     {
-      "headline": "30-year US Treasury yield hit ~5.31-5.33%, a 19-year high (highest since 2007), on worsening fiscal deficit outlook and inflation stuck above the Fed's target; markets now price possible 2026 rate hikes rather than cuts",
+      "headline": "US Treasury announced it will more than double debt buybacks (from $2B to at least $4B) across 10/20/30-year maturities; 30-year yield fell over 10bps to ~5.18% and 10-year fell to ~4.64%, easing bond-market stress after last week's 19-year yield high",
       "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/18/treasury-yields-.html"
+      "source": "thestreet.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-20-2026"
     },
     {
-      "headline": "Broad tech/chip selloff pressured Nasdaq on Aug 19 (capital rotating out of high-growth names, TSMC trading well above fair-value estimates) even as underlying AI chip demand stays strong (Micron launches $250M AI investment fund; chip supply chain tightness seen persisting through year-end)",
+      "headline": "Chip selloff continued: Intel and AMD fell about 4% (AMD dropped below the $500 level) even as bond yields eased broadly, while Nvidia was roughly unchanged; underlying AI accelerator/data-center demand still seen as robust",
       "themes": ["semis", "ai"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/18/stock-market-today-live-updates.html"
+      "source": "247wallst.com",
+      "url": "https://247wallst.com/investing/2026/08/19/intel-and-amd-fall-4-nvidia-unchanged-as-chip-selloff-defies-bond-yield-relief/"
+    },
+    {
+      "headline": "Moderna soared 105% and BioNTech rose about 19% after positive Phase 3 trial results (Moderna/Merck) for a personalized mRNA cancer vaccine combined with Keytruda in melanoma patients; biotech ETFs XBI/IBB up over 4%",
+      "themes": ["healthcare"],
+      "source": "thestreet.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-19-2026"
     }
   ]
 }
