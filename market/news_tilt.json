@@ -1,42 +1,41 @@
 {
   "themes": {
     "defense": 0.5,
-    "energy": 0.5,
-    "financials": 0.2,
-    "semis": -0.35,
-    "ai": 0.1,
-    "healthcare": 0.5
+    "energy": 0.4,
+    "materials": 0.4,
+    "ai": 0.4,
+    "semis": -0.2
   },
   "events": [
     {
-      "headline": "UAE announced a total trade and financial embargo on Iran following a call from Trump; Iran's FM called it a diversion amid US debt/fiscal strain. Comes after the US-Iran 60-day truce deadline lapsed Aug 17 with no deal, raising Gulf tension risk",
+      "headline": "US-Iran ceasefire expires with no deal; Trump threatens Oman amid Strait of Hormuz tensions",
       "themes": ["defense", "energy"],
-      "source": "justsecurity.org",
-      "url": "https://www.justsecurity.org/154606/early-edition-august-20-2026/"
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/08/17/us-iran-war-trump-hormuz.html"
     },
     {
-      "headline": "Brent crude rose to roughly $93-95/bbl (up over 1.5% on the day) on Gulf supply risk tied to escalating Iran tensions",
+      "headline": "OPEC+ raises output only modestly as Gulf supply remains disrupted; oil prices climb on Hormuz risk premium",
       "themes": ["energy"],
-      "source": "tradingeconomics.com",
-      "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      "source": "iea.org",
+      "url": "https://www.iea.org/reports/oil-market-report-august-2026"
     },
     {
-      "headline": "US Treasury announced it will more than double debt buybacks (from $2B to at least $4B) across 10/20/30-year maturities; 30-year yield fell over 10bps to ~5.18% and 10-year fell to ~4.64%, easing bond-market stress after last week's 19-year yield high",
-      "themes": ["financials"],
-      "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-20-2026"
+      "headline": "US bans tungsten scrap and battery waste (\"black mass\") exports to secure domestic critical mineral supply",
+      "themes": ["materials"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-05/us-bans-export-of-tungsten-battery-waste-to-protect-supplies"
     },
     {
-      "headline": "Chip selloff continued: Intel and AMD fell about 4% (AMD dropped below the $500 level) even as bond yields eased broadly, while Nvidia was roughly unchanged; underlying AI accelerator/data-center demand still seen as robust",
-      "themes": ["semis", "ai"],
-      "source": "247wallst.com",
-      "url": "https://247wallst.com/investing/2026/08/19/intel-and-amd-fall-4-nvidia-unchanged-as-chip-selloff-defies-bond-yield-relief/"
+      "headline": "Nvidia partners with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR on AI compute financing platforms to mobilize over $500B",
+      "themes": ["ai"],
+      "source": "nvidianews.nvidia.com",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital"
     },
     {
-      "headline": "Moderna soared 105% and BioNTech rose about 19% after positive Phase 3 trial results (Moderna/Merck) for a personalized mRNA cancer vaccine combined with Keytruda in melanoma patients; biotech ETFs XBI/IBB up over 4%",
-      "themes": ["healthcare"],
-      "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-19-2026"
+      "headline": "US agency reviewing how Chinese AI firms access Nvidia chips via offshore compute rental after AI breakthroughs",
+      "themes": ["semis"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-07/us-reviews-china-s-offshore-access-to-nvidia-chips-after-ai-breakthroughs"
     }
   ]
 }
