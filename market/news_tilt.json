@@ -1,41 +1,49 @@
 {
   "themes": {
-    "defense": 0.5,
+    "defense": 0.4,
     "energy": 0.4,
-    "materials": 0.4,
+    "materials": 0.3,
     "ai": 0.4,
-    "semis": -0.2
+    "semis": 0.5,
+    "financials": -0.3,
+    "crypto": 0.2
   },
   "events": [
     {
-      "headline": "US-Iran ceasefire expires with no deal; Trump threatens Oman amid Strait of Hormuz tensions",
-      "themes": ["defense", "energy"],
+      "headline": "Russia-Ukraine war escalates: Putin warns Kyiv opened 'Pandora's box' after Ukrainian strikes on Russian economic/industrial targets; drone debris kills civilians in Krasnodar",
+      "themes": ["defense"],
+      "source": "justsecurity.org",
+      "url": "https://www.justsecurity.org/155017/early-edition-august-24-2026/"
+    },
+    {
+      "headline": "Iran threatens to target alternative oil shipping routes near Strait of Hormuz and calls sanctions support an 'act of war' as US Treasury prepares toughest-ever Iran sanctions package",
+      "themes": ["energy", "defense"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/17/us-iran-war-trump-hormuz.html"
+      "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html"
     },
     {
-      "headline": "OPEC+ raises output only modestly as Gulf supply remains disrupted; oil prices climb on Hormuz risk premium",
-      "themes": ["energy"],
-      "source": "iea.org",
-      "url": "https://www.iea.org/reports/oil-market-report-august-2026"
-    },
-    {
-      "headline": "US bans tungsten scrap and battery waste (\"black mass\") exports to secure domestic critical mineral supply",
+      "headline": "Rare earth prices jump on fears of renewed Chinese export controls; US moves to secure domestic critical mineral supply",
       "themes": ["materials"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-05/us-bans-export-of-tungsten-battery-waste-to-protect-supplies"
+      "source": "investornews.com",
+      "url": "https://investornews.com/critical-minerals-rare-earths/critical-minerals-report-08-16-2026-the-critical-minerals-bull-market-is-here-as-china-puts-its-arsenal-back-in-play/"
     },
     {
-      "headline": "Nvidia partners with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR on AI compute financing platforms to mobilize over $500B",
-      "themes": ["ai"],
-      "source": "nvidianews.nvidia.com",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital"
+      "headline": "Global semiconductor sales hit record for 15th straight month; AMD, Broadcom, Micron report strong AI-driven growth and TSMC raises 2027 capex guidance to $85B on AI capacity strain",
+      "themes": ["semis", "ai"],
+      "source": "distillintelligence.com",
+      "url": "https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-08-21"
     },
     {
-      "headline": "US agency reviewing how Chinese AI firms access Nvidia chips via offshore compute rental after AI breakthroughs",
-      "themes": ["semis"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-07/us-reviews-china-s-offshore-access-to-nvidia-chips-after-ai-breakthroughs"
+      "headline": "Fed officials divided ahead of September FOMC meeting, with markets pricing a near-even split between a rate hike and a hold as inflation stays elevated near 2.7%",
+      "themes": ["financials"],
+      "source": "tradingeconomics.com",
+      "url": "https://tradingeconomics.com/united-states/interest-rate/news/485858"
+    },
+    {
+      "headline": "US Treasury advances GENIUS Act stablecoin rulemaking, moving toward clearer federal framework for payment stablecoins",
+      "themes": ["crypto"],
+      "source": "natlawreview.com",
+      "url": "https://natlawreview.com/article/finreg-monthly-update-august-2026"
     }
   ]
 }

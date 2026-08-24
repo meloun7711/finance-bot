@@ -3,47 +3,50 @@
 _Model output, not advice. Data through 2026-08-17; 243 names. Paper/research signals for review — not auto-executed._
 
 ## News tilt (from headlines, bounded)
-- **defense**: +0.50
+- **semis**: +0.50
+- **defense**: +0.40
 - **energy**: +0.40
-- **materials**: +0.40
 - **ai**: +0.40
-- **semis**: -0.20
+- **materials**: +0.30
+- **financials**: -0.30
+- **crypto**: +0.20
 
 **Events driving the tilt:**
-- US-Iran ceasefire expires with no deal; Trump threatens Oman amid Strait of Hormuz tensions → _defense, energy_ (cnbc.com)
-- OPEC+ raises output only modestly as Gulf supply remains disrupted; oil prices climb on Hormuz risk premium → _energy_ (iea.org)
-- US bans tungsten scrap and battery waste ("black mass") exports to secure domestic critical mineral supply → _materials_ (bloomberg.com)
-- Nvidia partners with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR on AI compute financing platforms to mobilize over $500B → _ai_ (nvidianews.nvidia.com)
-- US agency reviewing how Chinese AI firms access Nvidia chips via offshore compute rental after AI breakthroughs → _semis_ (bloomberg.com)
+- Russia-Ukraine war escalates: Putin warns Kyiv opened 'Pandora's box' after Ukrainian strikes on Russian economic/industrial targets; drone debris kills civilians in Krasnodar → _defense_ (justsecurity.org)
+- Iran threatens to target alternative oil shipping routes near Strait of Hormuz and calls sanctions support an 'act of war' as US Treasury prepares toughest-ever Iran sanctions package → _energy, defense_ (cnbc.com)
+- Rare earth prices jump on fears of renewed Chinese export controls; US moves to secure domestic critical mineral supply → _materials_ (investornews.com)
+- Global semiconductor sales hit record for 15th straight month; AMD, Broadcom, Micron report strong AI-driven growth and TSMC raises 2027 capex guidance to $85B on AI capacity strain → _semis, ai_ (distillintelligence.com)
+- Fed officials divided ahead of September FOMC meeting, with markets pricing a near-even split between a rate hike and a hold as inflation stays elevated near 2.7% → _financials_ (tradingeconomics.com)
+- US Treasury advances GENIUS Act stablecoin rulemaking, moving toward clearer federal framework for payment stablecoins → _crypto_ (natlawreview.com)
 
 ## Top 15 — likely UP (news-adjusted)
 | # | Ticker | Decision | Structural | News | Themes |
 |---|--------|---------:|-----------:|-----:|--------|
 | 1 | **VLO** | +0.75 | +0.69 | +0.40 | energy |
 | 2 | **MPC** | +0.73 | +0.67 | +0.40 | energy |
-| 3 | **AIR** | +0.73 | +0.65 | +0.50 | defense |
+| 3 | **ASML** | +0.73 | +0.65 | +0.50 | semis |
 | 4 | **PSX** | +0.71 | +0.65 | +0.40 | energy |
-| 5 | **DELL** | +0.71 | +0.65 | +0.40 | ai |
-| 6 | **TRGP** | +0.71 | +0.65 | +0.40 | energy |
-| 7 | **NUE** | +0.70 | +0.64 | +0.40 | materials |
-| 8 | **TWLO** | +0.68 | +0.62 | +0.40 | ai |
-| 9 | **STLD** | +0.68 | +0.62 | +0.40 | materials |
-| 10 | **AMD** | +0.67 | +0.61 | +0.40 | ai,semis |
-| 11 | **FTNT** | +0.65 | +0.65 | +0.00 | cyber |
-| 12 | **NBIS** | +0.65 | +0.59 | +0.40 | ai |
-| 13 | **PANW** | +0.65 | +0.65 | +0.00 | tech,cyber |
-| 14 | **HXL** | +0.64 | +0.57 | +0.50 | defense |
-| 15 | **HWM** | +0.64 | +0.57 | +0.50 | defense |
+| 5 | **ONTO** | +0.71 | +0.64 | +0.50 | semis |
+| 6 | **AIR** | +0.71 | +0.65 | +0.40 | defense |
+| 7 | **DELL** | +0.71 | +0.65 | +0.40 | ai |
+| 8 | **TRGP** | +0.71 | +0.65 | +0.40 | energy |
+| 9 | **TER** | +0.70 | +0.63 | +0.50 | semis |
+| 10 | **AMD** | +0.69 | +0.61 | +0.50 | ai,semis |
+| 11 | **TWLO** | +0.68 | +0.62 | +0.40 | ai |
+| 12 | **NUE** | +0.68 | +0.64 | +0.30 | materials |
+| 13 | **FORM** | +0.68 | +0.61 | +0.50 | semis |
+| 14 | **LRCX** | +0.68 | +0.61 | +0.50 | semis |
+| 15 | **MU** | +0.68 | +0.61 | +0.50 | semis |
 
 ## Bottom 8 — likely DOWN
-- MSTR -0.81 (crypto)
+- MSTR -0.78 (crypto)
 - JOBY -0.77 (space)
-- COIN -0.76 (crypto)
 - INTU -0.76 (tech)
 - HUBS -0.75 (tech)
 - BSX -0.75 (healthcare)
 - ACHR -0.75 (space)
 - QUBT -0.74 (quantum)
+- COIN -0.73 (crypto)
 
 ## Dip-in-uptrend (strong long-term, pulling back now)
 - **POWI** — 20d -12.7%, -28.9% off recent high
@@ -54,3 +57,4 @@ _Model output, not advice. Data through 2026-08-17; 243 names. Paper/research si
 - **GOOGL** — 20d -2.3%, -11.8% off recent high
 - **CW** — 20d -2.2%, -12.2% off recent high
 - **GS** — 20d -0.4%, -8.7% off recent high
+- **MCHP** — 20d -0.3%, -21.9% off recent high
