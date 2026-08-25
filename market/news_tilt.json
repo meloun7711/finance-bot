@@ -1,49 +1,41 @@
 {
   "themes": {
     "defense": 0.4,
-    "energy": 0.4,
-    "materials": 0.3,
-    "ai": 0.4,
-    "semis": 0.5,
-    "financials": -0.3,
-    "crypto": 0.2
+    "energy": -0.3,
+    "materials": 0.4,
+    "semis": -0.2,
+    "financials": -0.2
   },
   "events": [
     {
-      "headline": "Russia-Ukraine war escalates: Putin warns Kyiv opened 'Pandora's box' after Ukrainian strikes on Russian economic/industrial targets; drone debris kills civilians in Krasnodar",
-      "themes": ["defense"],
-      "source": "justsecurity.org",
-      "url": "https://www.justsecurity.org/155017/early-edition-august-24-2026/"
+      "headline": "US escalates 'Operation Economic Outcast' sanctions campaign to isolate Iran; capital rotates into defense-adjacent sectors amid Ukraine war and tariff tensions",
+      "themes": ["defense", "energy"],
+      "source": "thestreet.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-24-2026"
     },
     {
-      "headline": "Iran threatens to target alternative oil shipping routes near Strait of Hormuz and calls sanctions support an 'act of war' as US Treasury prepares toughest-ever Iran sanctions package",
-      "themes": ["energy", "defense"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html"
+      "headline": "Crude oil falls below $83/barrel as intensified US sanctions on Iran create uncertainty over Strait of Hormuz flows and China exposure",
+      "themes": ["energy"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-24/latest-oil-market-news-and-analysis-for-aug-25"
     },
     {
-      "headline": "Rare earth prices jump on fears of renewed Chinese export controls; US moves to secure domestic critical mineral supply",
+      "headline": "Rare earth prices jump on renewed fears of Chinese export controls on critical minerals",
       "themes": ["materials"],
       "source": "investornews.com",
       "url": "https://investornews.com/critical-minerals-rare-earths/critical-minerals-report-08-16-2026-the-critical-minerals-bull-market-is-here-as-china-puts-its-arsenal-back-in-play/"
     },
     {
-      "headline": "Global semiconductor sales hit record for 15th straight month; AMD, Broadcom, Micron report strong AI-driven growth and TSMC raises 2027 capex guidance to $85B on AI capacity strain",
+      "headline": "AI chip stocks slide as Micron faces Netlist patent headwinds and investors brace for Nvidia earnings; hyperscalers diverge from semis",
       "themes": ["semis", "ai"],
-      "source": "distillintelligence.com",
-      "url": "https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-08-21"
+      "source": "startuphub.ai",
+      "url": "https://www.startuphub.ai/ai-news/ai-stocks-daily/2026/ai-stocks-2026-08-24"
     },
     {
-      "headline": "Fed officials divided ahead of September FOMC meeting, with markets pricing a near-even split between a rate hike and a hold as inflation stays elevated near 2.7%",
+      "headline": "Fed holds rates steady for a fifth consecutive meeting; three FOMC dissents favored a hike, leaving the September meeting a toss-up",
       "themes": ["financials"],
-      "source": "tradingeconomics.com",
-      "url": "https://tradingeconomics.com/united-states/interest-rate/news/485858"
-    },
-    {
-      "headline": "US Treasury advances GENIUS Act stablecoin rulemaking, moving toward clearer federal framework for payment stablecoins",
-      "themes": ["crypto"],
-      "source": "natlawreview.com",
-      "url": "https://natlawreview.com/article/finreg-monthly-update-august-2026"
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/economy/policy/articles/federal-just-released-august-inflation-232824554.html"
     }
   ]
 }

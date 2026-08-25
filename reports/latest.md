@@ -3,50 +3,47 @@
 _Model output, not advice. Data through 2026-08-17; 243 names. Paper/research signals for review — not auto-executed._
 
 ## News tilt (from headlines, bounded)
-- **semis**: +0.50
 - **defense**: +0.40
-- **energy**: +0.40
-- **ai**: +0.40
-- **materials**: +0.30
-- **financials**: -0.30
-- **crypto**: +0.20
+- **materials**: +0.40
+- **energy**: -0.30
+- **semis**: -0.20
+- **financials**: -0.20
 
 **Events driving the tilt:**
-- Russia-Ukraine war escalates: Putin warns Kyiv opened 'Pandora's box' after Ukrainian strikes on Russian economic/industrial targets; drone debris kills civilians in Krasnodar → _defense_ (justsecurity.org)
-- Iran threatens to target alternative oil shipping routes near Strait of Hormuz and calls sanctions support an 'act of war' as US Treasury prepares toughest-ever Iran sanctions package → _energy, defense_ (cnbc.com)
-- Rare earth prices jump on fears of renewed Chinese export controls; US moves to secure domestic critical mineral supply → _materials_ (investornews.com)
-- Global semiconductor sales hit record for 15th straight month; AMD, Broadcom, Micron report strong AI-driven growth and TSMC raises 2027 capex guidance to $85B on AI capacity strain → _semis, ai_ (distillintelligence.com)
-- Fed officials divided ahead of September FOMC meeting, with markets pricing a near-even split between a rate hike and a hold as inflation stays elevated near 2.7% → _financials_ (tradingeconomics.com)
-- US Treasury advances GENIUS Act stablecoin rulemaking, moving toward clearer federal framework for payment stablecoins → _crypto_ (natlawreview.com)
+- US escalates 'Operation Economic Outcast' sanctions campaign to isolate Iran; capital rotates into defense-adjacent sectors amid Ukraine war and tariff tensions → _defense, energy_ (thestreet.com)
+- Crude oil falls below $83/barrel as intensified US sanctions on Iran create uncertainty over Strait of Hormuz flows and China exposure → _energy_ (bloomberg.com)
+- Rare earth prices jump on renewed fears of Chinese export controls on critical minerals → _materials_ (investornews.com)
+- AI chip stocks slide as Micron faces Netlist patent headwinds and investors brace for Nvidia earnings; hyperscalers diverge from semis → _semis, ai_ (startuphub.ai)
+- Fed holds rates steady for a fifth consecutive meeting; three FOMC dissents favored a hike, leaving the September meeting a toss-up → _financials_ (finance.yahoo.com)
 
 ## Top 15 — likely UP (news-adjusted)
 | # | Ticker | Decision | Structural | News | Themes |
 |---|--------|---------:|-----------:|-----:|--------|
-| 1 | **VLO** | +0.75 | +0.69 | +0.40 | energy |
-| 2 | **MPC** | +0.73 | +0.67 | +0.40 | energy |
-| 3 | **ASML** | +0.73 | +0.65 | +0.50 | semis |
-| 4 | **PSX** | +0.71 | +0.65 | +0.40 | energy |
-| 5 | **ONTO** | +0.71 | +0.64 | +0.50 | semis |
-| 6 | **AIR** | +0.71 | +0.65 | +0.40 | defense |
-| 7 | **DELL** | +0.71 | +0.65 | +0.40 | ai |
-| 8 | **TRGP** | +0.71 | +0.65 | +0.40 | energy |
-| 9 | **TER** | +0.70 | +0.63 | +0.50 | semis |
-| 10 | **AMD** | +0.69 | +0.61 | +0.50 | ai,semis |
-| 11 | **TWLO** | +0.68 | +0.62 | +0.40 | ai |
-| 12 | **NUE** | +0.68 | +0.64 | +0.30 | materials |
-| 13 | **FORM** | +0.68 | +0.61 | +0.50 | semis |
-| 14 | **LRCX** | +0.68 | +0.61 | +0.50 | semis |
-| 15 | **MU** | +0.68 | +0.61 | +0.50 | semis |
+| 1 | **AIR** | +0.71 | +0.65 | +0.40 | defense |
+| 2 | **NUE** | +0.70 | +0.64 | +0.40 | materials |
+| 3 | **STLD** | +0.68 | +0.62 | +0.40 | materials |
+| 4 | **FTNT** | +0.65 | +0.65 | +0.00 | cyber |
+| 5 | **DELL** | +0.65 | +0.65 | +0.00 | ai |
+| 6 | **PANW** | +0.65 | +0.65 | +0.00 | tech,cyber |
+| 7 | **VLO** | +0.64 | +0.69 | -0.30 | energy |
+| 8 | **MPC** | +0.63 | +0.67 | -0.30 | energy |
+| 9 | **HXL** | +0.63 | +0.57 | +0.40 | defense |
+| 10 | **HWM** | +0.63 | +0.57 | +0.40 | defense |
+| 11 | **TWLO** | +0.62 | +0.62 | +0.00 | ai |
+| 12 | **ASML** | +0.62 | +0.65 | -0.20 | semis |
+| 13 | **CAT** | +0.62 | +0.62 | +0.00 | industrial_consumer |
+| 14 | **ESLT** | +0.61 | +0.55 | +0.40 | defense |
+| 15 | **CRWD** | +0.61 | +0.61 | +0.00 | cyber |
 
 ## Bottom 8 — likely DOWN
-- MSTR -0.78 (crypto)
+- MSTR -0.81 (crypto)
+- SOUN -0.79 (ai)
+- RBLX -0.79 (ai,tech)
+- DUOL -0.78 (ai)
 - JOBY -0.77 (space)
+- BBAI -0.77 (ai)
+- COIN -0.76 (crypto)
 - INTU -0.76 (tech)
-- HUBS -0.75 (tech)
-- BSX -0.75 (healthcare)
-- ACHR -0.75 (space)
-- QUBT -0.74 (quantum)
-- COIN -0.73 (crypto)
 
 ## Dip-in-uptrend (strong long-term, pulling back now)
 - **POWI** — 20d -12.7%, -28.9% off recent high
@@ -57,4 +54,3 @@ _Model output, not advice. Data through 2026-08-17; 243 names. Paper/research si
 - **GOOGL** — 20d -2.3%, -11.8% off recent high
 - **CW** — 20d -2.2%, -12.2% off recent high
 - **GS** — 20d -0.4%, -8.7% off recent high
-- **MCHP** — 20d -0.3%, -21.9% off recent high
