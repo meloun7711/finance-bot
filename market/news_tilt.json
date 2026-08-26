@@ -1,41 +1,48 @@
 {
   "themes": {
     "defense": 0.4,
-    "energy": -0.3,
-    "materials": 0.4,
-    "semis": -0.2,
-    "financials": -0.2
+    "energy": 0.15,
+    "materials": 0.3,
+    "ai": 0.3,
+    "semis": 0.3,
+    "financials": -0.1
   },
   "events": [
     {
-      "headline": "US escalates 'Operation Economic Outcast' sanctions campaign to isolate Iran; capital rotates into defense-adjacent sectors amid Ukraine war and tariff tensions",
-      "themes": ["defense", "energy"],
-      "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-24-2026"
+      "headline": "US intensifies Iran sanctions; Treasury gives countries trading with Tehran a wind-down deadline, Strait of Hormuz flows watched",
+      "themes": ["energy", "defense"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/08/24/stock-market-today-live-updates.html"
     },
     {
-      "headline": "Crude oil falls below $83/barrel as intensified US sanctions on Iran create uncertainty over Strait of Hormuz flows and China exposure",
-      "themes": ["energy"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-24/latest-oil-market-news-and-analysis-for-aug-25"
-    },
-    {
-      "headline": "Rare earth prices jump on renewed fears of Chinese export controls on critical minerals",
-      "themes": ["materials"],
-      "source": "investornews.com",
-      "url": "https://investornews.com/critical-minerals-rare-earths/critical-minerals-report-08-16-2026-the-critical-minerals-bull-market-is-here-as-china-puts-its-arsenal-back-in-play/"
-    },
-    {
-      "headline": "AI chip stocks slide as Micron faces Netlist patent headwinds and investors brace for Nvidia earnings; hyperscalers diverge from semis",
-      "themes": ["semis", "ai"],
-      "source": "startuphub.ai",
-      "url": "https://www.startuphub.ai/ai-news/ai-stocks-daily/2026/ai-stocks-2026-08-24"
-    },
-    {
-      "headline": "Fed holds rates steady for a fifth consecutive meeting; three FOMC dissents favored a hike, leaving the September meeting a toss-up",
-      "themes": ["financials"],
+      "headline": "Defense contractors keep drawing inflows on NATO spending commitments and Ukraine tensions even as broader market wobbles",
+      "themes": ["defense"],
       "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/economy/policy/articles/federal-just-released-august-inflation-232824554.html"
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-aug-25-132700491.html"
+    },
+    {
+      "headline": "China's rare-earth export licensing regime for samarium, gadolinium, lutetium and other medium/heavy rare earths remains fully enforced, keeping supply-chain risk elevated",
+      "themes": ["materials"],
+      "source": "csis.org",
+      "url": "https://www.csis.org/analysis/consequences-chinas-new-rare-earths-export-restrictions"
+    },
+    {
+      "headline": "Nvidia H200 AI chips resume flowing into China (ByteDance, Tencent each receive ~10,000 units) though still a fraction of the licensed cap",
+      "themes": ["ai", "semis"],
+      "source": "benzinga.com",
+      "url": "https://www.benzinga.com/markets/tech/26/08/61293582/nvidias-h200-chips-are-flowing-into-china-again-bytedance-tencent-get-around-10000-each-report-says"
+    },
+    {
+      "headline": "Global semiconductor sales rose 35.1% quarter-over-quarter in Q2 2026 to $403.3B, per SIA/WSTS data, extending a record growth streak driven by AI demand",
+      "themes": ["semis", "ai"],
+      "source": "semiconductors.org",
+      "url": "https://www.semiconductors.org/global-semiconductor-sales-increase-35-1-from-q1-2026-to-q2-2026/"
+    },
+    {
+      "headline": "Fed reiterates it is holding the funds rate at 3.50%-3.75% amid above-target inflation; markets price September FOMC as most likely a hold, with meaningful hike odds still priced in",
+      "themes": ["financials"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/08/24/stock-market-today-live-updates.html"
     }
   ]
 }
