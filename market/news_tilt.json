@@ -1,48 +1,47 @@
 {
   "themes": {
     "defense": 0.4,
-    "energy": 0.15,
+    "energy": 0.2,
     "materials": 0.3,
-    "ai": 0.3,
-    "semis": 0.3,
-    "financials": -0.1
+    "semis": -0.2,
+    "financials": -0.2
   },
   "events": [
     {
-      "headline": "US intensifies Iran sanctions; Treasury gives countries trading with Tehran a wind-down deadline, Strait of Hormuz flows watched",
+      "headline": "US activates civil-war-era maritime prize court to seize Iranian oil tankers as Iran war continues; Pentagon reviewing troop posture amid munitions strain",
+      "themes": ["defense"],
+      "source": "justsecurity.org",
+      "url": "https://www.justsecurity.org/155398/early-edition-august-27-2026/"
+    },
+    {
+      "headline": "Trump administration rolls out sweeping new global sanctions targeting Iran oil trade, warning of penalties for countries helping Tehran evade them",
       "themes": ["energy", "defense"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/24/stock-market-today-live-updates.html"
+      "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html"
     },
     {
-      "headline": "Defense contractors keep drawing inflows on NATO spending commitments and Ukraine tensions even as broader market wobbles",
-      "themes": ["defense"],
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-aug-25-132700491.html"
+      "themes": ["energy"],
+      "headline": "OPEC+ (Saudi Arabia, Russia and five others) agree to boost September oil output by 188,000 bpd, completing rollback of voluntary cuts; WTI/Brent fell ~2.5% on profit-taking despite sanctions news",
+      "source": "dtnpf.com",
+      "url": "https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/08/25/oil-extends-decline-new-us-sanctions"
     },
     {
-      "headline": "China's rare-earth export licensing regime for samarium, gadolinium, lutetium and other medium/heavy rare earths remains fully enforced, keeping supply-chain risk elevated",
+      "headline": "Rare earth prices jump on renewed fears China will reimpose export controls (currently suspended until Nov 10, 2026); US separately blocks tungsten and battery-waste exports to shore up domestic minerals supply",
       "themes": ["materials"],
-      "source": "csis.org",
-      "url": "https://www.csis.org/analysis/consequences-chinas-new-rare-earths-export-restrictions"
+      "source": "investornews.com",
+      "url": "https://investornews.com/critical-minerals-rare-earths/critical-minerals-report-08-16-2026-the-critical-minerals-bull-market-is-here-as-china-puts-its-arsenal-back-in-play/"
     },
     {
-      "headline": "Nvidia H200 AI chips resume flowing into China (ByteDance, Tencent each receive ~10,000 units) though still a fraction of the licensed cap",
-      "themes": ["ai", "semis"],
-      "source": "benzinga.com",
-      "url": "https://www.benzinga.com/markets/tech/26/08/61293582/nvidias-h200-chips-are-flowing-into-china-again-bytedance-tencent-get-around-10000-each-report-says"
-    },
-    {
-      "headline": "Global semiconductor sales rose 35.1% quarter-over-quarter in Q2 2026 to $403.3B, per SIA/WSTS data, extending a record growth streak driven by AI demand",
+      "headline": "US Commerce Department moves to close loophole allowing Nvidia's advanced Rubin/Blackwell AI chips to reach Chinese firms via overseas subsidiaries, tightening export enforcement",
       "themes": ["semis", "ai"],
-      "source": "semiconductors.org",
-      "url": "https://www.semiconductors.org/global-semiconductor-sales-increase-35-1-from-q1-2026-to-q2-2026/"
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html"
     },
     {
-      "headline": "Fed reiterates it is holding the funds rate at 3.50%-3.75% amid above-target inflation; markets price September FOMC as most likely a hold, with meaningful hike odds still priced in",
+      "headline": "Fed held rates steady at 3.50%-3.75% in July with a divided 9-3 vote; July minutes show officials see need for a rate hike soon if inflation (3-year high, partly energy-driven) doesn't cool",
       "themes": ["financials"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/24/stock-market-today-live-updates.html"
+      "url": "https://www.cnbc.com/2026/08/19/fed-minutes-july-2026-officials-saw-need-for-rate-hike-if-inflation-doesnt-cool.html"
     }
   ]
 }
