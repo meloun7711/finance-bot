@@ -1,47 +1,42 @@
 {
   "themes": {
-    "defense": 0.4,
-    "energy": 0.2,
+    "defense": 0.5,
+    "energy": 0.35,
     "materials": 0.3,
-    "semis": -0.2,
-    "financials": -0.2
+    "ai": 0.2,
+    "semis": 0.25,
+    "financials": -0.3
   },
   "events": [
     {
-      "headline": "US activates civil-war-era maritime prize court to seize Iranian oil tankers as Iran war continues; Pentagon reviewing troop posture amid munitions strain",
+      "headline": "US defense budget on pace for $1 trillion in 2026 with ~$1.5T 2027 request as NATO spending accelerates amid ongoing Mideast tensions",
       "themes": ["defense"],
-      "source": "justsecurity.org",
-      "url": "https://www.justsecurity.org/155398/early-edition-august-27-2026/"
+      "source": "fool.com",
+      "url": "https://www.fool.com/investing/2026/07/09/soaring-defense-spending-means-great-news-for-thes/"
     },
     {
-      "headline": "Trump administration rolls out sweeping new global sanctions targeting Iran oil trade, warning of penalties for countries helping Tehran evade them",
-      "themes": ["energy", "defense"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html"
-    },
-    {
+      "headline": "Oil holds above $100/barrel as Iran's Strait of Hormuz disruption persists; Gulf producers ramping exports to offset shut-in capacity",
       "themes": ["energy"],
-      "headline": "OPEC+ (Saudi Arabia, Russia and five others) agree to boost September oil output by 188,000 bpd, completing rollback of voluntary cuts; WTI/Brent fell ~2.5% on profit-taking despite sanctions news",
-      "source": "dtnpf.com",
-      "url": "https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/08/25/oil-extends-decline-new-us-sanctions"
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-27/hormuz-oil-flows-rising-as-gulf-giants-ramp-up-accelerates"
     },
     {
-      "headline": "Rare earth prices jump on renewed fears China will reimpose export controls (currently suspended until Nov 10, 2026); US separately blocks tungsten and battery-waste exports to shore up domestic minerals supply",
+      "headline": "China tightens rare-earth export licensing (samarium, gadolinium, lutetium) and steps up enforcement, pressuring Western supply-chain diversification",
       "themes": ["materials"],
-      "source": "investornews.com",
-      "url": "https://investornews.com/critical-minerals-rare-earths/critical-minerals-report-08-16-2026-the-critical-minerals-bull-market-is-here-as-china-puts-its-arsenal-back-in-play/"
+      "source": "morganlewis.com",
+      "url": "https://www.morganlewis.com/pubs/2026/07/recent-china-export-control-actions-signal-active-enforcement-for-rare-earths-and-strategic-minerals"
     },
     {
-      "headline": "US Commerce Department moves to close loophole allowing Nvidia's advanced Rubin/Blackwell AI chips to reach Chinese firms via overseas subsidiaries, tightening export enforcement",
-      "themes": ["semis", "ai"],
+      "headline": "US trade officials confirm Nvidia H200 AI chips now shipping to China under new export approval, though volumes remain limited so far",
+      "themes": ["ai", "semis"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html"
+      "url": "https://www.cnbc.com/2026/07/14/nvidia-h200-ai-chips-china.html"
     },
     {
-      "headline": "Fed held rates steady at 3.50%-3.75% in July with a divided 9-3 vote; July minutes show officials see need for a rate hike soon if inflation (3-year high, partly energy-driven) doesn't cool",
+      "headline": "Fed's preferred inflation gauge (PCE) came in hotter than expected in July (headline 3.7%, core 3.3%), keeping a September rate hike in play",
       "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/19/fed-minutes-july-2026-officials-saw-need-for-rate-hike-if-inflation-doesnt-cool.html"
+      "source": "fool.com",
+      "url": "https://www.fool.com/investing/2026/08/26/the-fed-s-preferred-inflation-gauge-came-in-slightly-hotter-than-expected-here-s-what-investors-need-to-know/"
     }
   ]
 }

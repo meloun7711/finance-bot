@@ -3,48 +3,48 @@
 _Model output, not advice. Data through 2026-08-26; 243 names. Paper/research signals for review — not auto-executed._
 
 ## News tilt (from headlines, bounded)
-- **defense**: +0.40
+- **defense**: +0.50
+- **energy**: +0.35
 - **materials**: +0.30
-- **energy**: +0.20
-- **semis**: -0.20
-- **financials**: -0.20
+- **financials**: -0.30
+- **semis**: +0.25
+- **ai**: +0.20
 
 **Events driving the tilt:**
-- US activates civil-war-era maritime prize court to seize Iranian oil tankers as Iran war continues; Pentagon reviewing troop posture amid munitions strain → _defense_ (justsecurity.org)
-- Trump administration rolls out sweeping new global sanctions targeting Iran oil trade, warning of penalties for countries helping Tehran evade them → _energy, defense_ (cnbc.com)
-- OPEC+ (Saudi Arabia, Russia and five others) agree to boost September oil output by 188,000 bpd, completing rollback of voluntary cuts; WTI/Brent fell ~2.5% on profit-taking despite sanctions news → _energy_ (dtnpf.com)
-- Rare earth prices jump on renewed fears China will reimpose export controls (currently suspended until Nov 10, 2026); US separately blocks tungsten and battery-waste exports to shore up domestic minerals supply → _materials_ (investornews.com)
-- US Commerce Department moves to close loophole allowing Nvidia's advanced Rubin/Blackwell AI chips to reach Chinese firms via overseas subsidiaries, tightening export enforcement → _semis, ai_ (cnbc.com)
-- Fed held rates steady at 3.50%-3.75% in July with a divided 9-3 vote; July minutes show officials see need for a rate hike soon if inflation (3-year high, partly energy-driven) doesn't cool → _financials_ (cnbc.com)
+- US defense budget on pace for $1 trillion in 2026 with ~$1.5T 2027 request as NATO spending accelerates amid ongoing Mideast tensions → _defense_ (fool.com)
+- Oil holds above $100/barrel as Iran's Strait of Hormuz disruption persists; Gulf producers ramping exports to offset shut-in capacity → _energy_ (bloomberg.com)
+- China tightens rare-earth export licensing (samarium, gadolinium, lutetium) and steps up enforcement, pressuring Western supply-chain diversification → _materials_ (morganlewis.com)
+- US trade officials confirm Nvidia H200 AI chips now shipping to China under new export approval, though volumes remain limited so far → _ai, semis_ (cnbc.com)
+- Fed's preferred inflation gauge (PCE) came in hotter than expected in July (headline 3.7%, core 3.3%), keeping a September rate hike in play → _financials_ (fool.com)
 
 ## Top 15 — likely UP (news-adjusted)
 | # | Ticker | Decision | Structural | News | Themes |
 |---|--------|---------:|-----------:|-----:|--------|
-| 1 | **VLO** | +0.71 | +0.68 | +0.20 | energy |
-| 2 | **MPC** | +0.69 | +0.66 | +0.20 | energy |
-| 3 | **AIR** | +0.68 | +0.62 | +0.40 | defense |
-| 4 | **NUE** | +0.68 | +0.63 | +0.30 | materials |
-| 5 | **PSX** | +0.67 | +0.64 | +0.20 | energy |
-| 6 | **TRGP** | +0.66 | +0.63 | +0.20 | energy |
-| 7 | **FTNT** | +0.65 | +0.65 | +0.00 | cyber |
-| 8 | **STLD** | +0.64 | +0.59 | +0.30 | materials |
-| 9 | **DELL** | +0.64 | +0.64 | +0.00 | ai |
-| 10 | **MRK** | +0.63 | +0.63 | +0.00 | healthcare |
-| 11 | **FCX** | +0.62 | +0.58 | +0.30 | materials |
-| 12 | **TGT** | +0.61 | +0.61 | +0.00 | industrial_consumer |
-| 13 | **ESLT** | +0.61 | +0.55 | +0.40 | defense |
-| 14 | **AMD** | +0.60 | +0.60 | +0.00 | ai,semis |
-| 15 | **TWLO** | +0.60 | +0.60 | +0.00 | ai |
+| 1 | **VLO** | +0.73 | +0.68 | +0.35 | energy |
+| 2 | **MPC** | +0.71 | +0.66 | +0.35 | energy |
+| 3 | **AIR** | +0.69 | +0.62 | +0.50 | defense |
+| 4 | **PSX** | +0.69 | +0.64 | +0.35 | energy |
+| 5 | **TRGP** | +0.68 | +0.63 | +0.35 | energy |
+| 6 | **NUE** | +0.68 | +0.63 | +0.30 | materials |
+| 7 | **DELL** | +0.67 | +0.64 | +0.20 | ai |
+| 8 | **ASML** | +0.66 | +0.62 | +0.25 | semis |
+| 9 | **FTNT** | +0.65 | +0.65 | +0.00 | cyber |
+| 10 | **AMD** | +0.64 | +0.60 | +0.25 | ai,semis |
+| 11 | **STLD** | +0.64 | +0.59 | +0.30 | materials |
+| 12 | **MU** | +0.63 | +0.60 | +0.25 | semis |
+| 13 | **ONTO** | +0.63 | +0.59 | +0.25 | semis |
+| 14 | **TWLO** | +0.63 | +0.60 | +0.20 | ai |
+| 15 | **SLAB** | +0.63 | +0.59 | +0.25 | semis |
 
 ## Bottom 8 — likely DOWN
 - MSTR -0.80 (crypto)
-- RBLX -0.79 (ai,tech)
-- SOUN -0.76 (ai)
+- RBLX -0.76 (ai,tech)
 - BSX -0.76 (healthcare)
 - JOBY -0.75 (space)
-- BBAI -0.75 (ai)
 - INTU -0.74 (tech)
 - HUBS -0.73 (tech)
+- QUBT -0.73 (quantum)
+- SOUN -0.73 (ai)
 
 ## Dip-in-uptrend (strong long-term, pulling back now)
 - **DDOG** — 20d -13.4%, -20.6% off recent high
