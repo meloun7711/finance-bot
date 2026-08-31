@@ -3,48 +3,47 @@
 _Model output, not advice. Data through 2026-08-26; 243 names. Paper/research signals for review — not auto-executed._
 
 ## News tilt (from headlines, bounded)
-- **defense**: +0.50
-- **energy**: +0.35
-- **materials**: +0.30
-- **financials**: -0.30
+- **defense**: +0.55
+- **energy**: +0.50
+- **financials**: -0.40
+- **materials**: +0.35
+- **ai**: +0.30
 - **semis**: +0.25
-- **ai**: +0.20
 
 **Events driving the tilt:**
-- US defense budget on pace for $1 trillion in 2026 with ~$1.5T 2027 request as NATO spending accelerates amid ongoing Mideast tensions → _defense_ (fool.com)
-- Oil holds above $100/barrel as Iran's Strait of Hormuz disruption persists; Gulf producers ramping exports to offset shut-in capacity → _energy_ (bloomberg.com)
-- China tightens rare-earth export licensing (samarium, gadolinium, lutetium) and steps up enforcement, pressuring Western supply-chain diversification → _materials_ (morganlewis.com)
-- US trade officials confirm Nvidia H200 AI chips now shipping to China under new export approval, though volumes remain limited so far → _ai, semis_ (cnbc.com)
-- Fed's preferred inflation gauge (PCE) came in hotter than expected in July (headline 3.7%, core 3.3%), keeping a September rate hike in play → _financials_ (fool.com)
+- US military struck Iranian rocket launchers preparing to mine the Strait of Hormuz, ending weeks of relative calm; Brent crude jumped above $90/bbl on renewed supply-disruption fears → _defense, energy_ (bloomberg.com)
+- China imposed its most stringent rare-earth and magnet export controls yet, restricting products containing even trace amounts of Chinese-origin content, directly threatening US defense supply chains → _materials, defense_ (csis.org)
+- Fed Chair Kevin Warsh delivered an unexpectedly hawkish Jackson Hole speech, saying financial conditions aren't restrictive enough; September rate-hike odds rose to roughly 60% → _financials_ (cnbc.com)
+- Nvidia partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500B of third-party capital for AI compute infrastructure buildout → _ai, semis_ (cnbc.com)
 
 ## Top 15 — likely UP (news-adjusted)
 | # | Ticker | Decision | Structural | News | Themes |
 |---|--------|---------:|-----------:|-----:|--------|
-| 1 | **VLO** | +0.73 | +0.68 | +0.35 | energy |
-| 2 | **MPC** | +0.71 | +0.66 | +0.35 | energy |
-| 3 | **AIR** | +0.69 | +0.62 | +0.50 | defense |
-| 4 | **PSX** | +0.69 | +0.64 | +0.35 | energy |
-| 5 | **TRGP** | +0.68 | +0.63 | +0.35 | energy |
-| 6 | **NUE** | +0.68 | +0.63 | +0.30 | materials |
-| 7 | **DELL** | +0.67 | +0.64 | +0.20 | ai |
+| 1 | **VLO** | +0.76 | +0.68 | +0.50 | energy |
+| 2 | **MPC** | +0.74 | +0.66 | +0.50 | energy |
+| 3 | **PSX** | +0.71 | +0.64 | +0.50 | energy |
+| 4 | **TRGP** | +0.70 | +0.63 | +0.50 | energy |
+| 5 | **AIR** | +0.70 | +0.62 | +0.55 | defense |
+| 6 | **NUE** | +0.68 | +0.63 | +0.35 | materials |
+| 7 | **DELL** | +0.68 | +0.64 | +0.30 | ai |
 | 8 | **ASML** | +0.66 | +0.62 | +0.25 | semis |
 | 9 | **FTNT** | +0.65 | +0.65 | +0.00 | cyber |
-| 10 | **AMD** | +0.64 | +0.60 | +0.25 | ai,semis |
-| 11 | **STLD** | +0.64 | +0.59 | +0.30 | materials |
-| 12 | **MU** | +0.63 | +0.60 | +0.25 | semis |
-| 13 | **ONTO** | +0.63 | +0.59 | +0.25 | semis |
-| 14 | **TWLO** | +0.63 | +0.60 | +0.20 | ai |
+| 10 | **AMD** | +0.65 | +0.60 | +0.30 | ai,semis |
+| 11 | **STLD** | +0.65 | +0.59 | +0.35 | materials |
+| 12 | **TWLO** | +0.65 | +0.60 | +0.30 | ai |
+| 13 | **MU** | +0.63 | +0.60 | +0.25 | semis |
+| 14 | **ONTO** | +0.63 | +0.59 | +0.25 | semis |
 | 15 | **SLAB** | +0.63 | +0.59 | +0.25 | semis |
 
 ## Bottom 8 — likely DOWN
 - MSTR -0.80 (crypto)
-- RBLX -0.76 (ai,tech)
 - BSX -0.76 (healthcare)
 - JOBY -0.75 (space)
+- RBLX -0.75 (ai,tech)
 - INTU -0.74 (tech)
 - HUBS -0.73 (tech)
 - QUBT -0.73 (quantum)
-- SOUN -0.73 (ai)
+- ZS -0.72 (cyber)
 
 ## Dip-in-uptrend (strong long-term, pulling back now)
 - **DDOG** — 20d -13.4%, -20.6% off recent high

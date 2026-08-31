@@ -1,42 +1,36 @@
 {
   "themes": {
-    "defense": 0.5,
-    "energy": 0.35,
-    "materials": 0.3,
-    "ai": 0.2,
-    "semis": 0.25,
-    "financials": -0.3
+    "defense": 0.55,
+    "energy": 0.5,
+    "materials": 0.35,
+    "financials": -0.4,
+    "ai": 0.3,
+    "semis": 0.25
   },
   "events": [
     {
-      "headline": "US defense budget on pace for $1 trillion in 2026 with ~$1.5T 2027 request as NATO spending accelerates amid ongoing Mideast tensions",
-      "themes": ["defense"],
-      "source": "fool.com",
-      "url": "https://www.fool.com/investing/2026/07/09/soaring-defense-spending-means-great-news-for-thes/"
-    },
-    {
-      "headline": "Oil holds above $100/barrel as Iran's Strait of Hormuz disruption persists; Gulf producers ramping exports to offset shut-in capacity",
-      "themes": ["energy"],
+      "headline": "US military struck Iranian rocket launchers preparing to mine the Strait of Hormuz, ending weeks of relative calm; Brent crude jumped above $90/bbl on renewed supply-disruption fears",
+      "themes": ["defense", "energy"],
       "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-27/hormuz-oil-flows-rising-as-gulf-giants-ramp-up-accelerates"
+      "url": "https://www.bloomberg.com/news/articles/2026-08-30/latest-oil-market-news-and-analysis-for-aug-31"
     },
     {
-      "headline": "China tightens rare-earth export licensing (samarium, gadolinium, lutetium) and steps up enforcement, pressuring Western supply-chain diversification",
-      "themes": ["materials"],
-      "source": "morganlewis.com",
-      "url": "https://www.morganlewis.com/pubs/2026/07/recent-china-export-control-actions-signal-active-enforcement-for-rare-earths-and-strategic-minerals"
+      "headline": "China imposed its most stringent rare-earth and magnet export controls yet, restricting products containing even trace amounts of Chinese-origin content, directly threatening US defense supply chains",
+      "themes": ["materials", "defense"],
+      "source": "csis.org",
+      "url": "https://www.csis.org/analysis/chinas-new-rare-earth-and-magnet-restrictions-threaten-us-defense-supply-chains"
     },
     {
-      "headline": "US trade officials confirm Nvidia H200 AI chips now shipping to China under new export approval, though volumes remain limited so far",
+      "headline": "Fed Chair Kevin Warsh delivered an unexpectedly hawkish Jackson Hole speech, saying financial conditions aren't restrictive enough; September rate-hike odds rose to roughly 60%",
+      "themes": ["financials"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/08/31/jackson-hole-fed-chair-kevin-warsh-hawkish-rate-hikes-analysts.html"
+    },
+    {
+      "headline": "Nvidia partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500B of third-party capital for AI compute infrastructure buildout",
       "themes": ["ai", "semis"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/07/14/nvidia-h200-ai-chips-china.html"
-    },
-    {
-      "headline": "Fed's preferred inflation gauge (PCE) came in hotter than expected in July (headline 3.7%, core 3.3%), keeping a September rate hike in play",
-      "themes": ["financials"],
-      "source": "fool.com",
-      "url": "https://www.fool.com/investing/2026/08/26/the-fed-s-preferred-inflation-gauge-came-in-slightly-hotter-than-expected-here-s-what-investors-need-to-know/"
+      "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html"
     }
   ]
 }
