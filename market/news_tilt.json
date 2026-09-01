@@ -2,35 +2,47 @@
   "themes": {
     "defense": 0.55,
     "energy": 0.5,
-    "materials": 0.35,
-    "financials": -0.4,
+    "materials": 0.15,
+    "financials": -0.3,
     "ai": 0.3,
-    "semis": 0.25
+    "semis": 0.35
   },
   "events": [
     {
-      "headline": "US military struck Iranian rocket launchers preparing to mine the Strait of Hormuz, ending weeks of relative calm; Brent crude jumped above $90/bbl on renewed supply-disruption fears",
+      "headline": "US and Iran resumed open hostilities; two oil tankers (Saudi and South Korean-owned) hit by projectiles in the Strait of Hormuz, pushing Brent crude above $92/bbl",
       "themes": ["defense", "energy"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-30/latest-oil-market-news-and-analysis-for-aug-31"
+      "source": "thestreet.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-1-2026"
     },
     {
-      "headline": "China imposed its most stringent rare-earth and magnet export controls yet, restricting products containing even trace amounts of Chinese-origin content, directly threatening US defense supply chains",
-      "themes": ["materials", "defense"],
-      "source": "csis.org",
-      "url": "https://www.csis.org/analysis/chinas-new-rare-earth-and-magnet-restrictions-threaten-us-defense-supply-chains"
+      "headline": "US rolled out new global sanctions targeting Iranian oil exports",
+      "themes": ["energy", "defense"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html"
     },
     {
-      "headline": "Fed Chair Kevin Warsh delivered an unexpectedly hawkish Jackson Hole speech, saying financial conditions aren't restrictive enough; September rate-hike odds rose to roughly 60%",
+      "headline": "OPEC+ approved a roughly 188,000 bpd September output hike, completing the rollback of its 2023 voluntary production cuts",
+      "themes": ["energy"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html"
+    },
+    {
+      "headline": "China paused several newly announced rare-earth and critical-mineral export controls, though 2025-era restrictions on tungsten, tellurium, bismuth, molybdenum and indium remain in force, keeping supply tight",
+      "themes": ["materials"],
+      "source": "clarkhill.com",
+      "url": "https://www.clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains/"
+    },
+    {
+      "headline": "Fed Chair Kevin Warsh warned inflation may force a rate hike at the September 15-16 FOMC meeting; futures markets price roughly 55% odds of a quarter-point hike, and the 10-year Treasury yield rose to 4.76%",
       "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/31/jackson-hole-fed-chair-kevin-warsh-hawkish-rate-hikes-analysts.html"
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-28/warsh-s-inflation-warning-sets-up-september-showdown-for-the-fed"
     },
     {
-      "headline": "Nvidia partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500B of third-party capital for AI compute infrastructure buildout",
+      "headline": "SEMICON Taiwan 2026 opened spotlighting AI-driven semiconductor supply-chain growth, as Nvidia's H200 AI chip exports to China continue under approved conditions",
       "themes": ["ai", "semis"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html"
+      "source": "techtimes.com",
+      "url": "https://www.techtimes.com/articles/326056/20260831/semicon-taiwan-2026-kicks-off-ai-chips-bottleneck-wires-connecting-them.htm"
     }
   ]
 }

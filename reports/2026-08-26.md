@@ -5,16 +5,18 @@ _Model output, not advice. Data through 2026-08-26; 243 names. Paper/research si
 ## News tilt (from headlines, bounded)
 - **defense**: +0.55
 - **energy**: +0.50
-- **financials**: -0.40
-- **materials**: +0.35
+- **semis**: +0.35
+- **financials**: -0.30
 - **ai**: +0.30
-- **semis**: +0.25
+- **materials**: +0.15
 
 **Events driving the tilt:**
-- US military struck Iranian rocket launchers preparing to mine the Strait of Hormuz, ending weeks of relative calm; Brent crude jumped above $90/bbl on renewed supply-disruption fears → _defense, energy_ (bloomberg.com)
-- China imposed its most stringent rare-earth and magnet export controls yet, restricting products containing even trace amounts of Chinese-origin content, directly threatening US defense supply chains → _materials, defense_ (csis.org)
-- Fed Chair Kevin Warsh delivered an unexpectedly hawkish Jackson Hole speech, saying financial conditions aren't restrictive enough; September rate-hike odds rose to roughly 60% → _financials_ (cnbc.com)
-- Nvidia partnered with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500B of third-party capital for AI compute infrastructure buildout → _ai, semis_ (cnbc.com)
+- US and Iran resumed open hostilities; two oil tankers (Saudi and South Korean-owned) hit by projectiles in the Strait of Hormuz, pushing Brent crude above $92/bbl → _defense, energy_ (thestreet.com)
+- US rolled out new global sanctions targeting Iranian oil exports → _energy, defense_ (cnbc.com)
+- OPEC+ approved a roughly 188,000 bpd September output hike, completing the rollback of its 2023 voluntary production cuts → _energy_ (cnbc.com)
+- China paused several newly announced rare-earth and critical-mineral export controls, though 2025-era restrictions on tungsten, tellurium, bismuth, molybdenum and indium remain in force, keeping supply tight → _materials_ (clarkhill.com)
+- Fed Chair Kevin Warsh warned inflation may force a rate hike at the September 15-16 FOMC meeting; futures markets price roughly 55% odds of a quarter-point hike, and the 10-year Treasury yield rose to 4.76% → _financials_ (bloomberg.com)
+- SEMICON Taiwan 2026 opened spotlighting AI-driven semiconductor supply-chain growth, as Nvidia's H200 AI chip exports to China continue under approved conditions → _ai, semis_ (techtimes.com)
 
 ## Top 15 — likely UP (news-adjusted)
 | # | Ticker | Decision | Structural | News | Themes |
@@ -24,16 +26,16 @@ _Model output, not advice. Data through 2026-08-26; 243 names. Paper/research si
 | 3 | **PSX** | +0.71 | +0.64 | +0.50 | energy |
 | 4 | **TRGP** | +0.70 | +0.63 | +0.50 | energy |
 | 5 | **AIR** | +0.70 | +0.62 | +0.55 | defense |
-| 6 | **NUE** | +0.68 | +0.63 | +0.35 | materials |
-| 7 | **DELL** | +0.68 | +0.64 | +0.30 | ai |
-| 8 | **ASML** | +0.66 | +0.62 | +0.25 | semis |
+| 6 | **DELL** | +0.68 | +0.64 | +0.30 | ai |
+| 7 | **ASML** | +0.67 | +0.62 | +0.35 | semis |
+| 8 | **AMD** | +0.66 | +0.60 | +0.35 | ai,semis |
 | 9 | **FTNT** | +0.65 | +0.65 | +0.00 | cyber |
-| 10 | **AMD** | +0.65 | +0.60 | +0.30 | ai,semis |
-| 11 | **STLD** | +0.65 | +0.59 | +0.35 | materials |
-| 12 | **TWLO** | +0.65 | +0.60 | +0.30 | ai |
-| 13 | **MU** | +0.63 | +0.60 | +0.25 | semis |
-| 14 | **ONTO** | +0.63 | +0.59 | +0.25 | semis |
-| 15 | **SLAB** | +0.63 | +0.59 | +0.25 | semis |
+| 10 | **NUE** | +0.65 | +0.63 | +0.15 | materials |
+| 11 | **MU** | +0.65 | +0.60 | +0.35 | semis |
+| 12 | **ONTO** | +0.65 | +0.59 | +0.35 | semis |
+| 13 | **TWLO** | +0.65 | +0.60 | +0.30 | ai |
+| 14 | **SLAB** | +0.64 | +0.59 | +0.35 | semis |
+| 15 | **MRVL** | +0.64 | +0.59 | +0.35 | semis |
 
 ## Bottom 8 — likely DOWN
 - MSTR -0.80 (crypto)
