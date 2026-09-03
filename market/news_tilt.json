@@ -1,52 +1,42 @@
 {
   "themes": {
-    "defense": -0.2,
+    "defense": 0.5,
     "energy": 0.5,
-    "financials": -0.3,
-    "semis": 0.2
+    "materials": 0.3,
+    "ai": 0.3,
+    "semis": 0.3,
+    "financials": -0.4
   },
   "events": [
     {
-      "headline": "US military launches fresh wave of strikes on Iran; Trump says more to come, Jordan and Bahrain hit by Iranian retaliation",
+      "headline": "Iran strikes Jordan, UAE and Kuwait with missiles/drones in retaliation for US airstrikes; Strait of Hormuz shipping collapses to a handful of transits",
       "themes": ["defense", "energy"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/02/us-iran-war-trump-hormuz-irgc-jordan-bahrain.html"
+      "source": "thestreet.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-03-2026"
     },
     {
-      "headline": "Oil spikes as US strikes Iran again, but defense primes (Lockheed, RTX, Northrop) slide as 'escalation trade' fails to hold amid war fatigue",
-      "themes": ["energy", "defense"],
-      "source": "benzinga.com",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61560608/oil-spikes-defense-stocks-slide-markets-brace-as-us-strikes-iran-again"
-    },
-    {
-      "headline": "CNBC Daily Open: markets trapped in 'Iran doom loop' as repeated escalation cycles fail to move indices decisively",
-      "themes": ["defense", "energy"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/02/iran-markets-doom-loop.html"
-    },
-    {
-      "headline": "Fed Chair Kevin Warsh's hawkish Jackson Hole inflation warning pushes September rate-hike odds above 50%, now ~60% per CME FedWatch",
-      "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/31/markets-see-warsh-endorsing-a-rate-hike-in-september-not-everyone-is-convinced.html"
-    },
-    {
-      "headline": "Core PCE inflation running at 3.7% y/y (1.7pp above Fed's 2% target); August CPI due Sept 11 seen as pivotal for the September FOMC decision",
-      "themes": ["financials"],
-      "source": "japantimes.co.jp",
-      "url": "https://www.japantimes.co.jp/business/2026/08/29/economy/federal-reserve-warsh-inflation/"
-    },
-    {
-      "headline": "Semicon Taiwan 2026 draws 1,300+ companies as AI-driven demand pushes chip industry into packaging, advanced nodes and interconnect innovation",
-      "themes": ["semis", "ai"],
-      "source": "digitimes.com",
-      "url": "https://www.digitimes.com/news/a20260902PD209/taiwan-2026-packaging-technology-fab.html"
-    },
-    {
-      "headline": "OPEC+ completes rollback of voluntary output cuts for September, adding ~188kbd, though Gulf/Red Sea shipping disruption from the Iran war has kept most hikes 'on paper'",
+      "headline": "Brent crude jumps to ~$99.38/bbl, up over $3 on the day, as Iran conflict disrupts Gulf supply and US crude inventories fall",
       "themes": ["energy"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/02/opec-agrees-september-oil-hike-completing-rollback-of-voluntary-cuts.html"
+      "source": "fortune.com",
+      "url": "https://fortune.com/article/price-of-oil-09-03-2026/"
+    },
+    {
+      "headline": "China's widened rare-earth/critical-mineral export controls keep bottleneck in place; yttrium shipments to Japan hit zero, NdPr pricing up 21% in a month",
+      "themes": ["materials"],
+      "source": "spglobal.com",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/012726-rare-earth-supply-bottlenecks-set-to-persist-in-2026"
+    },
+    {
+      "headline": "Semicon Taiwan 2026 highlights AI-driven chip substrate shortages (Unimicron/MediaTek) as AI compute buildout keeps outpacing chip supply",
+      "themes": ["ai", "semis"],
+      "source": "digitimes.com",
+      "url": "https://www.digitimes.com/news/a20260903PD222/unimicron-substrate-capacity-demand-semicon-taiwan.html"
+    },
+    {
+      "headline": "Fed Governor Warsh warns inflation still too high ahead of Sept 16 FOMC meeting; futures markets price 57.5% odds of a rate hike",
+      "themes": ["financials"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-28/warsh-s-inflation-warning-sets-up-september-showdown-for-the-fed"
     }
   ]
 }
