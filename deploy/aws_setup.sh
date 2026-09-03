@@ -51,7 +51,7 @@ chmod +x "$DIR/run_daily.sh"
 
 # cron: weekdays 14:35 UTC (9:35 EST / 10:35 EDT — always just after the US open)
 ( crontab -l 2>/dev/null | grep -v run_daily.sh; \
-  echo "35 14 * * 1-5 $DIR/run_daily.sh >> $DIR/FNCBOT/cron.log 2>&1" ) | crontab -
+  echo "35 14 * * 1-5 bash $DIR/run_daily.sh >> $DIR/FNCBOT/cron.log 2>&1" ) | crontab -
 
 echo "✓ Setup complete. Test it now with:  $DIR/run_daily.sh"
 echo "  Logs will be at: $DIR/FNCBOT/cron.log ; state pushes to the fncbot-state branch."
