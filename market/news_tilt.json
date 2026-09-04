@@ -1,42 +1,34 @@
 {
   "themes": {
     "defense": 0.5,
-    "energy": 0.5,
-    "materials": 0.3,
-    "ai": 0.3,
-    "semis": 0.3,
-    "financials": -0.4
+    "energy": 0.4,
+    "materials": 0.4,
+    "financials": -0.2
   },
   "events": [
     {
-      "headline": "Iran strikes Jordan, UAE and Kuwait with missiles/drones in retaliation for US airstrikes; Strait of Hormuz shipping collapses to a handful of transits",
-      "themes": ["defense", "energy"],
-      "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-03-2026"
+      "headline": "Iran launches missile/drone strikes on US bases and allies in Jordan, Kuwait and Bahrain after US strikes on Iranian military targets; heaviest US-Iran exchange in over a month",
+      "themes": ["defense"],
+      "source": "aljazeera.com",
+      "url": "https://www.aljazeera.com/news/2026/9/2/iran-us-exchange-new-attacks-who-was-hit-in-latest-strikes"
     },
     {
-      "headline": "Brent crude jumps to ~$99.38/bbl, up over $3 on the day, as Iran conflict disrupts Gulf supply and US crude inventories fall",
-      "themes": ["energy"],
-      "source": "fortune.com",
-      "url": "https://fortune.com/article/price-of-oil-09-03-2026/"
+      "headline": "UAE condemns Iran's 'hostile attacks' across the Gulf region as fighting with the US expands, following strikes on Jordan, Kuwait, Bahrain and Iraq's Kurdistan region",
+      "themes": ["defense"],
+      "source": "thenationalnews.com",
+      "url": "https://www.thenationalnews.com/news/gulf/2026/09/02/iran-attacks-gulf-neighbours-as-fighting-with-us-expands/"
     },
     {
-      "headline": "China's widened rare-earth/critical-mineral export controls keep bottleneck in place; yttrium shipments to Japan hit zero, NdPr pricing up 21% in a month",
+      "headline": "Escalating US-Iran conflict sends oil prices to a five-week high and pushes US Treasury yields to their highest level in nearly three years; Brent still elevated near $95/bbl and WTI up ~10% on the week as of Sept 4",
+      "themes": ["energy", "financials"],
+      "source": "cbsnews.com",
+      "url": "https://www.cbsnews.com/live-updates/iran-war-us-strikes-strait-of-hormuz-larak-island/"
+    },
+    {
+      "headline": "China's widened rare-earth/critical-mineral export controls keep global bottleneck in place; yttrium shipments to Japan hit zero and NdPr pricing up 21% in a month",
       "themes": ["materials"],
       "source": "spglobal.com",
       "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/012726-rare-earth-supply-bottlenecks-set-to-persist-in-2026"
-    },
-    {
-      "headline": "Semicon Taiwan 2026 highlights AI-driven chip substrate shortages (Unimicron/MediaTek) as AI compute buildout keeps outpacing chip supply",
-      "themes": ["ai", "semis"],
-      "source": "digitimes.com",
-      "url": "https://www.digitimes.com/news/a20260903PD222/unimicron-substrate-capacity-demand-semicon-taiwan.html"
-    },
-    {
-      "headline": "Fed Governor Warsh warns inflation still too high ahead of Sept 16 FOMC meeting; futures markets price 57.5% odds of a rate hike",
-      "themes": ["financials"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-28/warsh-s-inflation-warning-sets-up-september-showdown-for-the-fed"
     }
   ]
 }
