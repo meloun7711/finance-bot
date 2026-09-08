@@ -1,42 +1,47 @@
 {
   "themes": {
-    "defense": 0.5,
-    "energy": 0.4,
-    "materials": 0.3,
-    "financials": -0.2,
-    "ai": 0.4,
-    "semis": 0.4
+    "defense": 0.55,
+    "energy": 0.45,
+    "ai": 0.3,
+    "semis": 0.3,
+    "financials": -0.3
   },
   "events": [
     {
-      "headline": "Iran prepares to announce a restricted zone near the Strait of Hormuz as IRGC claims new attacks on US warships; US and Iran continue trading strikes in the strait over the weekend",
+      "headline": "US Central Command strikes three Iranian vessels after IRGC missile attack on US Navy ships; Iran threatens to declare restricted zone near Strait of Hormuz",
       "themes": ["defense", "energy"],
-      "source": "aljazeera.com",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/9/6/iran-war-live-irgc-claims-new-attacks-on-us-warships-over-naval-blockade"
+      "source": "thecipherbrief.com",
+      "url": "https://www.thecipherbrief.com/report/global-intelligence-report-for-tuesday-september-8-2026"
     },
     {
-      "headline": "Brent crude trades near $95.73/bbl, up more than 8% for the week (its strongest weekly performance since July) as escalating US-Iran conflict raises concern over disrupted crude supply through the Strait of Hormuz",
-      "themes": ["energy"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/06/stock-market-today-live-updates.html"
+      "headline": "US Energy Secretary says Washington will maintain naval blockade to limit Iranian oil exports through Strait of Hormuz",
+      "themes": ["energy", "defense"],
+      "source": "fortune.com",
+      "url": "https://fortune.com/article/price-of-oil-09-08-2026/"
     },
     {
-      "themes": ["materials"],
-      "headline": "Xi and Trump meet in Washington with the global critical-minerals order at stake; China rare-earth firms halt some US shipments over geopolitical worries ahead of the Nov. 10 expiry of Beijing's export-control suspension",
-      "source": "investornews.com",
-      "url": "https://investornews.com/critical-minerals-rare-earths/critical-minerals-report-09-06-2026-xi-and-trump-meet-in-washington-with-the-global-minerals-order-at-stake/"
+      "headline": "Saudi Arabia vows response after Iran-backed Houthi attacks injure dozens across four cities",
+      "themes": ["defense"],
+      "source": "justsecurity.org",
+      "url": "https://www.justsecurity.org/156556/early-edition-september-8-2026/"
     },
     {
-      "headline": "A stronger-than-expected jobs report pushes the 2-year Treasury yield to its highest since January 2025, keeping market-implied odds of a September Fed rate hike near 50% (down from ~63% a day earlier) amid a still-hawkish tone from Chair Warsh",
+      "headline": "Russian drone and missile strikes resume on Kyiv and Odesa, killing two, even as US envoys report progress in Russia-Ukraine peace talks",
+      "themes": ["defense"],
+      "source": "justsecurity.org",
+      "url": "https://www.justsecurity.org/156556/early-edition-september-8-2026/"
+    },
+    {
+      "headline": "ASML wins commitments from TSMC, Samsung and Intel to adopt High NA EUV lithography for next-gen AI chip production",
+      "themes": ["ai", "semis"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-08/asml-tsmc-samsung-intel-back-12-inch-masks-for-ai-chips"
+    },
+    {
+      "headline": "Fed Chair Kevin Warsh reiterates inflation is too high after CPI rose 3.4% y/y, traders raise September rate-hike odds to near 56%",
       "themes": ["financials"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/04/treasurys-bonds-nonfarm-payrolls-unemployment-data.html"
-    },
-    {
-      "headline": "Nvidia agrees to acquire Hugging Face for roughly $12.9B to expand its AI developer platform, as Semicon Taiwan 2026 draws record attendance and TSMC/Samsung/SK Hynix/Micron report memory and foundry capacity sold out through 2027 on AI chip demand",
-      "themes": ["ai", "semis"],
-      "source": "techtimes.com",
-      "url": "https://www.techtimes.com/articles/326056/20260831/semicon-taiwan-2026-kicks-off-ai-chips-bottleneck-wires-connecting-them.htm"
+      "url": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html"
     }
   ]
 }
