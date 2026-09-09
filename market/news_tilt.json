@@ -1,47 +1,41 @@
 {
   "themes": {
-    "defense": 0.55,
-    "energy": 0.45,
-    "ai": 0.3,
-    "semis": 0.3,
-    "financials": -0.3
+    "defense": 0.5,
+    "energy": 0.5,
+    "financials": -0.2,
+    "materials": 0.2,
+    "semis": -0.1
   },
   "events": [
     {
-      "headline": "US Central Command strikes three Iranian vessels after IRGC missile attack on US Navy ships; Iran threatens to declare restricted zone near Strait of Hormuz",
+      "headline": "US military strikes five Iranian tankers after Iran fires ballistic missiles at a US Navy warship; Houthi attacks on Saudi energy facilities widen the threat",
       "themes": ["defense", "energy"],
-      "source": "thecipherbrief.com",
-      "url": "https://www.thecipherbrief.com/report/global-intelligence-report-for-tuesday-september-8-2026"
+      "source": "thestreet.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-09-2026"
     },
     {
-      "headline": "US Energy Secretary says Washington will maintain naval blockade to limit Iranian oil exports through Strait of Hormuz",
-      "themes": ["energy", "defense"],
-      "source": "fortune.com",
-      "url": "https://fortune.com/article/price-of-oil-09-08-2026/"
+      "headline": "OPEC+ keeps oil output policy unchanged for October, pausing supply increases amid Iran war uncertainty",
+      "themes": ["energy"],
+      "source": "thenationalnews.com",
+      "url": "https://www.thenationalnews.com/business/energy/2026/09/06/opec-keeps-oil-output-policy-unchanged-for-october-amid-iran-war-uncertainty/"
     },
     {
-      "headline": "Saudi Arabia vows response after Iran-backed Houthi attacks injure dozens across four cities",
-      "themes": ["defense"],
-      "source": "justsecurity.org",
-      "url": "https://www.justsecurity.org/156556/early-edition-september-8-2026/"
+      "headline": "WTI crude climbs for a sixth straight day toward $100/bbl on Iran conflict, sharpening focus on this week's CPI/PPI data ahead of the Fed's September meeting; hawkish repricing weighs on stocks",
+      "themes": ["energy", "financials"],
+      "source": "thestreet.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-09-2026"
     },
     {
-      "headline": "Russian drone and missile strikes resume on Kyiv and Odesa, killing two, even as US envoys report progress in Russia-Ukraine peace talks",
-      "themes": ["defense"],
-      "source": "justsecurity.org",
-      "url": "https://www.justsecurity.org/156556/early-edition-september-8-2026/"
+      "headline": "China tightens exit-entry rules from Sept 15 to stop engineers leaking rare-earth and battery know-how, even as its Oct-2025 rare earth export controls remain suspended through Nov 2026",
+      "themes": ["materials"],
+      "source": "asiatimes.com",
+      "url": "https://asiatimes.com/2026/08/china-exit-rules-tightened-to-guard-rare-earth-battery-secrets/"
     },
     {
-      "headline": "ASML wins commitments from TSMC, Samsung and Intel to adopt High NA EUV lithography for next-gen AI chip production",
-      "themes": ["ai", "semis"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-08/asml-tsmc-samsung-intel-back-12-inch-masks-for-ai-chips"
-    },
-    {
-      "headline": "Fed Chair Kevin Warsh reiterates inflation is too high after CPI rose 3.4% y/y, traders raise September rate-hike odds to near 56%",
-      "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html"
+      "headline": "Investigation finds blacklisted Chinese server maker's US subsidiary exported billions in Nvidia AI chips via an Entity List loophole, clouding the planned mid-September US-China AI summit",
+      "themes": ["semis", "ai"],
+      "source": "asiatimes.com",
+      "url": "https://asiatimes.com/2026/09/nvidia-chip-export-loophole-clouds-us-china-ai-summit-talks/"
     }
   ]
 }
