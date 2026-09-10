@@ -2,40 +2,38 @@
   "themes": {
     "defense": 0.5,
     "energy": 0.5,
-    "financials": -0.2,
-    "materials": 0.2,
-    "semis": -0.1
+    "financials": 0.2
   },
   "events": [
     {
-      "headline": "US military strikes five Iranian tankers after Iran fires ballistic missiles at a US Navy warship; Houthi attacks on Saudi energy facilities widen the threat",
+      "headline": "US strikes several Iranian oil tankers in retaliation for warship attack, escalating Strait of Hormuz conflict",
       "themes": ["defense", "energy"],
-      "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-09-2026"
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-09/us-hits-several-iran-oil-tankers-in-response-to-warship-attack"
     },
     {
-      "headline": "OPEC+ keeps oil output policy unchanged for October, pausing supply increases amid Iran war uncertainty",
+      "headline": "Brent crude pushes past $100/bbl and WTI hits three-month highs as Strait of Hormuz disruption and renewed Iran sanctions constrain Middle East exports",
       "themes": ["energy"],
-      "source": "thenationalnews.com",
-      "url": "https://www.thenationalnews.com/business/energy/2026/09/06/opec-keeps-oil-output-policy-unchanged-for-october-amid-iran-war-uncertainty/"
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-09/latest-oil-market-news-and-analysis-for-sept-10"
     },
     {
-      "headline": "WTI crude climbs for a sixth straight day toward $100/bbl on Iran conflict, sharpening focus on this week's CPI/PPI data ahead of the Fed's September meeting; hawkish repricing weighs on stocks",
-      "themes": ["energy", "financials"],
-      "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-09-2026"
+      "headline": "UBS upgrades Lockheed Martin to buy on underappreciated earnings growth potential amid elevated defense spending",
+      "themes": ["defense"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/09/07/stock-market-today-live-updates.html"
     },
     {
-      "headline": "China tightens exit-entry rules from Sept 15 to stop engineers leaking rare-earth and battery know-how, even as its Oct-2025 rare earth export controls remain suspended through Nov 2026",
-      "themes": ["materials"],
-      "source": "asiatimes.com",
-      "url": "https://asiatimes.com/2026/08/china-exit-rules-tightened-to-guard-rare-earth-battery-secrets/"
+      "headline": "Fed officials signal willingness to raise rates if inflation doesn't cool; markets price ~60% odds of a hike at the Sept 15-16 FOMC meeting, pending Friday's CPI print",
+      "themes": ["financials"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-10/us-cpi-report-to-guide-fed-decision-on-rates-impact-on-economy"
     },
     {
-      "headline": "Investigation finds blacklisted Chinese server maker's US subsidiary exported billions in Nvidia AI chips via an Entity List loophole, clouding the planned mid-September US-China AI summit",
-      "themes": ["semis", "ai"],
-      "source": "asiatimes.com",
-      "url": "https://asiatimes.com/2026/09/nvidia-chip-export-loophole-clouds-us-china-ai-summit-talks/"
+      "headline": "Six vessels attacked in Gulf and Strait of Hormuz as US-Iran war puts merchant shipping on the front line",
+      "themes": ["defense", "energy"],
+      "source": "yahoo.com (Reuters)",
+      "url": "https://www.yahoo.com/news/articles/cargo-ship-hit-projectile-strait-055851133.html"
     }
   ]
 }
