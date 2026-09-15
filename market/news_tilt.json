@@ -1,47 +1,41 @@
 {
   "themes": {
-    "defense": 0.5,
+    "defense": 0.4,
     "energy": 0.5,
-    "ai": 0.4,
-    "semis": 0.5,
-    "tech": 0.2
+    "ai": 0.5,
+    "semis": 0.4,
+    "financials": -0.3
   },
   "events": [
     {
-      "headline": "Saudi Arabia's East-West oil pipeline shut after drone strikes from Iraq amid 2026 Iran war; Strait of Hormuz still effectively closed",
+      "headline": "Houthi forces complete takeover of Yemen's Red Sea coastline, seizing Mokha port and the Hanish Islands, tightening a blockade on the Bab al-Mandab shipping strait amid the widening 2026 Iran war",
       "themes": ["defense", "energy"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/14/iran-war-saudi-arabia-east-west-pipeline-oil.html"
+      "url": "https://www.cnbc.com/2026/09/11/iran-houthis-mokha-red-sea-yemen.html"
     },
     {
-      "headline": "Brent crude spikes to ~$108/bbl, up ~60% y/y, on Gulf supply disruption from the Iran war",
+      "headline": "Drone strikes launched from Iraq force shutdown of Saudi Arabia's East-West oil pipeline, adding to regional energy-infrastructure disruption from the Iran war",
       "themes": ["energy"],
-      "source": "tradingeconomics.com",
-      "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
+      "source": "cbsnews.com",
+      "url": "https://www.cbsnews.com/live-updates/iran-war-diesel-price-record-houthis-red-sea/"
     },
     {
-      "headline": "OPEC+ holds October output steady after completing rollback of 2023 voluntary production cuts",
+      "headline": "OPEC+ agrees to hold October production steady, citing concern over attacks on energy infrastructure and disruption of international shipping routes",
       "themes": ["energy"],
       "source": "opec.org",
       "url": "https://www.opec.org/pr-detail/1835613-6-september-2026.html"
     },
     {
-      "headline": "Nvidia agrees to acquire Hugging Face for ~$12.9 billion, expanding into open-source AI model distribution",
-      "themes": ["ai", "semis", "tech"],
+      "headline": "Nvidia agrees to acquire AI platform Hugging Face for $12.9 billion, its second-largest acquisition on record, expanding its open-model ecosystem reach",
+      "themes": ["ai", "semis"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html"
+      "url": "https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html"
     },
     {
-      "headline": "Samsung, SK Hynix and Micron reportedly sell out 2027 DRAM/HBM capacity as AI memory demand outstrips supply",
-      "themes": ["semis", "tech"],
-      "source": "tomshardware.com",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/samsung-and-sk-hynix-warn-ai-driven-memory-shortages-could-last-until-2027-and-beyond-as-hbm-demand-explodes-customers-already-reserving-supply-years-ahead-while-the-wider-dram-market-begins-to-tighten"
-    },
-    {
-      "headline": "Fed's Sept 16 rate decision looks contentious: markets price ~60% odds of a hike as some officials push back against White House pressure to cut, despite two months of cooling CPI",
+      "headline": "Markets price an ~87-91% probability of a 25bp Fed rate hike at the Sept 15-16 FOMC meeting as inflation holds near 3.4% YoY, above target, driven partly by energy-price shocks from the Iran war",
       "themes": ["financials"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html"
+      "url": "https://www.cnbc.com/2026/08/31/markets-see-warsh-endorsing-a-rate-hike-in-september-not-everyone-is-convinced.html"
     }
   ]
 }
