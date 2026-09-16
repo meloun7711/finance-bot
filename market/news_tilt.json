@@ -1,41 +1,35 @@
 {
   "themes": {
-    "defense": 0.4,
-    "energy": 0.5,
+    "energy": 0.6,
+    "defense": 0.5,
     "ai": 0.5,
-    "semis": 0.4,
-    "financials": -0.3
+    "semis": 0.5,
+    "financials": -0.4
   },
   "events": [
     {
-      "headline": "Houthi forces complete takeover of Yemen's Red Sea coastline, seizing Mokha port and the Hanish Islands, tightening a blockade on the Bab al-Mandab shipping strait amid the widening 2026 Iran war",
-      "themes": ["defense", "energy"],
+      "headline": "Saudi Arabia's East-West pipeline stays largely shut after Houthi strikes force export halts and cargo cancellations; oil jumps to 2026 highs (WTI $105.83, Brent $108.75) as Libya's NOC also suspends output at three oilfields amid protests",
+      "themes": ["energy", "defense"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/11/iran-houthis-mokha-red-sea-yemen.html"
+      "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html"
     },
     {
-      "headline": "Drone strikes launched from Iraq force shutdown of Saudi Arabia's East-West oil pipeline, adding to regional energy-infrastructure disruption from the Iran war",
-      "themes": ["energy"],
-      "source": "cbsnews.com",
-      "url": "https://www.cbsnews.com/live-updates/iran-war-diesel-price-record-houthis-red-sea/"
+      "headline": "Federal Reserve raises target federal funds rate 25bp to 3.75%-4.00%, the first hike since 2023, citing inflation near 3.4% YoY that energy-driven price shocks from the Iran war have kept above target; Chair Warsh signals more hikes may follow",
+      "themes": ["financials"],
+      "source": "seekingalpha.com",
+      "url": "https://seekingalpha.com/news/3930678-federal-reserve-boosts-policy-rate-by-25-basis-points-as-expected"
     },
     {
-      "headline": "OPEC+ agrees to hold October production steady, citing concern over attacks on energy infrastructure and disruption of international shipping routes",
-      "themes": ["energy"],
-      "source": "opec.org",
-      "url": "https://www.opec.org/pr-detail/1835613-6-september-2026.html"
-    },
-    {
-      "headline": "Nvidia agrees to acquire AI platform Hugging Face for $12.9 billion, its second-largest acquisition on record, expanding its open-model ecosystem reach",
+      "headline": "Broadcom guides to $115B in AI semiconductor revenue for fiscal 2027 and $230B by fiscal 2028, citing secured supply and demand from OpenAI and Anthropic, extending the AI-chip capex supercycle",
       "themes": ["ai", "semis"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html"
+      "url": "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html"
     },
     {
-      "headline": "Markets price an ~87-91% probability of a 25bp Fed rate hike at the Sept 15-16 FOMC meeting as inflation holds near 3.4% YoY, above target, driven partly by energy-price shocks from the Iran war",
-      "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/31/markets-see-warsh-endorsing-a-rate-hike-in-september-not-everyone-is-convinced.html"
+      "headline": "Samsung, SK Hynix and Micron report memory production sold out through 2027 and TSMC expands chipmaking-equipment capacity fivefold this year, unable to keep pace with AI hyperscaler demand for custom silicon and HBM",
+      "themes": ["semis", "ai"],
+      "source": "distillintelligence.com",
+      "url": "https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-09-04"
     }
   ]
 }
