@@ -1,35 +1,49 @@
 {
   "themes": {
-    "energy": 0.6,
-    "defense": 0.5,
-    "ai": 0.5,
-    "semis": 0.5,
-    "financials": -0.4
+    "energy": 0.4,
+    "defense": 0.3,
+    "financials": -0.3,
+    "ai": 0.3,
+    "semis": 0.3,
+    "tech": 0.2,
+    "materials": -0.2
   },
   "events": [
     {
-      "headline": "Saudi Arabia's East-West pipeline stays largely shut after Houthi strikes force export halts and cargo cancellations; oil jumps to 2026 highs (WTI $105.83, Brent $108.75) as Libya's NOC also suspends output at three oilfields amid protests",
-      "themes": ["energy", "defense"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html"
-    },
-    {
-      "headline": "Federal Reserve raises target federal funds rate 25bp to 3.75%-4.00%, the first hike since 2023, citing inflation near 3.4% YoY that energy-driven price shocks from the Iran war have kept above target; Chair Warsh signals more hikes may follow",
+      "headline": "Federal Reserve raises target federal funds rate 25bp to 3.75%-4.00%, its first hike since 2023, citing inflation (~3.4% YoY) kept elevated partly by Middle East-driven energy price shocks; officials signal further hikes possible",
       "themes": ["financials"],
-      "source": "seekingalpha.com",
-      "url": "https://seekingalpha.com/news/3930678-federal-reserve-boosts-policy-rate-by-25-basis-points-as-expected"
+      "source": "federalreserve.gov",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a1.htm"
     },
     {
-      "headline": "Broadcom guides to $115B in AI semiconductor revenue for fiscal 2027 and $230B by fiscal 2028, citing secured supply and demand from OpenAI and Anthropic, extending the AI-chip capex supercycle",
+      "headline": "EIA Short-Term Energy Outlook: Brent crude averaged $91/bbl in August, up $7 from July, as Middle East export constraints and regional oil-production shut-ins tighten global supply",
+      "themes": ["energy", "defense"],
+      "source": "eia.gov",
+      "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php"
+    },
+    {
+      "headline": "Huawei unveils accelerated Ascend AI chip roadmap at Huawei Connect 2026, pulling the Ascend 960DT training chip forward three quarters to Q1 2027 and citing AI chip demand that outstrips its own capacity",
       "themes": ["ai", "semis"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html"
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-16/huawei-set-to-unveil-china-s-best-answer-to-nvidia-ai-chip-reign"
     },
     {
-      "headline": "Samsung, SK Hynix and Micron report memory production sold out through 2027 and TSMC expands chipmaking-equipment capacity fivefold this year, unable to keep pace with AI hyperscaler demand for custom silicon and HBM",
-      "themes": ["semis", "ai"],
-      "source": "distillintelligence.com",
-      "url": "https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-09-04"
+      "headline": "US federal judge declines to break up Google's ad-tech business, instead ordering behavioral remedies (auction and interoperability changes, compliance monitor) for six years, removing a major structural-breakup overhang on Alphabet",
+      "themes": ["tech"],
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/09/02/google-spared-from-ad-business-breakup-but-judge-orders-changes-to-how-it-operates/"
+    },
+    {
+      "headline": "China's suspension of tightened rare-earth, lithium-battery and superhard-material export controls (agreed after the Xi-Trump meeting) remains in force through November 10, 2026, easing near-term critical-minerals supply risk",
+      "themes": ["materials"],
+      "source": "clarkhill.com",
+      "url": "https://www.clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains/"
+    },
+    {
+      "headline": "European governments continue accelerating defense-industrial integration and joint manufacturing capacity amid persistent Russia-Ukraine and Middle East conflict risk",
+      "themes": ["defense"],
+      "source": "weforum.org",
+      "url": "https://www.weforum.org/stories/geo-economics-and-politics/iran-us-war-and-other-geopolitical-stories-to-know-this-month/"
     }
   ]
 }
