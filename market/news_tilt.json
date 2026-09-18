@@ -1,49 +1,55 @@
 {
   "themes": {
-    "energy": 0.4,
-    "defense": 0.3,
-    "financials": -0.3,
+    "defense": 0.5,
+    "energy": 0.35,
+    "materials": -0.15,
     "ai": 0.3,
-    "semis": 0.3,
-    "tech": 0.2,
-    "materials": -0.2
+    "semis": 0.35,
+    "financials": 0.15,
+    "tech": -0.15
   },
   "events": [
     {
-      "headline": "Federal Reserve raises target federal funds rate 25bp to 3.75%-4.00%, its first hike since 2023, citing inflation (~3.4% YoY) kept elevated partly by Middle East-driven energy price shocks; officials signal further hikes possible",
+      "headline": "US-Iran/Israel war remains active: Strait of Hormuz contested, US naval blockade of Iranian oil ports continues, Ukraine drone/air strikes at war-highs",
+      "themes": ["defense", "energy"],
+      "source": "cfr.org",
+      "url": "https://www.cfr.org/global-conflict-tracker/conflict/confrontation-between-united-states-and-iran"
+    },
+    {
+      "headline": "Saudi Arabia, Pakistan and Turkey signed the Mecca Joint Defense Agreement, a mutual-defense pact reshaping Middle East security architecture",
+      "themes": ["defense"],
+      "source": "geopoliticalmonitor.com",
+      "url": "https://www.geopoliticalmonitor.com/topic/military/"
+    },
+    {
+      "headline": "Crude oil trading near $101/bbl, holding an elevated geopolitical risk premium tied to the contested Strait of Hormuz and ongoing US blockade of Iran",
+      "themes": ["energy"],
+      "source": "fortune.com",
+      "url": "https://fortune.com/article/price-of-oil-09-18-2026/"
+    },
+    {
+      "headline": "Federal Reserve raised its benchmark rate 25bp to 3.75%-4% on Sept 16 (first hike since 2023) to fight inflation, with markets pricing another hike this year",
       "themes": ["financials"],
       "source": "federalreserve.gov",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a1.htm"
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
     },
     {
-      "headline": "EIA Short-Term Energy Outlook: Brent crude averaged $91/bbl in August, up $7 from July, as Middle East export constraints and regional oil-production shut-ins tighten global supply",
-      "themes": ["energy", "defense"],
-      "source": "eia.gov",
-      "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php"
-    },
-    {
-      "headline": "Huawei unveils accelerated Ascend AI chip roadmap at Huawei Connect 2026, pulling the Ascend 960DT training chip forward three quarters to Q1 2027 and citing AI chip demand that outstrips its own capacity",
-      "themes": ["ai", "semis"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-16/huawei-set-to-unveil-china-s-best-answer-to-nvidia-ai-chip-reign"
-    },
-    {
-      "headline": "US federal judge declines to break up Google's ad-tech business, instead ordering behavioral remedies (auction and interoperability changes, compliance monitor) for six years, removing a major structural-breakup overhang on Alphabet",
-      "themes": ["tech"],
-      "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2026/09/02/google-spared-from-ad-business-breakup-but-judge-orders-changes-to-how-it-operates/"
-    },
-    {
-      "headline": "China's suspension of tightened rare-earth, lithium-battery and superhard-material export controls (agreed after the Xi-Trump meeting) remains in force through November 10, 2026, easing near-term critical-minerals supply risk",
+      "headline": "China's rare-earth, lithium-battery and critical-minerals export controls remain suspended under the US-China trade truce (through Nov 10, 2026), easing near-term supply-crunch fears",
       "themes": ["materials"],
-      "source": "clarkhill.com",
-      "url": "https://www.clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains/"
+      "source": "china-briefing.com",
+      "url": "https://www.china-briefing.com/news/chinas-rare-earth-export-controls-impacts-on-businesses/"
     },
     {
-      "headline": "European governments continue accelerating defense-industrial integration and joint manufacturing capacity amid persistent Russia-Ukraine and Middle East conflict risk",
-      "themes": ["defense"],
-      "source": "weforum.org",
-      "url": "https://www.weforum.org/stories/geo-economics-and-politics/iran-us-war-and-other-geopolitical-stories-to-know-this-month/"
+      "headline": "AI data-center buildout continues to strain chip supply; hyperscalers (Microsoft, Alphabet, Amazon) shifting spend toward inference/custom ASICs, supporting semiconductor demand and pricing",
+      "themes": ["ai", "semis"],
+      "source": "manufacturingdive.com",
+      "url": "https://www.manufacturingdive.com/news/opinion-omdia-ai-semiconductor-chip-scarcity/817172/"
+    },
+    {
+      "headline": "US lawmakers are escalating AI antitrust/regulatory scrutiny, including a proposed federal-charter regime for large AI firms, a headwind for big-tech/AI valuations",
+      "themes": ["ai", "tech"],
+      "source": "techpolicy.press",
+      "url": "https://www.techpolicy.press/looking-ahead-on-us-antitrust-enforcement-and-tech-will-2026-deliver-more-of-the-same/"
     }
   ]
 }
