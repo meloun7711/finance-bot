@@ -1,55 +1,36 @@
 {
   "themes": {
-    "defense": 0.5,
-    "energy": 0.35,
-    "materials": -0.15,
-    "ai": 0.3,
-    "semis": 0.35,
-    "financials": 0.15,
-    "tech": -0.15
+    "defense": 0.4,
+    "energy": 0.2,
+    "materials": 0.3,
+    "ai": 0.4,
+    "semis": 0.5,
+    "financials": 0.15
   },
   "events": [
     {
-      "headline": "US-Iran/Israel war remains active: Strait of Hormuz contested, US naval blockade of Iranian oil ports continues, Ukraine drone/air strikes at war-highs",
+      "headline": "Houthis claimed missile/drone strikes on 'sensitive' targets in Riyadh (Sept 19-20); Saudi/Gulf stocks fell and Red Sea/Saudi oil-export risk resurfaced, keeping Middle East conflict escalation live",
       "themes": ["defense", "energy"],
-      "source": "cfr.org",
-      "url": "https://www.cfr.org/global-conflict-tracker/conflict/confrontation-between-united-states-and-iran"
+      "source": "investing.com (Reuters)",
+      "url": "https://www.investing.com/news/economy-news/saudi-gulf-stocks-fall-after-houthisclaim-riyadh-attacks-4908151"
     },
     {
-      "headline": "Saudi Arabia, Pakistan and Turkey signed the Mecca Joint Defense Agreement, a mutual-defense pact reshaping Middle East security architecture",
-      "themes": ["defense"],
-      "source": "geopoliticalmonitor.com",
-      "url": "https://www.geopoliticalmonitor.com/topic/military/"
+      "headline": "US Treasury's Bessent and China's Vice Premier He Lifeng opened talks on AI guardrails, tariffs and critical-minerals/rare-earth flows ahead of the Trump-Xi Washington summit; US to hold off new tariffs until after the summit",
+      "themes": ["materials", "ai", "semis"],
+      "source": "cnbc.com (Reuters)",
+      "url": "https://www.cnbc.com/2026/09/20/bessent-chinas-he-to-hold-talks-on-ai-trade-minerals-reuters.html"
     },
     {
-      "headline": "Crude oil trading near $101/bbl, holding an elevated geopolitical risk premium tied to the contested Strait of Hormuz and ongoing US blockade of Iran",
-      "themes": ["energy"],
-      "source": "fortune.com",
-      "url": "https://fortune.com/article/price-of-oil-09-18-2026/"
-    },
-    {
-      "headline": "Federal Reserve raised its benchmark rate 25bp to 3.75%-4% on Sept 16 (first hike since 2023) to fight inflation, with markets pricing another hike this year",
+      "headline": "Fed raised its benchmark rate 25bp to 3.75%-4.00% on Sept 16 (first hike since 2023), aimed at combating oil-driven inflation; markets price one more hike this year",
       "themes": ["financials"],
-      "source": "federalreserve.gov",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
     },
     {
-      "headline": "China's rare-earth, lithium-battery and critical-minerals export controls remain suspended under the US-China trade truce (through Nov 10, 2026), easing near-term supply-crunch fears",
-      "themes": ["materials"],
-      "source": "china-briefing.com",
-      "url": "https://www.china-briefing.com/news/chinas-rare-earth-export-controls-impacts-on-businesses/"
-    },
-    {
-      "headline": "AI data-center buildout continues to strain chip supply; hyperscalers (Microsoft, Alphabet, Amazon) shifting spend toward inference/custom ASICs, supporting semiconductor demand and pricing",
-      "themes": ["ai", "semis"],
-      "source": "manufacturingdive.com",
-      "url": "https://www.manufacturingdive.com/news/opinion-omdia-ai-semiconductor-chip-scarcity/817172/"
-    },
-    {
-      "headline": "US lawmakers are escalating AI antitrust/regulatory scrutiny, including a proposed federal-charter regime for large AI firms, a headwind for big-tech/AI valuations",
-      "themes": ["ai", "tech"],
-      "source": "techpolicy.press",
-      "url": "https://www.techpolicy.press/looking-ahead-on-us-antitrust-enforcement-and-tech-will-2026-deliver-more-of-the-same/"
+      "headline": "AI-driven chip demand remains extremely strong: TSMC equipment demand up ~90% with capacity expanded 5x this year, Samsung/SK Hynix/Micron sold out through 2027 on HBM deals, July worldwide chip sales up 135% y/y",
+      "themes": ["semis", "ai"],
+      "source": "247wallst.com",
+      "url": "https://247wallst.com/investing/2026/09/16/3-semiconductor-stocks-to-buy-before-ai-demand-explodes-in-september/"
     }
   ]
 }
