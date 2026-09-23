@@ -1,42 +1,35 @@
 {
   "themes": {
-    "defense": 0.3,
-    "energy": -0.4,
-    "materials": 0.3,
-    "financials": -0.2,
-    "ai": 0.2,
-    "semis": 0.2
+    "energy": -0.2,
+    "defense": 0.2,
+    "ai": 0.4,
+    "semis": 0.4
   },
   "events": [
     {
-      "headline": "WTI crude plunges ~4.25% to ~$92/bbl after Trump signals openness to meeting Iran's President Pezeshkian at the UN, unwinding war-risk premium built up over the 2026 Iran war/Strait of Hormuz crisis",
-      "themes": ["energy"],
-      "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-22-2026"
-    },
-    {
-      "headline": "Honeywell and Kratos announced cruise-missile propulsion milestones amid high global demand to replenish depleted defense stockpiles",
-      "themes": ["defense"],
-      "source": "stockmarketwatch.com",
-      "url": "https://stockmarketwatch.com/digest/2026-09-21"
-    },
-    {
-      "headline": "China's export licensing controls on seven medium/heavy rare earths (samarium, gadolinium, terbium, dysprosium, lutetium, scandium, yttrium) remain in force; non-Chinese dysprosium/terbium trading at large multiples of Chinese reference prices, with the broader Oct-2025 control package's one-year suspension set to expire Nov 10, 2026",
-      "themes": ["materials"],
-      "source": "china-briefing.com",
-      "url": "https://www.china-briefing.com/news/chinas-rare-earth-export-controls-impacts-on-businesses/"
-    },
-    {
-      "headline": "Fed hiked its benchmark rate 25bp to 3.75%-4.00% on Sept 16 in a unanimous 12-0 vote, the first hike in 3+ years, citing elevated inflation (core PCE 3.3% in July); 16 of 18 officials see another hike this year",
-      "themes": ["financials"],
+      "headline": "Oil prices mixed (WTI -0.44% to ~$90/bbl, Brent +0.36% to ~$99.6/bbl) as traders weigh hours-long US-Iran talks at UN sidelines against Trump's renewed threat to annihilate Iran absent a deal; Saudi Arabia reportedly preparing to restart its East-West pipeline by Saturday",
+      "themes": [
+        "energy"
+      ],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+      "url": "https://www.cnbc.com/2026/09/23/iran-us-talks-crude-oil-un-wti.html"
     },
     {
-      "headline": "Korean chip stocks (Samsung, SK Hynix) gained as Meta's Muse AI agent spurred enthusiasm across the AI/semiconductor supply chain, though broader AI/chip momentum was cooling into Tuesday's session",
-      "themes": ["ai", "semis"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-22/korean-chip-stocks-gain-as-meta-s-muse-ai-agent-spurs-enthusiasm"
+      "headline": "Trump told the UN General Assembly he faces a \"big decision\" on Iran -- strike a peace deal or \"annihilate the Islamic Republic\" -- while predicting a deal after the Nov 3 midterms; US envoys held a 3-hour meeting with Iranian officials same day",
+      "themes": [
+        "defense"
+      ],
+      "source": "nbcnews.com",
+      "url": "https://www.nbcnews.com/politics/trump-administration/trump-address-united-nations-general-assembly-iran-war-rcna599085"
+    },
+    {
+      "headline": "Nasdaq 100 posted its first record close since June as chipmaker rally continued; PHLX Semiconductor Index (SOX) up over 14% in the last 5 sessions, with Korean chip stocks (Samsung, SK Hynix) also gaining on AI enthusiasm",
+      "themes": [
+        "ai",
+        "semis"
+      ],
+      "source": "thestreet.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-23-2026"
     }
   ]
 }
