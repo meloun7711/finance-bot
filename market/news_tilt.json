@@ -1,35 +1,37 @@
 {
   "themes": {
-    "energy": -0.2,
-    "defense": 0.2,
-    "ai": 0.4,
-    "semis": 0.4
+    "energy": 0.4,
+    "defense": 0.3,
+    "ai": 0.5,
+    "semis": 0.5,
+    "materials": 0.3,
+    "financials": -0.3,
+    "tech": 0.2
   },
   "events": [
     {
-      "headline": "Oil prices mixed (WTI -0.44% to ~$90/bbl, Brent +0.36% to ~$99.6/bbl) as traders weigh hours-long US-Iran talks at UN sidelines against Trump's renewed threat to annihilate Iran absent a deal; Saudi Arabia reportedly preparing to restart its East-West pipeline by Saturday",
-      "themes": [
-        "energy"
-      ],
+      "headline": "Oil prices climb as Iran threatens to restrict freedom of navigation through the Strait of Hormuz while US sanctions/blockade on Iranian oil exports remain in place; diplomatic talks continue but no deal yet",
+      "themes": ["energy", "defense"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-23/latest-oil-market-news-and-analysis-for-sept-24"
+    },
+    {
+      "headline": "US stock futures slide as 10-year Treasury yield hits highest level since 2007 (~5.15%) and 5-year yield tops 5% for first time since 2007, amid sticky inflation fears following the Fed's mid-September hike to 3.75%-4.00%",
+      "themes": ["financials"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/23/iran-us-talks-crude-oil-un-wti.html"
+      "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
     },
     {
-      "headline": "Trump told the UN General Assembly he faces a \"big decision\" on Iran -- strike a peace deal or \"annihilate the Islamic Republic\" -- while predicting a deal after the Nov 3 midterms; US envoys held a 3-hour meeting with Iranian officials same day",
-      "themes": [
-        "defense"
-      ],
-      "source": "nbcnews.com",
-      "url": "https://www.nbcnews.com/politics/trump-administration/trump-address-united-nations-general-assembly-iran-war-rcna599085"
+      "headline": "AMD tops $1 trillion market value, Intel +12%, Arm +17% and the Philadelphia Semiconductor Index notches a 5th straight gaining session as Meta's new AI agent ('Muse') fuels enthusiasm for AI chip demand",
+      "themes": ["ai", "semis"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-21/amd-set-to-top-1-trillion-in-market-value-as-chip-stocks-soar"
     },
     {
-      "headline": "Nasdaq 100 posted its first record close since June as chipmaker rally continued; PHLX Semiconductor Index (SOX) up over 14% in the last 5 sessions, with Korean chip stocks (Samsung, SK Hynix) also gaining on AI enthusiasm",
-      "themes": [
-        "ai",
-        "semis"
-      ],
-      "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-23-2026"
+      "headline": "US-China trade truce extended to Jan 10 as Xi Jinping begins state visit to Washington; Treasury Secretary Bessent confirms tariffs stay lower and rare-earth mineral exports keep flowing, easing supply-chain/export-control risk",
+      "themes": ["materials", "tech"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html"
     }
   ]
 }
