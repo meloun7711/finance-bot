@@ -1,37 +1,43 @@
 {
   "themes": {
-    "energy": 0.4,
-    "defense": 0.3,
     "ai": 0.5,
     "semis": 0.5,
+    "energy": 0.3,
+    "defense": 0.3,
     "materials": 0.3,
-    "financials": -0.3,
+    "financials": -0.4,
     "tech": 0.2
   },
   "events": [
     {
-      "headline": "Oil prices climb as Iran threatens to restrict freedom of navigation through the Strait of Hormuz while US sanctions/blockade on Iranian oil exports remain in place; diplomatic talks continue but no deal yet",
+      "headline": "US and Iran negotiators explore a phased deal to reopen the Strait of Hormuz, sending Brent crude down from recent highs; supply remains constrained after Saudi East-West pipeline attacks and a near-record-low US SPR",
       "themes": ["energy", "defense"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-23/latest-oil-market-news-and-analysis-for-sept-24"
+      "source": "thestreet.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-25-2026"
     },
     {
-      "headline": "US stock futures slide as 10-year Treasury yield hits highest level since 2007 (~5.15%) and 5-year yield tops 5% for first time since 2007, amid sticky inflation fears following the Fed's mid-September hike to 3.75%-4.00%",
+      "headline": "Trump and Xi meet in Washington and agree to extend the US-China trade truce to Jan. 10; China agrees to suspend rare-earth export controls and the US trims some tariffs, easing supply-chain risk",
+      "themes": ["materials", "tech"],
+      "source": "npr.org",
+      "url": "https://www.npr.org/2026/09/24/g-s1-144806/trump-xi-summit"
+    },
+    {
+      "headline": "10-year Treasury yield hits its highest level since 2007 (~5.2%) and the 30-year its highest since 2004 (~5.5%) after New York Fed President Williams says another rate hike is 'reasonable' by year-end, following the Fed's mid-September hike to 3.75%-4.00%",
       "themes": ["financials"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+      "url": "https://www.cnbc.com/2026/09/24/feds-williams-another-rate-hike-by-year-end.html"
     },
     {
-      "headline": "AMD tops $1 trillion market value, Intel +12%, Arm +17% and the Philadelphia Semiconductor Index notches a 5th straight gaining session as Meta's new AI agent ('Muse') fuels enthusiasm for AI chip demand",
+      "headline": "AMD crosses $1 trillion market value and chipmakers rally as AI accelerator demand stays strong; Nvidia posted 106% YoY revenue growth last quarter with Data Center revenue up 117%",
       "themes": ["ai", "semis"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-21/amd-set-to-top-1-trillion-in-market-value-as-chip-stocks-soar"
+      "source": "247wallst.com",
+      "url": "https://247wallst.com/investing/2026/09/21/amd-rises-5-as-report-flags-10-chip-price-increase-nvidia-and-taiwan-semiconductor-tick-up/"
     },
     {
-      "headline": "US-China trade truce extended to Jan 10 as Xi Jinping begins state visit to Washington; Treasury Secretary Bessent confirms tariffs stay lower and rare-earth mineral exports keep flowing, easing supply-chain/export-control risk",
-      "themes": ["materials", "tech"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html"
+      "headline": "Drone carrying explosives found near a Ukrainian cargo aircraft at Leipzig/Halle Airport in Germany; Poland says it thwarted a Russian-backed assassination attempt, while the US Senate narrowly rejected forcing an end to the Iran war without congressional authorization",
+      "themes": ["defense"],
+      "source": "justsecurity.org",
+      "url": "https://www.justsecurity.org/158876/early-edition-september-25-2026/"
     }
   ]
 }
