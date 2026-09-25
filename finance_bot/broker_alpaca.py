@@ -85,15 +85,25 @@ def _close(symbol: str) -> dict:
 
 def rebalance(targets: dict[str, float]) -> dict:
     """Move the paper account toward `targets` (symbol -> weight). Returns a summary."""
+    from finance_bot import exit_rules
+
     acct = account()
     if acct.get("trading_blocked") or acct.get("account_blocked"):
         return {"error": "account blocked", "account": acct.get("status")}
     equity = float(acct["equity"])
-    held = {p["symbol"]: float(p["market_value"]) for p in positions()}
-    tgt_usd = {s: min(w, PER_NAME_CAP) * equity for s, w in targets.items() if w > 0}
+    pos = positions()
+    held = {p["symbol"]: float(p["market_value"]) for p in pos}
+
+    # ── EXIT RULE: hard stop-loss + cooldown (prototype, see exit_rules.py) ──
+    stop = exit_rules.check_stops(pos)                 # decides stops, refreshes cooldown
+    exit_rules.save_cooldown(stop["cooldown"])
+    blocked = stop["blocked"]                          # stopped today + still cooling off
+    # drop blocked names from the target book so we don't rebuy a falling knife
+    tgt_usd = {s: min(w, PER_NAME_CAP) * equity
+               for s, w in targets.items() if w > 0 and s not in blocked}
 
     orders = []
-    # 1) exit names no longer in the target book
+    # 1) exit names no longer in the target book (this closes stopped names too)
     for sym in list(held):
         if sym not in tgt_usd:
             orders.append(_close(sym))
@@ -110,6 +120,7 @@ def rebalance(targets: dict[str, float]) -> dict:
     errs = [o for o in orders if "error" in o]
     return {"endpoint": "PAPER", "equity": round(equity, 2),
             "targets": len(tgt_usd), "orders_sent": len(orders),
+            "stopped_out": stop["to_close"], "blocked_names": len(blocked),
             "errors": len(errs), "error_samples": errs[:3]}
 
 
