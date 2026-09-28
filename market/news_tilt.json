@@ -1,43 +1,42 @@
 {
   "themes": {
-    "ai": 0.5,
-    "semis": 0.5,
-    "energy": 0.3,
-    "defense": 0.3,
-    "materials": 0.3,
-    "financials": -0.4,
-    "tech": 0.2
+    "defense": 0.45,
+    "energy": 0.5,
+    "semis": 0.45,
+    "ai": 0.3,
+    "financials": -0.3,
+    "materials": 0.2
   },
   "events": [
     {
-      "headline": "US and Iran negotiators explore a phased deal to reopen the Strait of Hormuz, sending Brent crude down from recent highs; supply remains constrained after Saudi East-West pipeline attacks and a near-record-low US SPR",
-      "themes": ["energy", "defense"],
+      "headline": "Trump rejects Iran's latest proposal to reopen the Strait of Hormuz; oil jumps over 1% and equity futures slip as the conflict escalates",
+      "themes": ["defense", "energy"],
       "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-25-2026"
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-28-2026"
     },
     {
-      "headline": "Trump and Xi meet in Washington and agree to extend the US-China trade truce to Jan. 10; China agrees to suspend rare-earth export controls and the US trims some tariffs, easing supply-chain risk",
-      "themes": ["materials", "tech"],
-      "source": "npr.org",
-      "url": "https://www.npr.org/2026/09/24/g-s1-144806/trump-xi-summit"
+      "headline": "IEA September Oil Market Report: over 10 mb/d of Gulf output remains shut in on security risks, global oil production down 1.6 mb/d m/m, demand outlook cut further amid the prolonged US-Iran impasse",
+      "themes": ["energy"],
+      "source": "iea.org",
+      "url": "https://www.iea.org/reports/oil-market-report-september-2026"
     },
     {
-      "headline": "10-year Treasury yield hits its highest level since 2007 (~5.2%) and the 30-year its highest since 2004 (~5.5%) after New York Fed President Williams says another rate hike is 'reasonable' by year-end, following the Fed's mid-September hike to 3.75%-4.00%",
+      "headline": "AI-driven memory chip shortage sends DRAM/HBM contract prices soaring (spot prices up ~700% y/y by July); Micron, Samsung and SK Hynix shifting capacity to high-margin AI memory with no relief seen before 2028",
+      "themes": ["semis", "ai"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/graphics/2026-ai-boom-memory-chip-shortage/"
+    },
+    {
+      "headline": "Fed hiked rates to 3.75%-4.00% in September (first hike in 3+ years) on persistently elevated inflation; 16 of 18 officials see at least one more hike this year",
       "themes": ["financials"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/24/feds-williams-another-rate-hike-by-year-end.html"
+      "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
     },
     {
-      "headline": "AMD crosses $1 trillion market value and chipmakers rally as AI accelerator demand stays strong; Nvidia posted 106% YoY revenue growth last quarter with Data Center revenue up 117%",
-      "themes": ["ai", "semis"],
-      "source": "247wallst.com",
-      "url": "https://247wallst.com/investing/2026/09/21/amd-rises-5-as-report-flags-10-chip-price-increase-nvidia-and-taiwan-semiconductor-tick-up/"
-    },
-    {
-      "headline": "Drone carrying explosives found near a Ukrainian cargo aircraft at Leipzig/Halle Airport in Germany; Poland says it thwarted a Russian-backed assassination attempt, while the US Senate narrowly rejected forcing an end to the Iran war without congressional authorization",
-      "themes": ["defense"],
-      "source": "justsecurity.org",
-      "url": "https://www.justsecurity.org/158876/early-edition-september-25-2026/"
+      "headline": "Treasury Secretary Bessent says US and China agreed to extend their trade truce by two more months, to Jan. 10, 2027, easing near-term critical-minerals/tariff escalation risk",
+      "themes": ["materials"],
+      "source": "thestreet.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-28-2026"
     }
   ]
 }
