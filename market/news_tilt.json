@@ -1,30 +1,29 @@
 {
   "themes": {
-    "defense": 0.45,
-    "energy": 0.5,
-    "semis": 0.45,
-    "ai": 0.3,
+    "defense": 0.5,
+    "energy": 0.3,
+    "semis": -0.4,
     "financials": -0.3,
-    "materials": 0.2
+    "materials": 0.3
   },
   "events": [
     {
-      "headline": "Trump rejects Iran's latest proposal to reopen the Strait of Hormuz; oil jumps over 1% and equity futures slip as the conflict escalates",
+      "headline": "Trump rejects Iran's conditional proposal to reopen the Strait of Hormuz, tells aides he expects to resume bombing Iran after the November midterms; indirect US-Iran talks continue via Qatari mediators",
       "themes": ["defense", "energy"],
-      "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-28-2026"
+      "source": "aljazeera.com",
+      "url": "https://www.aljazeera.com/economy/2026/9/28/oil-prices-surge-after-trump-rejects-irans-plan-to-reopen-strait-of-hormuz"
     },
     {
-      "headline": "IEA September Oil Market Report: over 10 mb/d of Gulf output remains shut in on security risks, global oil production down 1.6 mb/d m/m, demand outlook cut further amid the prolonged US-Iran impasse",
+      "headline": "Oil prices hold broadly flat (Brent ~$105.24, WTI ~$92.54) on Sept 29 as markets weigh persistent Strait of Hormuz supply risk against hopes for ceasefire progress in Qatari-mediated talks",
       "themes": ["energy"],
-      "source": "iea.org",
-      "url": "https://www.iea.org/reports/oil-market-report-september-2026"
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/09/29/oil-prices-today-brent-wti-hormuz.html"
     },
     {
-      "headline": "AI-driven memory chip shortage sends DRAM/HBM contract prices soaring (spot prices up ~700% y/y by July); Micron, Samsung and SK Hynix shifting capacity to high-margin AI memory with no relief seen before 2028",
-      "themes": ["semis", "ai"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/graphics/2026-ai-boom-memory-chip-shortage/"
+      "headline": "Broad chip selloff deepens: Arm Holdings sinks 9% (no company-specific news; SoftBank's $25B margin loan against ARM shares adds a market-linked pressure point), Qualcomm -6%, Marvell -5%, Intel and AMD also down sharply",
+      "themes": ["semis"],
+      "source": "247wallst.com",
+      "url": "https://247wallst.com/investing/2026/09/28/arm-sinks-9-as-chip-selloff-deepens-qualcomm-drops-6-marvell-slides-5/"
     },
     {
       "headline": "Fed hiked rates to 3.75%-4.00% in September (first hike in 3+ years) on persistently elevated inflation; 16 of 18 officials see at least one more hike this year",
@@ -33,10 +32,10 @@
       "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
     },
     {
-      "headline": "Treasury Secretary Bessent says US and China agreed to extend their trade truce by two more months, to Jan. 10, 2027, easing near-term critical-minerals/tariff escalation risk",
+      "headline": "China's suspension of its October 2025 rare-earth, lithium-battery and critical-materials export controls (paused through Nov 10, 2026) continues to ease supply-chain disruption risk for downstream manufacturers",
       "themes": ["materials"],
-      "source": "thestreet.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-28-2026"
+      "source": "clarkhill.com",
+      "url": "https://www.clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains/"
     }
   ]
 }
