@@ -1,38 +1,33 @@
 {
   "themes": {
-    "defense": 0.5,
+    "defense": 0.4,
     "energy": 0.3,
-    "semis": -0.4,
-    "financials": -0.3,
-    "materials": 0.3
+    "materials": 0.2,
+    "semis": 0.4,
+    "ai": 0.3,
+    "financials": 0.4
   },
   "events": [
     {
-      "headline": "Trump rejects Iran's conditional proposal to reopen the Strait of Hormuz, tells aides he expects to resume bombing Iran after the November midterms; indirect US-Iran talks continue via Qatari mediators",
-      "themes": ["defense", "energy"],
-      "source": "aljazeera.com",
-      "url": "https://www.aljazeera.com/economy/2026/9/28/oil-prices-surge-after-trump-rejects-irans-plan-to-reopen-strait-of-hormuz"
+      "headline": "Trump rejects Iran's proposal to fully reopen the Strait of Hormuz and denies sanctions-relief talk; Saudi Arabia has restored roughly half of its East-West pipeline flows (~3.5M bbl/day to the Red Sea) bypassing Hormuz, easing but not resolving Mideast supply risk",
+      "themes": ["energy", "defense"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-29/latest-oil-market-and-analysis-for-sept-30"
     },
     {
-      "headline": "Oil prices hold broadly flat (Brent ~$105.24, WTI ~$92.54) on Sept 29 as markets weigh persistent Strait of Hormuz supply risk against hopes for ceasefire progress in Qatari-mediated talks",
-      "themes": ["energy"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/29/oil-prices-today-brent-wti-hormuz.html"
+      "headline": "Chip stocks rally sharply: AMD and Intel each up ~29% in September, SOXX semiconductor ETF up ~11% this month heading for its strongest month since June, driven by AI infrastructure demand",
+      "themes": ["semis", "ai"],
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/chip-stocks-roar-back-amd-074855493.html"
     },
     {
-      "headline": "Broad chip selloff deepens: Arm Holdings sinks 9% (no company-specific news; SoftBank's $25B margin loan against ARM shares adds a market-linked pressure point), Qualcomm -6%, Marvell -5%, Intel and AMD also down sharply",
-      "themes": ["semis"],
-      "source": "247wallst.com",
-      "url": "https://247wallst.com/investing/2026/09/28/arm-sinks-9-as-chip-selloff-deepens-qualcomm-drops-6-marvell-slides-5/"
-    },
-    {
-      "headline": "Fed hiked rates to 3.75%-4.00% in September (first hike in 3+ years) on persistently elevated inflation; 16 of 18 officials see at least one more hike this year",
+      "headline": "August PCE inflation (Fed's preferred gauge) rose less than expected (0.3% m/m, 3.4% y/y vs 3.7% forecast), causing traders to cut odds of an October Fed rate hike to ~36% from roughly coin-toss",
       "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-30/traders-pull-back-on-october-fed-hike-bets-after-cool-pce-data"
     },
     {
-      "headline": "China's suspension of its October 2025 rare-earth, lithium-battery and critical-materials export controls (paused through Nov 10, 2026) continues to ease supply-chain disruption risk for downstream manufacturers",
+      "headline": "China's suspension of its Oct 2025 rare-earth, lithium-battery and critical-materials export controls (paused through Nov 10, 2026) remains in effect, continuing to ease near-term supply-chain disruption risk though the pause is nearing expiration",
       "themes": ["materials"],
       "source": "clarkhill.com",
       "url": "https://www.clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains/"
