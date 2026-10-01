@@ -1,36 +1,48 @@
 {
   "themes": {
     "defense": 0.4,
-    "energy": 0.3,
+    "energy": 0.2,
     "materials": 0.2,
-    "semis": 0.4,
-    "ai": 0.3,
-    "financials": 0.4
+    "ai": 0.4,
+    "semis": 0.5,
+    "financials": -0.1
   },
   "events": [
     {
-      "headline": "Trump rejects Iran's proposal to fully reopen the Strait of Hormuz and denies sanctions-relief talk; Saudi Arabia has restored roughly half of its East-West pipeline flows (~3.5M bbl/day to the Red Sea) bypassing Hormuz, easing but not resolving Mideast supply risk",
+      "headline": "Iran war talks stall: Rubio demands Iranian UN delegation leave the US after ceasefire-proposal talks break down; Trump tells TIME military action against Iran could resume after the midterms; Pentagon announces major overhaul including 20% cut to admirals/generals",
+      "themes": ["defense"],
+      "source": "justsecurity.org",
+      "url": "https://www.justsecurity.org/159415/early-edition-october-1-2026/"
+    },
+    {
+      "headline": "Oil fell ~1-1.4% (Brent $96.92, WTI $89.18) as Gulf crude exports recover toward pre-war levels and US-Iran diplomacy advances, though fuel (vs. crude) supply remains tight and OPEC+ is expected to hold November quotas steady with output still ~5M bpd below pre-war levels",
       "themes": ["energy", "defense"],
       "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-29/latest-oil-market-and-analysis-for-sept-30"
+      "url": "https://www.bloomberg.com/news/articles/2026-09-30/latest-oil-market-news-and-analysis-for-oct-1"
     },
     {
-      "headline": "Chip stocks rally sharply: AMD and Intel each up ~29% in September, SOXX semiconductor ETF up ~11% this month heading for its strongest month since June, driven by AI infrastructure demand",
-      "themes": ["semis", "ai"],
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/chip-stocks-roar-back-amd-074855493.html"
+      "headline": "China's refiners have halted fuel exports until further notice, a move that could further tighten the global fuel market even as crude supply eases",
+      "themes": ["energy"],
+      "source": "oilprice.com",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Halts-Fuel-Exports-Until-Further-Notice.html"
     },
     {
-      "headline": "August PCE inflation (Fed's preferred gauge) rose less than expected (0.3% m/m, 3.4% y/y vs 3.7% forecast), causing traders to cut odds of an October Fed rate hike to ~36% from roughly coin-toss",
-      "themes": ["financials"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-30/traders-pull-back-on-october-fed-hike-bets-after-cool-pce-data"
-    },
-    {
-      "headline": "China's suspension of its Oct 2025 rare-earth, lithium-battery and critical-materials export controls (paused through Nov 10, 2026) remains in effect, continuing to ease near-term supply-chain disruption risk though the pause is nearing expiration",
+      "headline": "China's suspension of its Oct-2025 rare-earth/lithium-battery/critical-minerals export controls remains in effect but is set to expire Nov 10, 2026; China separately added US rare-earth firms MP Materials and USA Rare Earth to its export-control list, keeping supply-chain risk elevated",
       "themes": ["materials"],
       "source": "clarkhill.com",
       "url": "https://www.clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains/"
+    },
+    {
+      "headline": "Intel shares rose ~3.7% as Micron's strong fiscal Q4 results boosted AI-chip and memory sector sentiment; Synopsys and Amazon signed a $1B+ deal to speed custom chip development; AMD EPYC server-CPU orders extend into 2028",
+      "themes": ["ai", "semis"],
+      "source": "fxleaders.com",
+      "url": "https://www.fxleaders.com/news/2026/10/01/intel-stock-rally-micron-earnings-chip-sector/"
+    },
+    {
+      "headline": "Fed Chair Warsh remains hawkish on inflation, and CME FedWatch-implied odds of an October rate hike rose to 49% (from 40%); Fed's September dot plot showed 16 of 18 officials projecting at least one more hike this year after the Sept 16 hike to 3.75-4.00%",
+      "themes": ["financials"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html"
     }
   ]
 }
