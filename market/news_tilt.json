@@ -1,48 +1,48 @@
 {
   "themes": {
-    "defense": 0.4,
-    "energy": 0.2,
+    "defense": 0.3,
+    "energy": 0.3,
     "materials": 0.2,
-    "ai": 0.4,
-    "semis": 0.5,
-    "financials": -0.1
+    "ai": 0.5,
+    "semis": 0.6,
+    "financials": -0.3
   },
   "events": [
     {
-      "headline": "Iran war talks stall: Rubio demands Iranian UN delegation leave the US after ceasefire-proposal talks break down; Trump tells TIME military action against Iran could resume after the midterms; Pentagon announces major overhaul including 20% cut to admirals/generals",
+      "headline": "US-Iran diplomacy stalls: Rubio demands Iran's UN delegation leave the US after ceasefire-proposal talks break down; Trump denies reports he was ready to offer Tehran sanctions relief, keeping Middle East tensions elevated",
       "themes": ["defense"],
       "source": "justsecurity.org",
       "url": "https://www.justsecurity.org/159415/early-edition-october-1-2026/"
     },
     {
-      "headline": "Oil fell ~1-1.4% (Brent $96.92, WTI $89.18) as Gulf crude exports recover toward pre-war levels and US-Iran diplomacy advances, though fuel (vs. crude) supply remains tight and OPEC+ is expected to hold November quotas steady with output still ~5M bpd below pre-war levels",
-      "themes": ["energy", "defense"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-30/latest-oil-market-news-and-analysis-for-oct-1"
-    },
-    {
-      "headline": "China's refiners have halted fuel exports until further notice, a move that could further tighten the global fuel market even as crude supply eases",
+      "headline": "Crude slipped to ~$92.63/bbl (WTI) on Oct 2, down slightly, but supply stays tight (Gulf output ~5M bpd below pre-war levels amid Hormuz disruption); OPEC+ meets Oct 4 and is expected to hold November quotas steady",
       "themes": ["energy"],
       "source": "oilprice.com",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Halts-Fuel-Exports-Until-Further-Notice.html"
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Expected-to-Keep-Oil-Production-Quotas-Unchanged.html"
     },
     {
-      "headline": "China's suspension of its Oct-2025 rare-earth/lithium-battery/critical-minerals export controls remains in effect but is set to expire Nov 10, 2026; China separately added US rare-earth firms MP Materials and USA Rare Earth to its export-control list, keeping supply-chain risk elevated",
+      "headline": "China's rare-earth/lithium-battery export-control suspension (in place since the Xi-Trump Busan meeting) remains set to expire Nov 10, 2026, with China having separately added US rare-earth firms (MP Materials, USA Rare Earth) to its control list this year, keeping supply-chain risk elevated",
       "themes": ["materials"],
       "source": "clarkhill.com",
       "url": "https://www.clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains/"
     },
     {
-      "headline": "Intel shares rose ~3.7% as Micron's strong fiscal Q4 results boosted AI-chip and memory sector sentiment; Synopsys and Amazon signed a $1B+ deal to speed custom chip development; AMD EPYC server-CPU orders extend into 2028",
+      "headline": "Morgan Stanley reinstated Nvidia as its semiconductor 'Top Pick' after meetings with CEO Jensen Huang and CFO Colette Kress; Broadcom's banking syndicate is reportedly gathering $60B in fresh financing for AI chips/infrastructure benefiting Anthropic and others",
       "themes": ["ai", "semis"],
-      "source": "fxleaders.com",
-      "url": "https://www.fxleaders.com/news/2026/10/01/intel-stock-rally-micron-earnings-chip-sector/"
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-stock-back-morgan-stanley-124934015.html"
     },
     {
-      "headline": "Fed Chair Warsh remains hawkish on inflation, and CME FedWatch-implied odds of an October rate hike rose to 49% (from 40%); Fed's September dot plot showed 16 of 18 officials projecting at least one more hike this year after the Sept 16 hike to 3.75-4.00%",
+      "headline": "Intel shares surged over 11% as Meta's Muse AI agent boosted expectations for CPU-heavy, agentic AI workloads in data centers, reinforcing Intel's server-CPU growth story",
+      "themes": ["semis", "ai"],
+      "source": "stockstotrade.com",
+      "url": "https://stockstotrade.com/news/intel-corporation-intc-news-2026_10_02-2"
+    },
+    {
+      "headline": "Fed Chair Warsh remains hawkish with core PCE inflation at 3.3% (up from 3.0% in Dec 2025); fixed-income markets are now pricing back-to-back rate hikes at the Oct 28 and December 2026 FOMC meetings",
       "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html"
+      "source": "forbes.com",
+      "url": "https://www.forbes.com/sites/simonmoore/2026/09/29/what-to-expect-from-interest-rates-for-the-rest-of-2026/"
     }
   ]
 }
