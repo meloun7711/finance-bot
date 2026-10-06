@@ -1,49 +1,35 @@
 {
   "themes": {
-    "defense": 0.3,
-    "energy": 0.4,
-    "materials": 0.2,
+    "defense": 0.4,
+    "materials": 0.3,
     "ai": 0.3,
     "semis": 0.4,
-    "crypto": 0.2,
     "financials": -0.2
   },
   "events": [
     {
-      "headline": "Ethiopian government forces retake Tigray capital Mekelle and its airport after TPLF-led rebel alliance withdraws, in the worst escalation of the conflict since the 2020-2022 civil war; African Union warns the renewed fighting threatens the 2022 Pretoria peace agreement",
+      "headline": "Ukraine launched one of its largest drone barrages of 2026 at Moscow on Oct 5, forcing temporary closure of Vnukovo, Domodedovo and Zhukovsky airports; Russia's MoD said 61 UAVs were shot down region-wide, with a fire reported at a chemical plant in Tula region, underscoring continued escalation risk in the war (day ~1,411)",
       "themes": ["defense"],
-      "source": "aljazeera.com",
-      "url": "https://www.aljazeera.com/news/2026/10/5/ethiopias-forces-retake-mekelle-amid-renewed-tigray-fighting"
+      "source": "yahoo.com",
+      "url": "https://www.yahoo.com/news/moscow-airports-close-following-reports-143038764.html"
     },
     {
-      "headline": "OPEC+ Joint Ministerial Monitoring Committee agreed Oct 4 to keep November production quotas unchanged, while Brent/WTI have firmed after President Trump ruled out easing Iran sanctions, keeping Gulf exports constrained",
-      "themes": ["energy"],
-      "source": "energynow.com",
-      "url": "https://energynow.com/2026/10/opec-agrees-to-keep-november-oil-output-targets-steady/"
-    },
-    {
-      "headline": "China's Ministry of Commerce confirmed its suspension of October-2025 rare-earth/lithium-battery export controls (agreed at the Trump-Xi summit) has been extended to January 10, 2027, averting a near-term supply shock but leaving the structural dispute over critical-mineral chokepoints unresolved",
+      "headline": "China's one-year suspension of its October-2025 rare-earth/lithium-battery export controls (agreed at the Trump-Xi summit) has been confirmed extended to January 10, 2027, averting a near-term critical-minerals supply shock though the underlying US-China dispute over chokepoints remains unresolved",
       "themes": ["materials"],
-      "source": "rinnovabili.net",
-      "url": "https://www.rinnovabili.net/policy-and-affairs/environmental-policies/chinese-rare-earth-exports-trump-xi-truce/"
+      "source": "rareearthexchanges.com",
+      "url": "https://rareearthexchanges.com/news/china-rare-earth-controls-trump-xi-deadline/"
     },
     {
-      "headline": "Semiconductor, memory and storage names rallied in Oct 5 trading (LRCX, AMAT, ARM, WDC, STX, SNDK all up) as TSMC raised its 2026 capex budget to $60-64B ahead of Oct 15 earnings, with global chip sales still tracking toward 26% YoY growth on AI/data-center demand",
-      "themes": ["semis", "ai"],
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/4-memory-semiconductor-stocks-watch-131800867.html"
+      "themes": ["ai", "semis"],
+      "headline": "Marvell held its Investor Day in New York on Oct 6 highlighting AI-infrastructure/custom-silicon demand, while Micron's confirmed $9.6B (JPY1.5T) Hiroshima HBM fab build-out and continued industry forecasts of AI/data-center-driven semiconductor growth kept chip and memory names in focus ahead of mid-October earnings season",
+      "source": "trendforce.com",
+      "url": "https://www.trendforce.com/news/2025/12/02/news-micron-to-build-a-new-memory-chip-plant-in-japan-with-usd-9-6b/"
     },
     {
-      "headline": "SEC proposed a new crypto-custody framework (Oct 1) letting registered investment advisers and funds custody crypto assets directly when no qualified custodian is available, the latest step in the agency's broader digital-asset rulemaking push",
-      "themes": ["crypto"],
-      "source": "coindesk.com",
-      "url": "https://www.coindesk.com/policy/2026/10/01/u-s-sec-maps-out-crypto-custody-in-new-proposal-that-furthers-its-digital-assets-agenda"
-    },
-    {
-      "headline": "Fed hiked rates Sept 16 to 3.75%-4% in a unanimous 12-0 vote as Chair Warsh called inflation 'too high for too long' (PCE ~3.6%, driven partly by war-related energy costs); officials have flagged one more possible hike before year-end, with September FOMC minutes due this week",
+      "headline": "Minutes from the Fed's Sept 16 FOMC meeting (where it hiked to 3.75%-4.00% amid inflation the Chair called 'too high for too long') are due Oct 7; with core PCE still running near 3.6% and prediction markets pricing roughly even odds on the Oct 27-28 decision, policy remains in a restrictive, data-dependent holding pattern",
       "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/09/16/fed-meeting-today-live-updates.html"
+      "source": "federalreserve.gov",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260916.htm"
     }
   ]
 }
