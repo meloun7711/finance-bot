@@ -1,35 +1,28 @@
 {
   "themes": {
     "defense": 0.4,
-    "materials": 0.3,
-    "ai": 0.3,
+    "ai": 0.35,
     "semis": 0.4,
     "financials": -0.2
   },
   "events": [
     {
-      "headline": "Ukraine launched one of its largest drone barrages of 2026 at Moscow on Oct 5, forcing temporary closure of Vnukovo, Domodedovo and Zhukovsky airports; Russia's MoD said 61 UAVs were shot down region-wide, with a fire reported at a chemical plant in Tula region, underscoring continued escalation risk in the war (day ~1,411)",
+      "headline": "Russia launched an overnight missile and drone attack on Kyiv (10 missiles including 6 ballistic, plus 121 drones), injuring at least 10 people including a child and damaging residential buildings across three districts, underscoring continued escalation risk in the war",
       "themes": ["defense"],
-      "source": "yahoo.com",
-      "url": "https://www.yahoo.com/news/moscow-airports-close-following-reports-143038764.html"
+      "source": "kyivindependent.com",
+      "url": "https://kyivindependent.com/ukraine-war-latest-russia-resumes-drone-attacks-on-kyiv-kills-1-injures-16-damages-residential-buildings/"
     },
     {
-      "headline": "China's one-year suspension of its October-2025 rare-earth/lithium-battery export controls (agreed at the Trump-Xi summit) has been confirmed extended to January 10, 2027, averting a near-term critical-minerals supply shock though the underlying US-China dispute over chokepoints remains unresolved",
-      "themes": ["materials"],
-      "source": "rareearthexchanges.com",
-      "url": "https://rareearthexchanges.com/news/china-rare-earth-controls-trump-xi-deadline/"
-    },
-    {
+      "headline": "TSMC reported September revenue up ~39% y/y to NT$251.87bn, beating estimates on sustained AI-chip demand; Q3 sales of ~$30.8B beat consensus and the company raised 2026 capex guidance to $60-64B, reinforcing the AI/semiconductor demand narrative ahead of its Oct 8 monthly sales print",
       "themes": ["ai", "semis"],
-      "headline": "Marvell held its Investor Day in New York on Oct 6 highlighting AI-infrastructure/custom-silicon demand, while Micron's confirmed $9.6B (JPY1.5T) Hiroshima HBM fab build-out and continued industry forecasts of AI/data-center-driven semiconductor growth kept chip and memory names in focus ahead of mid-October earnings season",
-      "source": "trendforce.com",
-      "url": "https://www.trendforce.com/news/2025/12/02/news-micron-to-build-a-new-memory-chip-plant-in-japan-with-usd-9-6b/"
+      "source": "tipranks.com",
+      "url": "https://www.tipranks.com/news/taiwan-semiconductor-tsm-sales-jumped-in-september-on-strong-ai-demand"
     },
     {
-      "headline": "Minutes from the Fed's Sept 16 FOMC meeting (where it hiked to 3.75%-4.00% amid inflation the Chair called 'too high for too long') are due Oct 7; with core PCE still running near 3.6% and prediction markets pricing roughly even odds on the Oct 27-28 decision, policy remains in a restrictive, data-dependent holding pattern",
+      "headline": "Fed Chair Kevin Warsh reaffirmed that inflation is not decelerating toward the 2% target, with headline CPI near 3.4% y/y and core PCE near 3.7%; the Fed's Sept FOMC minutes are due for release today (Oct 7, 2pm ET) and prediction markets show roughly even odds between a hold and a hike at the Oct 27-28 meeting, keeping policy in a hawkish, data-dependent holding pattern",
       "themes": ["financials"],
-      "source": "federalreserve.gov",
-      "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260916.htm"
+      "source": "cryptobriefing.com",
+      "url": "https://cryptobriefing.com/feds-warsh-inflation-not-slowing-2-target-by-2026-remains-priority/"
     }
   ]
 }
