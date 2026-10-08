@@ -1,28 +1,27 @@
 {
   "themes": {
-    "defense": 0.4,
-    "ai": 0.35,
-    "semis": 0.4,
-    "financials": -0.2
+    "defense": 0.5,
+    "energy": 0.4,
+    "financials": -0.3
   },
   "events": [
     {
-      "headline": "Russia launched an overnight missile and drone attack on Kyiv (10 missiles including 6 ballistic, plus 121 drones), injuring at least 10 people including a child and damaging residential buildings across three districts, underscoring continued escalation risk in the war",
+      "headline": "US VP Vance says Iran must make 'meaningful' cut to nuclear enrichment to end seven-month conflict; Houthi threats prompt US security alert for Saudi airports/airspace",
       "themes": ["defense"],
-      "source": "kyivindependent.com",
-      "url": "https://kyivindependent.com/ukraine-war-latest-russia-resumes-drone-attacks-on-kyiv-kills-1-injures-16-damages-residential-buildings/"
+      "source": "reuters.com (via abc.net.au, usembassy.gov)",
+      "url": "https://sa.usembassy.gov/security-alert-u-s-mission-saudi-arabia-october-7-2026/"
     },
     {
-      "headline": "TSMC reported September revenue up ~39% y/y to NT$251.87bn, beating estimates on sustained AI-chip demand; Q3 sales of ~$30.8B beat consensus and the company raised 2026 capex guidance to $60-64B, reinforcing the AI/semiconductor demand narrative ahead of its Oct 8 monthly sales print",
-      "themes": ["ai", "semis"],
-      "source": "tipranks.com",
-      "url": "https://www.tipranks.com/news/taiwan-semiconductor-tsm-sales-jumped-in-september-on-strong-ai-demand"
+      "headline": "Brent crude holds near $100/barrel as Iranian attacks on vessels in the Strait of Hormuz threaten Gulf shipping and supply",
+      "themes": ["energy", "defense"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/10/06/stock-market-today-live-updates.html"
     },
     {
-      "headline": "Fed Chair Kevin Warsh reaffirmed that inflation is not decelerating toward the 2% target, with headline CPI near 3.4% y/y and core PCE near 3.7%; the Fed's Sept FOMC minutes are due for release today (Oct 7, 2pm ET) and prediction markets show roughly even odds between a hold and a hike at the Oct 27-28 meeting, keeping policy in a hawkish, data-dependent holding pattern",
+      "headline": "30-year Treasury yield hits 5.7%, a 24-year high, ahead of Fed minutes; S&P 500 and Dow retreat from record highs on inflation and rate-path worries",
       "themes": ["financials"],
-      "source": "cryptobriefing.com",
-      "url": "https://cryptobriefing.com/feds-warsh-inflation-not-slowing-2-target-by-2026-remains-priority/"
+      "source": "thestreet.com (via finance.yahoo.com)",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-07-2026"
     }
   ]
 }
