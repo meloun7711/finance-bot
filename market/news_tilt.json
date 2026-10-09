@@ -1,27 +1,29 @@
 {
   "themes": {
-    "defense": 0.5,
-    "energy": 0.4,
-    "financials": -0.3
+    "defense": 0.4,
+    "energy": 0.35,
+    "financials": -0.3,
+    "ai": 0.3,
+    "semis": 0.3
   },
   "events": [
     {
-      "headline": "US VP Vance says Iran must make 'meaningful' cut to nuclear enrichment to end seven-month conflict; Houthi threats prompt US security alert for Saudi airports/airspace",
-      "themes": ["defense"],
-      "source": "reuters.com (via abc.net.au, usembassy.gov)",
-      "url": "https://sa.usembassy.gov/security-alert-u-s-mission-saudi-arabia-october-7-2026/"
+      "headline": "Iran says Strait of Hormuz will stay closed until US meets its conditions; disruption to Gulf shipping continues amid ongoing Iran-US/Israel conflict and Houthi attacks on Saudi energy infrastructure",
+      "themes": ["defense", "energy"],
+      "source": "oilprice.com",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Says-Hormuz-Will-Stay-Closed-Until-US-Meets-Its-Conditions.html"
     },
     {
-      "headline": "Brent crude holds near $100/barrel as Iranian attacks on vessels in the Strait of Hormuz threaten Gulf shipping and supply",
-      "themes": ["energy", "defense"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/10/06/stock-market-today-live-updates.html"
-    },
-    {
-      "headline": "30-year Treasury yield hits 5.7%, a 24-year high, ahead of Fed minutes; S&P 500 and Dow retreat from record highs on inflation and rate-path worries",
+      "headline": "US 30-year Treasury yield hits fresh 24-year high (~5.70%) on Oct 7, deepening a global bond selloff ahead of Fed minutes, as inflation, oil prices and fiscal concerns pressure rate-sensitive sectors",
       "themes": ["financials"],
-      "source": "thestreet.com (via finance.yahoo.com)",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-07-2026"
+      "source": "tradingeconomics.com",
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield/news/588457"
+    },
+    {
+      "headline": "Nvidia shares hit a fresh all-time high (~$238.90-240) as the company nears a $6 trillion market cap, supported by continued AI-chip demand and a new $150B buyback; TSMC's Oct 15 earnings seen as the next catalyst for the AI/semis complex",
+      "themes": ["ai", "semis"],
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-worth-6-trillion-now-164400772.html"
     }
   ]
 }
