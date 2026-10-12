@@ -1,29 +1,33 @@
 {
   "themes": {
-    "defense": 0.4,
+    "defense": 0.3,
     "energy": 0.35,
-    "financials": -0.3,
-    "ai": 0.3,
-    "semis": 0.3
+    "financials": -0.35
   },
   "events": [
     {
-      "headline": "Iran says Strait of Hormuz will stay closed until US meets its conditions; disruption to Gulf shipping continues amid ongoing Iran-US/Israel conflict and Houthi attacks on Saudi energy infrastructure",
+      "headline": "Houthi forces escalate missile/drone attacks on Saudi Aramco facilities in Riyadh, Yanbu and Khurais (Oct 3-4) and renew threats against Saudi oil facilities, airports and aviation on Oct 8, warning employees to stay away from targeted sites",
       "themes": ["defense", "energy"],
-      "source": "oilprice.com",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Says-Hormuz-Will-Stay-Closed-Until-US-Meets-Its-Conditions.html"
+      "source": "investinglive.com",
+      "url": "https://investinglive.com/news/oil-prices-extend-gains-as-yemen-s-houthis-threaten-broader-saudi-operation-after-attacks-hit-energy-sites/"
     },
     {
-      "headline": "US 30-year Treasury yield hits fresh 24-year high (~5.70%) on Oct 7, deepening a global bond selloff ahead of Fed minutes, as inflation, oil prices and fiscal concerns pressure rate-sensitive sectors",
+      "headline": "Bloomberg Markets Wrap (Oct 11): oil swings as Gulf shipping flows stay resilient but Houthi attacks on Saudi Arabia keep supply-disruption risk elevated; dollar edges higher",
+      "themes": ["energy"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-11/oil-rises-on-mideast-attacks-dollar-edges-higher-markets-wrap"
+    },
+    {
+      "headline": "Trump says the US will not attack Iran before next month's midterm elections, easing acute Iran-US war-escalation fears on Oct 10 and helping the S&P 500 rally near record highs, even as the separate Yemen/Saudi Houthi conflict continues",
+      "themes": ["defense"],
+      "source": "riotimesonline.com",
+      "url": "https://www.riotimesonline.com/global-economy-briefing-october-10-2026/"
+    },
+    {
+      "headline": "FOMC October 7 minutes describe inflation as elevated with limited recent progress toward the 2% target and signal broad support for another rate hike later in 2026 (no October move); September CPI due Oct 14 is seen rising to ~3.6-3.7% y/y from 3.4%, pressuring rate-sensitive sectors",
       "themes": ["financials"],
-      "source": "tradingeconomics.com",
-      "url": "https://tradingeconomics.com/united-states/government-bond-yield/news/588457"
-    },
-    {
-      "headline": "Nvidia shares hit a fresh all-time high (~$238.90-240) as the company nears a $6 trillion market cap, supported by continued AI-chip demand and a new $150B buyback; TSMC's Oct 15 earnings seen as the next catalyst for the AI/semis complex",
-      "themes": ["ai", "semis"],
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-worth-6-trillion-now-164400772.html"
+      "source": "barchart.com",
+      "url": "https://www.barchart.com/story/news/3526433/what-will-the-fed-do-with-rates-wednesday"
     }
   ]
 }
