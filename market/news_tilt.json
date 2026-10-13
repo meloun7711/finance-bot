@@ -1,33 +1,41 @@
 {
   "themes": {
+    "energy": 0.3,
     "defense": 0.3,
-    "energy": 0.35,
-    "financials": -0.35
+    "semis": -0.3,
+    "ai": -0.2,
+    "financials": 0.3
   },
   "events": [
     {
-      "headline": "Houthi forces escalate missile/drone attacks on Saudi Aramco facilities in Riyadh, Yanbu and Khurais (Oct 3-4) and renew threats against Saudi oil facilities, airports and aviation on Oct 8, warning employees to stay away from targeted sites",
-      "themes": ["defense", "energy"],
-      "source": "investinglive.com",
-      "url": "https://investinglive.com/news/oil-prices-extend-gains-as-yemen-s-houthis-threaten-broader-saudi-operation-after-attacks-hit-energy-sites/"
+      "headline": "Oil climbs as Mideast conflict and Houthi tanker attacks on Saudi shipping persist, overshadowing Russian diesel supply news",
+      "themes": ["energy", "defense"],
+      "source": "investing.com (Reuters)",
+      "url": "https://investing.com/news/commodities-news/oil-climbs-as-mideast-conflict-tanker-attacks-persist-4942900"
     },
     {
-      "headline": "Bloomberg Markets Wrap (Oct 11): oil swings as Gulf shipping flows stay resilient but Houthi attacks on Saudi Arabia keep supply-disruption risk elevated; dollar edges higher",
+      "headline": "Oil prices retreat as Saudi Arabia pledges to keep exports flowing despite tanker attacks",
       "themes": ["energy"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-11/oil-rises-on-mideast-attacks-dollar-edges-higher-markets-wrap"
+      "source": "oilprice.com",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Retreat-as-Saudi-Arabia-Pledges-to-Keep-Exports-Flowing.html"
     },
     {
-      "headline": "Trump says the US will not attack Iran before next month's midterm elections, easing acute Iran-US war-escalation fears on Oct 10 and helping the S&P 500 rally near record highs, even as the separate Yemen/Saudi Houthi conflict continues",
-      "themes": ["defense"],
-      "source": "riotimesonline.com",
-      "url": "https://www.riotimesonline.com/global-economy-briefing-october-10-2026/"
+      "headline": "S&P 500 pressured by higher oil prices and a memory-chip stock selloff; SK hynix, Seagate, Western Digital fall 6-7%",
+      "themes": ["semis", "energy"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/10/12/stock-market-today-live-updates.html"
     },
     {
-      "headline": "FOMC October 7 minutes describe inflation as elevated with limited recent progress toward the 2% target and signal broad support for another rate hike later in 2026 (no October move); September CPI due Oct 14 is seen rising to ~3.6-3.7% y/y from 3.4%, pressuring rate-sensitive sectors",
+      "headline": "US export curbs cut Nvidia's China AI chip market share to 34% in H1 2026 as Huawei gains ground, per IDC data",
+      "themes": ["ai", "semis"],
+      "source": "newsbytesapp.com",
+      "url": "https://newsbytesapp.com/news/business/us-export-curbs-cut-nvidia-china-ai-share-to-34/tldr"
+    },
+    {
+      "headline": "Bank earnings season opens strong: JPMorgan rallies on raised NII guidance despite EPS miss, Goldman Sachs beats revenue estimates",
       "themes": ["financials"],
-      "source": "barchart.com",
-      "url": "https://www.barchart.com/story/news/3526433/what-will-the-fed-do-with-rates-wednesday"
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/10/11/stock-market-today-live-updates.html"
     }
   ]
 }
