@@ -1,50 +1,34 @@
 {
   "themes": {
-    "semis": -0.4,
-    "ai": -0.2,
-    "financials": 0.3,
-    "tech": -0.2,
-    "healthcare": -0.3,
-    "energy": 0.3,
-    "defense": 0.2,
-    "materials": 0.2
+    "semis": -0.5,
+    "ai": -0.5,
+    "tech": -0.4,
+    "financials": -0.3
   },
   "events": [
     {
-      "headline": "Chip stocks fall again as Micron drops on Chinese DRAM competition fears (ChangXin Memory progress), dragging SK Hynix, Intel, AMD, Marvell",
+      "headline": "Hot September CPI report (+0.6% m/m, +3.7% y/y) released Oct 14 drives S&P 500 (-1.11%) and Nasdaq (-1.88%) down sharply on renewed rate-hike fears; Russell 2000 -1.93%",
+      "themes": ["financials", "tech"],
+      "source": "thestreet.com / washingtonpost.com",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-14-2026"
+    },
+    {
+      "headline": "TSMC posts record Q3 2026 profit (+69% y/y, revenue +16.2% q/q) on 'extremely robust' AI chip demand, but shares fall anyway as investors focus on margin pressure from 2nm ramp and cautious 2027 capex tone",
       "themes": ["semis", "ai"],
-      "source": "bnnbloomberg.ca",
-      "url": "https://bnnbloomberg.ca/markets/2026/10/13/wall-street-mixed-in-early-trading-as-big-us-banks-report-earnings-chip-stocks-fall-again"
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html"
     },
     {
-      "headline": "Big bank earnings mixed: JPMorgan misses EPS but rallies on raised NII guidance; Goldman Sachs beats on profit, as Q3 earnings season opens",
-      "themes": ["financials"],
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-13-211421266.html"
+      "headline": "Broad chip-sector selloff continues: Philadelphia Semiconductor Index -4.3%, Nvidia -3.2%, ASML -3.94% on Oct 14, amid AI capex/debt-sustainability jitters (CoreWeave debt raise, Oracle CDS spike reports)",
+      "themes": ["semis", "ai", "tech"],
+      "source": "tradingkey.com",
+      "url": "https://tradingkey.com/news/market-movers/262217077-market-movers-asml-20261014"
     },
     {
-      "headline": "10-year Treasury yield climbs to ~5.24% as NY Fed's John Williams says one more rate hike is still appropriate this year, pressuring growth/tech stocks",
-      "themes": ["tech", "financials"],
-      "source": "finance.yahoo.com (Bloomberg)",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-13-dow-sp-500-nasdaq-080236234.html"
-    },
-    {
-      "headline": "Johnson & Johnson shares drop roughly 6% after its MedTech division missed sales estimates",
-      "themes": ["healthcare"],
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-midday-oct-13-163402043.html"
-    },
-    {
-      "headline": "Oil stays elevated on persistent Mideast tension (Iran-Israel linked tanker attacks, fading US-Iran peace-deal hopes); Brent topped $105 earlier this week",
-      "themes": ["energy", "defense"],
-      "source": "www.fool.com",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/13/stock-market-today-oct-13-markets-edge-lower-as-earnings-season-kicks-off/"
-    },
-    {
-      "headline": "China's pause on expanded rare-earth/battery-material export controls holds for now but is set to expire Nov 7-10, 2026, keeping supply-chain risk elevated for non-Chinese materials producers",
-      "themes": ["materials"],
-      "source": "clarkhill.com",
-      "url": "https://clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains"
+      "headline": "Non-Magnificent-Seven tech names sell off on concerns they are using excessive debt to fund AI infrastructure buildout; CoreWeave shares fell sharply after a $2B convertible note offering, Oracle down ~9% intraday on Oct 14",
+      "themes": ["ai", "tech"],
+      "source": "finance.yahoo.com / sherwood.news",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-14-dow-sp-500-nasdaq-081136597.html"
     }
   ]
 }
