@@ -6,32 +6,36 @@ _Model output, not advice. Data through 2026-10-14; 243 names. Paper/research si
 - **semis**: -0.50
 - **ai**: -0.50
 - **tech**: -0.40
+- **energy**: +0.35
 - **financials**: -0.30
+- **defense**: +0.30
 
 **Events driving the tilt:**
-- Hot September CPI report (+0.6% m/m, +3.7% y/y) released Oct 14 drives S&P 500 (-1.11%) and Nasdaq (-1.88%) down sharply on renewed rate-hike fears; Russell 2000 -1.93% → _financials, tech_ (thestreet.com / washingtonpost.com)
-- TSMC posts record Q3 2026 profit (+69% y/y, revenue +16.2% q/q) on 'extremely robust' AI chip demand, but shares fall anyway as investors focus on margin pressure from 2nm ramp and cautious 2027 capex tone → _semis, ai_ (cnbc.com)
-- Broad chip-sector selloff continues: Philadelphia Semiconductor Index -4.3%, Nvidia -3.2%, ASML -3.94% on Oct 14, amid AI capex/debt-sustainability jitters (CoreWeave debt raise, Oracle CDS spike reports) → _semis, ai, tech_ (tradingkey.com)
-- Non-Magnificent-Seven tech names sell off on concerns they are using excessive debt to fund AI infrastructure buildout; CoreWeave shares fell sharply after a $2B convertible note offering, Oracle down ~9% intraday on Oct 14 → _ai, tech_ (finance.yahoo.com / sherwood.news)
+- September CPI accelerates to 3.7% y/y (core 2.6%) on surging energy/gasoline costs, released Oct 14; raises odds Fed hikes again at Oct 27-28 meeting instead of holding → _financials_ (cbsnews.com)
+- AI chip stocks lose ~$1.64T in value over six sessions; Nvidia, AMD, Micron hit by AI-financing/debt-sustainability worries (CoreWeave slump) and weak SK Hynix reaction → _ai, semis, tech_ (coinpaper.com)
+- Intel and AMD shares slip premarket Oct 16 after Nvidia unveils new PC processor competing directly in the PC chip market → _semis, tech_ (tipranks.com)
+- Massive Russian missile/drone attack on Ukraine (Oct 14) kills at least 9, damages power infrastructure, cuts electricity to over half a million people in Kyiv → _defense, energy_ (aljazeera.com)
+- Zelensky says Ukraine has resumed strikes on Russian oil refineries ("We've had enough"), adding to Russian export-capacity disruption as Ukraine-US tensions rise over Patriot/Starlink support → _energy, defense_ (cnn.com)
+- Brent crude trading around $105-108/bbl this week, elevated on Middle East tensions and Russia/Venezuela sanctions dynamics → _energy_ (fortune.com)
 
 ## Top 15 — likely UP (news-adjusted)
 | # | Ticker | Decision | Structural | News | Themes |
 |---|--------|---------:|-----------:|-----:|--------|
-| 1 | **VLO** | +0.70 | +0.70 | +0.00 | energy |
-| 2 | **MPC** | +0.70 | +0.70 | +0.00 | energy |
-| 3 | **PSX** | +0.69 | +0.69 | +0.00 | energy |
-| 4 | **FTNT** | +0.67 | +0.67 | +0.00 | cyber |
-| 5 | **OKTA** | +0.65 | +0.65 | +0.00 | cyber |
-| 6 | **TRGP** | +0.64 | +0.64 | +0.00 | energy |
-| 7 | **CRWD** | +0.63 | +0.63 | +0.00 | cyber |
-| 8 | **PANW** | +0.63 | +0.63 | +0.00 | tech,cyber |
-| 9 | **NUE** | +0.62 | +0.62 | +0.00 | materials |
-| 10 | **COP** | +0.61 | +0.61 | +0.00 | energy |
-| 11 | **TGT** | +0.61 | +0.61 | +0.00 | industrial_consumer |
-| 12 | **MRNA** | +0.59 | +0.59 | +0.00 | healthcare |
-| 13 | **XOM** | +0.58 | +0.58 | +0.00 | energy |
-| 14 | **OXY** | +0.57 | +0.57 | +0.00 | energy |
-| 15 | **CVX** | +0.57 | +0.57 | +0.00 | energy |
+| 1 | **VLO** | +0.75 | +0.70 | +0.35 | energy |
+| 2 | **MPC** | +0.75 | +0.70 | +0.35 | energy |
+| 3 | **PSX** | +0.74 | +0.69 | +0.35 | energy |
+| 4 | **TRGP** | +0.69 | +0.64 | +0.35 | energy |
+| 5 | **FTNT** | +0.67 | +0.67 | +0.00 | cyber |
+| 6 | **COP** | +0.67 | +0.61 | +0.35 | energy |
+| 7 | **OKTA** | +0.65 | +0.65 | +0.00 | cyber |
+| 8 | **XOM** | +0.64 | +0.58 | +0.35 | energy |
+| 9 | **CRWD** | +0.63 | +0.63 | +0.00 | cyber |
+| 10 | **OXY** | +0.63 | +0.57 | +0.35 | energy |
+| 11 | **PANW** | +0.63 | +0.63 | +0.00 | tech,cyber |
+| 12 | **CVX** | +0.62 | +0.57 | +0.35 | energy |
+| 13 | **NUE** | +0.62 | +0.62 | +0.00 | materials |
+| 14 | **DVN** | +0.61 | +0.56 | +0.35 | energy |
+| 15 | **EOG** | +0.61 | +0.56 | +0.35 | energy |
 
 ## Bottom 8 — likely DOWN
 - BBAI -0.88 (ai)

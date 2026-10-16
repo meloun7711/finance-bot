@@ -3,32 +3,46 @@
     "semis": -0.5,
     "ai": -0.5,
     "tech": -0.4,
-    "financials": -0.3
+    "financials": -0.3,
+    "energy": 0.35,
+    "defense": 0.3
   },
   "events": [
     {
-      "headline": "Hot September CPI report (+0.6% m/m, +3.7% y/y) released Oct 14 drives S&P 500 (-1.11%) and Nasdaq (-1.88%) down sharply on renewed rate-hike fears; Russell 2000 -1.93%",
-      "themes": ["financials", "tech"],
-      "source": "thestreet.com / washingtonpost.com",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-14-2026"
+      "headline": "September CPI accelerates to 3.7% y/y (core 2.6%) on surging energy/gasoline costs, released Oct 14; raises odds Fed hikes again at Oct 27-28 meeting instead of holding",
+      "themes": ["financials"],
+      "source": "cbsnews.com",
+      "url": "https://www.cbsnews.com/news/september-cpi-report-inflation-energy-costs/"
     },
     {
-      "headline": "TSMC posts record Q3 2026 profit (+69% y/y, revenue +16.2% q/q) on 'extremely robust' AI chip demand, but shares fall anyway as investors focus on margin pressure from 2nm ramp and cautious 2027 capex tone",
-      "themes": ["semis", "ai"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html"
+      "headline": "AI chip stocks lose ~$1.64T in value over six sessions; Nvidia, AMD, Micron hit by AI-financing/debt-sustainability worries (CoreWeave slump) and weak SK Hynix reaction",
+      "themes": ["ai", "semis", "tech"],
+      "source": "coinpaper.com",
+      "url": "https://coinpaper.com/37354/ai-chip-stocks-lose-164-trillion-in-six-sessions-as-nvidia-amd-and-micron-face-renewed-selling-pressure"
     },
     {
-      "headline": "Broad chip-sector selloff continues: Philadelphia Semiconductor Index -4.3%, Nvidia -3.2%, ASML -3.94% on Oct 14, amid AI capex/debt-sustainability jitters (CoreWeave debt raise, Oracle CDS spike reports)",
-      "themes": ["semis", "ai", "tech"],
-      "source": "tradingkey.com",
-      "url": "https://tradingkey.com/news/market-movers/262217077-market-movers-asml-20261014"
+      "headline": "Intel and AMD shares slip premarket Oct 16 after Nvidia unveils new PC processor competing directly in the PC chip market",
+      "themes": ["semis", "tech"],
+      "source": "tipranks.com",
+      "url": "https://www.tipranks.com/news/why-nvidia-stock-is-rising-while-amd-broadcom-and-intel-stocks-are-falling-in-premarket-today-october-16"
     },
     {
-      "headline": "Non-Magnificent-Seven tech names sell off on concerns they are using excessive debt to fund AI infrastructure buildout; CoreWeave shares fell sharply after a $2B convertible note offering, Oracle down ~9% intraday on Oct 14",
-      "themes": ["ai", "tech"],
-      "source": "finance.yahoo.com / sherwood.news",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-14-dow-sp-500-nasdaq-081136597.html"
+      "headline": "Massive Russian missile/drone attack on Ukraine (Oct 14) kills at least 9, damages power infrastructure, cuts electricity to over half a million people in Kyiv",
+      "themes": ["defense", "energy"],
+      "source": "aljazeera.com",
+      "url": "https://www.aljazeera.com/news/2026/10/14/massive-russian-attack-on-ukraine-kills-at-least-six-cuts-power-in-kyiv"
+    },
+    {
+      "headline": "Zelensky says Ukraine has resumed strikes on Russian oil refineries (\"We've had enough\"), adding to Russian export-capacity disruption as Ukraine-US tensions rise over Patriot/Starlink support",
+      "themes": ["energy", "defense"],
+      "source": "cnn.com",
+      "url": "https://www.cnn.com/world/europe/ukraine"
+    },
+    {
+      "headline": "Brent crude trading around $105-108/bbl this week, elevated on Middle East tensions and Russia/Venezuela sanctions dynamics",
+      "themes": ["energy"],
+      "source": "fortune.com",
+      "url": "https://fortune.com/article/price-of-oil-10-15-2026"
     }
   ]
 }
