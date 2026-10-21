@@ -1,1 +1,2 @@
 {"ts": "2026-08-11T02:59:41.997976+00:00", "event": "create", "version": 1, "parent": null, "params": {"gate": 0.33, "max_positions": 20, "exposure": 1.0}, "changed": {}, "reason": "baseline", "perf_before": null}
+{"ts": "2026-10-21T14:35:38.328745+00:00", "event": "adjust", "version": 2, "parent": 1, "params": {"gate": 0.33, "max_positions": 20, "exposure": 0.85}, "changed": {"exposure": [1.0, 0.85]}, "reason": "drawdown -8.3% over 33d \u2014 cut exposure (de-risk)", "perf_before": {"days": 33, "return": -0.0219, "drawdown": -0.0827, "daily_mean": -66.26}}

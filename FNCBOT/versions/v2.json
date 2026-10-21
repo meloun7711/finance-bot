@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "params": {
+    "gate": 0.33,
+    "max_positions": 20,
+    "exposure": 0.85
+  },
+  "parent": 1,
+  "activated": "2026-10-21T14:35:38.328356+00:00",
+  "note": "drawdown -8.3% over 33d \u2014 cut exposure (de-risk)"
+}
