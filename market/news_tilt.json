@@ -1,28 +1,40 @@
 {
   "themes": {
     "energy": 0.4,
-    "defense": 0.5,
-    "semis": 0.4,
-    "ai": 0.3
+    "defense": 0.4,
+    "semis": 0.3,
+    "ai": 0.2
   },
   "events": [
     {
-      "headline": "Brent crude hits five-month high near $112/bbl on Houthi attacks on Saudi infrastructure and a Gulf tanker strike, before easing to ~$108.79 as markets weigh a possible US waiver on Russian energy sanctions",
-      "themes": ["energy", "defense"],
+      "headline": "WTI and Brent crude rise on Middle East supply worries (Brent ~$108.82, WTI ~$97.15), even as markets weigh a possible US waiver easing Russia oil/gas sanctions",
+      "themes": ["energy"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/amp/2026/10/20/oil-eases-as-markets-assess-potential-waiver-on-russian-energy-middle-east-supply-risks.html"
+      "url": "https://cnbc.com/2026/10/21/oil-price-today-wti-brent-rise-on-middle-east-worries.html"
     },
     {
-      "headline": "Putin proposes three-way Ukraine summit with Trump and Xi, excluding Zelenskyy, as Russian strikes hit Ukrainian energy infrastructure overnight, leaving roughly 550,000 households without power",
-      "themes": ["defense"],
+      "headline": "Brent tops $109 after Houthi militants claim attacks on Saudi airports and Aramco facilities; Ukraine drone strikes hit Russian oil terminal/depot in St. Petersburg",
+      "themes": ["defense", "energy"],
       "source": "cnbc.com",
-      "url": "https://cnbc.com/2026/10/19/putin-trump-xi-ukraine-war-energy.html"
+      "url": "https://www.cnbc.com/2026/10/18/oil-price-today-ukraine-russia-iran-strait-hormuz.html"
     },
     {
       "headline": "ByteDance, Alibaba and Tencent place over $35B in orders for Nvidia's new export-compliant RTX PRO 5500 GPU, though Nvidia warns it cannot fill full demand due to production constraints",
       "themes": ["semis", "ai"],
       "source": "taipeitimes.com",
       "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
+    },
+    {
+      "headline": "Markets now price only ~15% odds of an October 28 Fed rate hike (down from ~70% weeks earlier) after a weak September jobs report, though Chair Warsh hasn't ruled out a surprise amid persistent inflation concerns",
+      "themes": ["financials"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html"
+    },
+    {
+      "headline": "China's one-year pause on sweeping rare-earth export controls (agreed at the Oct 2025 Trump-Xi Busan truce) is set to expire Nov 10, 2026; outcome of renewed Trump-Xi talks on extending or easing it remains unconfirmed",
+      "themes": ["materials"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/amp/2026/09/23/trump-xi-china-summit-allies.html"
     }
   ]
 }
