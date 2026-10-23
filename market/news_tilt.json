@@ -1,40 +1,35 @@
 {
   "themes": {
-    "energy": 0.4,
-    "defense": 0.4,
-    "semis": 0.3,
-    "ai": 0.2
+    "energy": 0.5,
+    "defense": 0.3,
+    "ai": -0.4,
+    "semis": -0.5,
+    "financials": 0.2
   },
   "events": [
     {
-      "headline": "WTI and Brent crude rise on Middle East supply worries (Brent ~$108.82, WTI ~$97.15), even as markets weigh a possible US waiver easing Russia oil/gas sanctions",
-      "themes": ["energy"],
-      "source": "cnbc.com",
-      "url": "https://cnbc.com/2026/10/21/oil-price-today-wti-brent-rise-on-middle-east-worries.html"
+      "headline": "Nasdaq 100 posts its worst day since June as chipmakers drop nearly 7%, driven by renewed AI-capex/debt concerns after Meta signaled higher spending plans",
+      "themes": ["ai", "semis"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-22/stock-market-today-dow-s-p-live-updates"
     },
     {
-      "headline": "Brent tops $109 after Houthi militants claim attacks on Saudi airports and Aramco facilities; Ukraine drone strikes hit Russian oil terminal/depot in St. Petersburg",
-      "themes": ["defense", "energy"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/10/18/oil-price-today-ukraine-russia-iran-strait-hormuz.html"
+      "headline": "Oil extends gains (WTI near $98-99, Brent near $111) on Saudi-Iran supply worries as Middle East tensions persist and US crude inventories fall more than expected",
+      "themes": ["energy", "defense"],
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-22/stock-market-today-dow-s-p-live-updates"
     },
     {
-      "headline": "ByteDance, Alibaba and Tencent place over $35B in orders for Nvidia's new export-compliant RTX PRO 5500 GPU, though Nvidia warns it cannot fill full demand due to production constraints",
-      "themes": ["semis", "ai"],
-      "source": "taipeitimes.com",
-      "url": "https://www.taipeitimes.com/News/biz/archives/2026/10/21/2003866323"
-    },
-    {
-      "headline": "Markets now price only ~15% odds of an October 28 Fed rate hike (down from ~70% weeks earlier) after a weak September jobs report, though Chair Warsh hasn't ruled out a surprise amid persistent inflation concerns",
+      "headline": "10-year Treasury yield falls to ~4.95% as markets price in roughly 80% odds the Fed holds rates at the Oct 28 FOMC meeting; Chair Warsh has declined to pre-commit",
       "themes": ["financials"],
       "source": "cnbc.com",
       "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html"
     },
     {
-      "headline": "China's one-year pause on sweeping rare-earth export controls (agreed at the Oct 2025 Trump-Xi Busan truce) is set to expire Nov 10, 2026; outcome of renewed Trump-Xi talks on extending or easing it remains unconfirmed",
-      "themes": ["materials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/amp/2026/09/23/trump-xi-china-summit-allies.html"
+      "headline": "Security firm Lava reports finding Nvidia Blackwell Ultra B300 GPUs tied to IP addresses linked to China Telecom, raising export-control compliance questions (unconfirmed whether chips are physically in China; Nvidia says it follows export rules)",
+      "themes": ["semis", "ai"],
+      "source": "digitimes.com",
+      "url": "https://www.digitimes.com/news/a20261023VL220/nvidia-chips-security-blackwell-china-telecom.html"
     }
   ]
 }
