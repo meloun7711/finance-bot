@@ -1,35 +1,36 @@
 {
   "themes": {
-    "energy": 0.5,
-    "defense": 0.3,
-    "ai": -0.4,
-    "semis": -0.5,
-    "financials": 0.2
+    "energy": 0.4,
+    "defense": 0.4,
+    "materials": 0.3,
+    "ai": -0.3,
+    "semis": -0.3,
+    "financials": -0.2
   },
   "events": [
     {
-      "headline": "Nasdaq 100 posts its worst day since June as chipmakers drop nearly 7%, driven by renewed AI-capex/debt concerns after Meta signaled higher spending plans",
-      "themes": ["ai", "semis"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-22/stock-market-today-dow-s-p-live-updates"
-    },
-    {
-      "headline": "Oil extends gains (WTI near $98-99, Brent near $111) on Saudi-Iran supply worries as Middle East tensions persist and US crude inventories fall more than expected",
+      "headline": "Oil trades near six-month highs (Brent ~$111-115, WTI ~$100) as the Iran war continues to disrupt flows through the Strait of Hormuz and a September 11 strike on the Saudi East-West pipeline keeps supply risk elevated; OPEC+ output remains well below targets per IEA's October report",
       "themes": ["energy", "defense"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-22/stock-market-today-dow-s-p-live-updates"
+      "source": "reuters.com (via CNBC market wrap)",
+      "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html"
     },
     {
-      "headline": "10-year Treasury yield falls to ~4.95% as markets price in roughly 80% odds the Fed holds rates at the Oct 28 FOMC meeting; Chair Warsh has declined to pre-commit",
+      "headline": "Nvidia, AMD and Intel shares retreated again in late-October trading as AI-capex/debt financing fears and losses among Asian chip suppliers weighed on the sector's recovery",
+      "themes": ["ai", "semis"],
+      "source": "invezz.com",
+      "url": "https://invezz.com/news/2026/10/20/nvidia-amd-and-intel-stocks-fall-again-in-premarket-what-went-wrong-overnight/"
+    },
+    {
+      "headline": "TSMC is surveying suppliers for rare-earth-free factory-automation equipment as China's rare-earth/battery-material export-control suspension (in place since Nov 2025) is set to expire November 10, 2026, raising the prospect of renewed curbs on chip-supply-chain inputs",
+      "themes": ["materials", "semis"],
+      "source": "japantimes.co.jp",
+      "url": "https://www.japantimes.co.jp/business/2026/10/22/tsmc-rare-earths-supply/"
+    },
+    {
+      "headline": "Markets price roughly 90% odds the Fed holds its benchmark rate at 3.75%-4.00% at the October 27-28 FOMC meeting, with officials striking a cautious/hawkish tone and little chance of a near-term cut",
       "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html"
-    },
-    {
-      "headline": "Security firm Lava reports finding Nvidia Blackwell Ultra B300 GPUs tied to IP addresses linked to China Telecom, raising export-control compliance questions (unconfirmed whether chips are physically in China; Nvidia says it follows export rules)",
-      "themes": ["semis", "ai"],
-      "source": "digitimes.com",
-      "url": "https://www.digitimes.com/news/a20261023VL220/nvidia-chips-security-blackwell-china-telecom.html"
+      "source": "admiralmarkets.com",
+      "url": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"
     }
   ]
 }
