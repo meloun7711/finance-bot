@@ -1,60 +1,62 @@
-# FNCBOT Decisions — 2026-10-23
+# FNCBOT Decisions — 2026-10-26
 
-_Model output, not advice. Data through 2026-10-23; 243 names. Paper/research signals for review — not auto-executed._
+_Model output, not advice. Data through 2026-10-26; 243 names. Paper/research signals for review — not auto-executed._
 
 ## News tilt (from headlines, bounded)
-- **energy**: +0.40
+- **ai**: +0.60
+- **semis**: +0.60
 - **defense**: +0.40
-- **materials**: +0.30
-- **ai**: -0.30
-- **semis**: -0.30
-- **financials**: -0.20
+- **energy**: +0.40
+- **materials**: +0.20
+- **financials**: +0.10
 
 **Events driving the tilt:**
-- Oil trades near six-month highs (Brent ~$111-115, WTI ~$100) as the Iran war continues to disrupt flows through the Strait of Hormuz and a September 11 strike on the Saudi East-West pipeline keeps supply risk elevated; OPEC+ output remains well below targets per IEA's October report → _energy, defense_ (reuters.com (via CNBC market wrap))
-- Nvidia, AMD and Intel shares retreated again in late-October trading as AI-capex/debt financing fears and losses among Asian chip suppliers weighed on the sector's recovery → _ai, semis_ (invezz.com)
-- TSMC is surveying suppliers for rare-earth-free factory-automation equipment as China's rare-earth/battery-material export-control suspension (in place since Nov 2025) is set to expire November 10, 2026, raising the prospect of renewed curbs on chip-supply-chain inputs → _materials, semis_ (japantimes.co.jp)
-- Markets price roughly 90% odds the Fed holds its benchmark rate at 3.75%-4.00% at the October 27-28 FOMC meeting, with officials striking a cautious/hawkish tone and little chance of a near-term cut → _financials_ (admiralmarkets.com)
+- Russia launched a mixed missile/drone barrage (~140 drones) on Ukraine overnight Oct 25-26 while rejecting ceasefire terms Zelensky proposed; Ukraine struck Russian munitions plants in Yelets and at the Energiya facility, keeping the war's intensity elevated with no near-term resolution → _defense_ (kyivindependent.com / criticalthreats.org (ISW))
+- Yemen's Houthis struck Saudi Aramco facilities near Riyadh and Khurais with missiles and drones in early October, part of a broader pattern of Mideast supply-chain attacks that, combined with the ongoing US-Iran conflict and new Russia oil-sanctions risk, has pushed Brent crude to six-month highs (~$114-116/bbl) → _defense, energy_ (reuters.com (via Zawya))
+- Oil settled near six-month highs Monday (Brent $115.81, WTI $101.76) as traders weigh Mideast attack risk and looming Russia oil sanctions against hopes of Ukraine de-escalation; US SPR stocks fell to their lowest level since 1982 → _energy_ (reuters.com (via CNBC market wrap))
+- Wall Street banks and Blackstone lined up $63B to finance Broadcom AI chips/networking gear for Anthropic, and Meta raised its planned equity offering to $97.5B with Nvidia, AMD and Broadcom pledging up to $5B combined; chip stocks rallied broadly (Nvidia +2.4%, AMD +2.8%, Micron +3.0%, Broadcom +2.3%) on renewed AI-buildout optimism following Anthropic's IPO filing → _ai, semis_ (reuters.com (via marketscreener.com / Yahoo Finance))
+- China's temporary suspension of rare-earth and lithium-battery-material export controls is set to expire November 10, 2026 with no extension announced yet, leaving chip and battery supply chains exposed to renewed curbs → _materials_ (technology.org)
+- The Fed's Oct 27-28 FOMC meeting is widely expected to hold the benchmark rate at 3.75%-4.00% (CME FedWatch ~83-91% odds of a hold; a Reuters poll found 94/100 economists expect a hold), tempering near-term rate-hike risk → _financials_ (raisin.com (citing Reuters poll / CME FedWatch))
 
 ## Top 15 — likely UP (news-adjusted)
 | # | Ticker | Decision | Structural | News | Themes |
 |---|--------|---------:|-----------:|-----:|--------|
 | 1 | **MPC** | +0.74 | +0.68 | +0.40 | energy |
-| 2 | **VLO** | +0.73 | +0.67 | +0.40 | energy |
-| 3 | **PSX** | +0.73 | +0.67 | +0.40 | energy |
+| 2 | **PSX** | +0.73 | +0.67 | +0.40 | energy |
+| 3 | **VLO** | +0.73 | +0.67 | +0.40 | energy |
 | 4 | **TRGP** | +0.71 | +0.65 | +0.40 | energy |
-| 5 | **NUE** | +0.67 | +0.63 | +0.30 | materials |
-| 6 | **COP** | +0.66 | +0.60 | +0.40 | energy |
-| 7 | **FTNT** | +0.66 | +0.66 | +0.00 | cyber |
-| 8 | **DVN** | +0.64 | +0.58 | +0.40 | energy |
-| 9 | **OKTA** | +0.63 | +0.63 | +0.00 | cyber |
-| 10 | **XOM** | +0.63 | +0.57 | +0.40 | energy |
-| 11 | **CRWD** | +0.63 | +0.63 | +0.00 | cyber |
-| 12 | **PANW** | +0.62 | +0.62 | +0.00 | tech,cyber |
-| 13 | **EOG** | +0.62 | +0.56 | +0.40 | energy |
-| 14 | **OXY** | +0.62 | +0.56 | +0.40 | energy |
-| 15 | **CVX** | +0.60 | +0.54 | +0.40 | energy |
+| 5 | **TWLO** | +0.71 | +0.62 | +0.60 | ai |
+| 6 | **AMD** | +0.70 | +0.61 | +0.60 | ai,semis |
+| 7 | **DELL** | +0.69 | +0.60 | +0.60 | ai |
+| 8 | **SLAB** | +0.68 | +0.59 | +0.60 | semis |
+| 9 | **MU** | +0.68 | +0.59 | +0.60 | semis |
+| 10 | **MRVL** | +0.68 | +0.59 | +0.60 | semis |
+| 11 | **FTNT** | +0.67 | +0.67 | +0.00 | cyber |
+| 12 | **INTC** | +0.66 | +0.57 | +0.60 | semis |
+| 13 | **TXN** | +0.66 | +0.57 | +0.60 | semis |
+| 14 | **AEHR** | +0.64 | +0.55 | +0.60 | semis |
+| 15 | **CRWD** | +0.64 | +0.64 | +0.00 | cyber |
 
 ## Bottom 8 — likely DOWN
-- SOUN -0.84 (ai)
-- BBAI -0.83 (ai)
-- APP -0.79 (ai)
-- INDI -0.79 (semis)
-- JOBY -0.79 (space)
 - LAES -0.79 (quantum)
-- RGTI -0.78 (quantum)
+- JOBY -0.79 (space)
+- RGTI -0.79 (quantum)
 - BSX -0.76 (healthcare)
+- ACHR -0.76 (space)
+- QBTS -0.75 (quantum)
+- INTU -0.75 (tech)
+- QUBT -0.74 (quantum)
 
 ## Dip-in-uptrend (strong long-term, pulling back now)
-- **DELL** — 20d -18.8%, -22.2% off recent high
-- **MU** — 20d -18.4%, -19.6% off recent high
-- **AMD** — 20d -17.8%, -20.2% off recent high
-- **ANET** — 20d -15.7%, -19.7% off recent high
-- **MRVL** — 20d -12.8%, -20.6% off recent high
-- **NET** — 20d -9.8%, -12.8% off recent high
-- **DE** — 20d -7.7%, -10.3% off recent high
-- **TSM** — 20d -7.2%, -14.0% off recent high
-- **SNOW** — 20d -5.6%, -14.0% off recent high
-- **MRK** — 20d -3.4%, -7.5% off recent high
-- **JNJ** — 20d -2.8%, -5.4% off recent high
-- **TGT** — 20d -2.6%, -9.7% off recent high
+- **MU** — 20d -15.7%, -19.1% off recent high
+- **DELL** — 20d -15.2%, -21.7% off recent high
+- **AMD** — 20d -15.0%, -20.4% off recent high
+- **ANET** — 20d -14.6%, -19.3% off recent high
+- **ASML** — 20d -10.1%, -15.4% off recent high
+- **FCX** — 20d -9.7%, -18.7% off recent high
+- **MRVL** — 20d -9.6%, -20.8% off recent high
+- **DE** — 20d -8.1%, -10.7% off recent high
+- **TSM** — 20d -7.0%, -13.4% off recent high
+- **NVDA** — 20d -6.2%, -10.2% off recent high
+- **TGT** — 20d -4.0%, -10.4% off recent high
+- **MRK** — 20d -3.0%, -7.3% off recent high
