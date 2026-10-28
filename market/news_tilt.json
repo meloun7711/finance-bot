@@ -1,48 +1,36 @@
 {
   "themes": {
-    "defense": 0.4,
+    "ai": 0.5,
+    "semis": 0.5,
     "energy": 0.4,
-    "materials": 0.2,
-    "ai": 0.6,
-    "semis": 0.6,
-    "financials": 0.1
+    "defense": 0.3,
+    "financials": 0.1,
+    "materials": -0.2
   },
   "events": [
     {
-      "headline": "Russia launched a mixed missile/drone barrage (~140 drones) on Ukraine overnight Oct 25-26 while rejecting ceasefire terms Zelensky proposed; Ukraine struck Russian munitions plants in Yelets and at the Energiya facility, keeping the war's intensity elevated with no near-term resolution",
-      "themes": ["defense"],
-      "source": "kyivindependent.com / criticalthreats.org (ISW)",
-      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-october-26-2026"
-    },
-    {
-      "headline": "Yemen's Houthis struck Saudi Aramco facilities near Riyadh and Khurais with missiles and drones in early October, part of a broader pattern of Mideast supply-chain attacks that, combined with the ongoing US-Iran conflict and new Russia oil-sanctions risk, has pushed Brent crude to six-month highs (~$114-116/bbl)",
-      "themes": ["defense", "energy"],
-      "source": "reuters.com (via Zawya)",
-      "url": "https://www.zawya.com/en/world/yemens-houthis-say-they-struck-saudi-aramco-sites-in-riyadh-khurais-1498480"
-    },
-    {
-      "headline": "Oil settled near six-month highs Monday (Brent $115.81, WTI $101.76) as traders weigh Mideast attack risk and looming Russia oil sanctions against hopes of Ukraine de-escalation; US SPR stocks fell to their lowest level since 1982",
-      "themes": ["energy"],
-      "source": "reuters.com (via CNBC market wrap)",
-      "url": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
-    },
-    {
-      "headline": "Wall Street banks and Blackstone lined up $63B to finance Broadcom AI chips/networking gear for Anthropic, and Meta raised its planned equity offering to $97.5B with Nvidia, AMD and Broadcom pledging up to $5B combined; chip stocks rallied broadly (Nvidia +2.4%, AMD +2.8%, Micron +3.0%, Broadcom +2.3%) on renewed AI-buildout optimism following Anthropic's IPO filing",
+      "headline": "Bank of America, Blackstone, Citi and Morgan Stanley arranged a $63B financing package (banks weighing ~$21B in bonds) for a special-purpose vehicle to buy Broadcom XPU AI accelerators and networking gear and lease them to Anthropic; Anthropic filed its S-1 to list on Nasdaq (ticker ANT) on Oct 26. Broadcom rose ~3-4%, AMD/Nvidia edged higher, CoreWeave jumped ~8% on Oct 27",
       "themes": ["ai", "semis"],
-      "source": "reuters.com (via marketscreener.com / Yahoo Finance)",
-      "url": "https://www.marketscreener.com/news/wall-street-banks-blackstone-line-up-63-billion-to-finance-broadcom-chips-for-anthropic-ce785cdcde8dff27"
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-27/banks-eye-21-billion-of-bonds-for-broadcom-chip-financing-deal"
     },
     {
-      "headline": "China's temporary suspension of rare-earth and lithium-battery-material export controls is set to expire November 10, 2026 with no extension announced yet, leaving chip and battery supply chains exposed to renewed curbs",
+      "headline": "Brent crude hit roughly $115/bbl on Oct 23, its highest since June 2022, as traders priced in reported US/Israeli plans for renewed strikes on Iran after the US midterms, continued Houthi attacks on Saudi energy and military targets, and a State Department evacuation order for non-essential personnel in Saudi Arabia",
+      "themes": ["energy", "defense"],
+      "source": "tradingeconomics.com",
+      "url": "https://tradingeconomics.com/commodity/brent-crude-oil/news/594684"
+    },
+    {
+      "headline": "A Reuters poll (94/100 economists) and CME FedWatch pricing (~83-91% odds) point to the Fed holding its benchmark rate at 3.75%-4.00% at the Oct 27-28 FOMC meeting concluding today, though markets see materially higher odds (~70%+) of a hike resuming in December given still-elevated inflation",
+      "themes": ["financials"],
+      "source": "raisin.com",
+      "url": "https://www.raisin.com/en-us/news/pre-fomc-preview-positioning-cash-october-2026/"
+    },
+    {
+      "headline": "China's suspension of expanded export controls on rare-earth and lithium-battery materials is set to lapse November 10, 2026 with no extension yet announced, leaving chip and battery supply chains exposed to renewed curbs within weeks",
       "themes": ["materials"],
       "source": "technology.org",
       "url": "https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/"
-    },
-    {
-      "headline": "The Fed's Oct 27-28 FOMC meeting is widely expected to hold the benchmark rate at 3.75%-4.00% (CME FedWatch ~83-91% odds of a hold; a Reuters poll found 94/100 economists expect a hold), tempering near-term rate-hike risk",
-      "themes": ["financials"],
-      "source": "raisin.com (citing Reuters poll / CME FedWatch)",
-      "url": "https://www.raisin.com/en-us/news/pre-fomc-preview-positioning-cash-october-2026/"
     }
   ]
 }
