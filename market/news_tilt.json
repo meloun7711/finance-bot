@@ -1,36 +1,42 @@
 {
   "themes": {
-    "ai": 0.5,
-    "semis": 0.5,
-    "energy": 0.4,
-    "defense": 0.3,
-    "financials": 0.1,
-    "materials": -0.2
+    "financials": -0.2,
+    "energy": 0.3,
+    "materials": 0.4,
+    "semis": 0.2,
+    "ai": 0.15,
+    "defense": -0.2
   },
   "events": [
     {
-      "headline": "Bank of America, Blackstone, Citi and Morgan Stanley arranged a $63B financing package (banks weighing ~$21B in bonds) for a special-purpose vehicle to buy Broadcom XPU AI accelerators and networking gear and lease them to Anthropic; Anthropic filed its S-1 to list on Nasdaq (ticker ANT) on Oct 26. Broadcom rose ~3-4%, AMD/Nvidia edged higher, CoreWeave jumped ~8% on Oct 27",
-      "themes": ["ai", "semis"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-27/banks-eye-21-billion-of-bonds-for-broadcom-chip-financing-deal"
-    },
-    {
-      "headline": "Brent crude hit roughly $115/bbl on Oct 23, its highest since June 2022, as traders priced in reported US/Israeli plans for renewed strikes on Iran after the US midterms, continued Houthi attacks on Saudi energy and military targets, and a State Department evacuation order for non-essential personnel in Saudi Arabia",
-      "themes": ["energy", "defense"],
-      "source": "tradingeconomics.com",
-      "url": "https://tradingeconomics.com/commodity/brent-crude-oil/news/594684"
-    },
-    {
-      "headline": "A Reuters poll (94/100 economists) and CME FedWatch pricing (~83-91% odds) point to the Fed holding its benchmark rate at 3.75%-4.00% at the Oct 27-28 FOMC meeting concluding today, though markets see materially higher odds (~70%+) of a hike resuming in December given still-elevated inflation",
+      "headline": "Fed holds rates steady in 10-2 split vote; Warsh says inflation fight 'unfinished', two officials dissented for a hike",
       "themes": ["financials"],
-      "source": "raisin.com",
-      "url": "https://www.raisin.com/en-us/news/pre-fomc-preview-positioning-cash-october-2026/"
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/10/28/fed-meeting-today-live-updates.html"
     },
     {
-      "headline": "China's suspension of expanded export controls on rare-earth and lithium-battery materials is set to lapse November 10, 2026 with no extension yet announced, leaving chip and battery supply chains exposed to renewed curbs within weeks",
+      "headline": "China's rare-earth export control pause nears Nov. 10 expiry with no renewal notice published yet",
       "themes": ["materials"],
-      "source": "technology.org",
-      "url": "https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/"
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/china-rare-earth-export-pause-123614106.html"
+    },
+    {
+      "headline": "Oil holds near multi-week highs as markets weigh a Russia-sanctions waiver against Middle East supply risk",
+      "themes": ["energy"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/amp/2026/10/20/oil-eases-as-markets-assess-potential-waiver-on-russian-energy-middle-east-supply-risks.html"
+    },
+    {
+      "headline": "US approves Nvidia H200 chip exports to China with conditions, though shipments stall amid Beijing scrutiny",
+      "themes": ["ai", "semis"],
+      "source": "nbcnews.com",
+      "url": "https://www.nbcnews.com/world/asia/us-approves-nvidia-h200-chip-exports-china-conditions-rcna253948"
+    },
+    {
+      "headline": "Trump says a Putin-Zelensky meeting will be set up 'very soon' amid fragile Ukraine peace push",
+      "themes": ["defense"],
+      "source": "business-standard.com",
+      "url": "https://www.business-standard.com/amp/world-news/trump-says-putin-zelenskyy-meeting-will-be-set-up-soon-to-end-ukraine-war-126102802038_1.html"
     }
   ]
 }
