@@ -1,42 +1,28 @@
 {
   "themes": {
-    "financials": -0.2,
-    "energy": 0.3,
-    "materials": 0.4,
-    "semis": 0.2,
-    "ai": 0.15,
-    "defense": -0.2
+    "financials": -0.15,
+    "materials": 0.3,
+    "semis": -0.3,
+    "ai": -0.15
   },
   "events": [
     {
-      "headline": "Fed holds rates steady in 10-2 split vote; Warsh says inflation fight 'unfinished', two officials dissented for a hike",
+      "headline": "Fed holds rates steady at 3.75%-4.00% in 10-2 vote (Oct 28); Chair Warsh signals inflation fight 'unfinished', markets price possible December move",
       "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/10/28/fed-meeting-today-live-updates.html"
+      "source": "admiralmarkets.com",
+      "url": "https://admiralmarkets.com/analytics/traders-blog/fomc-october-2026-fed-holds-rates"
     },
     {
-      "headline": "China's rare-earth export control pause nears Nov. 10 expiry with no renewal notice published yet",
+      "headline": "China's suspended rare-earth/lithium-battery export controls nears Nov. 10 expiry; Beijing has not published renewal text despite US claim of trade truce extension to Jan. 10, 2027",
       "themes": ["materials"],
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/markets/commodities/articles/china-rare-earth-export-pause-123614106.html"
+      "source": "fxstreet.com",
+      "url": "https://www.fxstreet.com/analysis/chinas-rare-earth-leverage-has-an-expiration-date-november-10-heres-what-beijing-is-deciding-202610141348"
     },
     {
-      "headline": "Oil holds near multi-week highs as markets weigh a Russia-sanctions waiver against Middle East supply risk",
-      "themes": ["energy"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/amp/2026/10/20/oil-eases-as-markets-assess-potential-waiver-on-russian-energy-middle-east-supply-risks.html"
-    },
-    {
-      "headline": "US approves Nvidia H200 chip exports to China with conditions, though shipments stall amid Beijing scrutiny",
+      "headline": "Nvidia CEO Jensen Huang defends ties to Megaspeed after NYT report on exec under US spying probe; comes as Nvidia's China data-center chip share fell to ~34% in H1 2026 per IDC data",
       "themes": ["ai", "semis"],
-      "source": "nbcnews.com",
-      "url": "https://www.nbcnews.com/world/asia/us-approves-nvidia-h200-chip-exports-china-conditions-rcna253948"
-    },
-    {
-      "headline": "Trump says a Putin-Zelensky meeting will be set up 'very soon' amid fragile Ukraine peace push",
-      "themes": ["defense"],
-      "source": "business-standard.com",
-      "url": "https://www.business-standard.com/amp/world-news/trump-says-putin-zelenskyy-meeting-will-be-set-up-soon-to-end-ukraine-war-126102802038_1.html"
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-29/nvidia-ceo-says-ties-to-company-under-spying-probe-were-normal"
     }
   ]
 }
