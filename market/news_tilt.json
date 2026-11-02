@@ -1,25 +1,39 @@
 {
   "themes": {
-    "financials": -0.15,
+    "energy": 0.4,
+    "defense": 0.3,
     "materials": 0.3,
-    "semis": -0.3,
-    "ai": -0.15
+    "financials": -0.15,
+    "semis": -0.2,
+    "ai": -0.1
   },
   "events": [
     {
-      "headline": "Fed holds rates steady at 3.75%-4.00% in 10-2 vote (Oct 28); Chair Warsh signals inflation fight 'unfinished', markets price possible December move",
-      "themes": ["financials"],
-      "source": "admiralmarkets.com",
-      "url": "https://admiralmarkets.com/analytics/traders-blog/fomc-october-2026-fed-holds-rates"
+      "headline": "OPEC+ agrees in principle to keep oil output targets steady for December (Nov 1 meeting); Gulf producers already pumping below quotas amid Iran-war disruption to flows",
+      "themes": ["energy"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/amp/2026/10/31/opec-oil-output-targets-december.html"
     },
     {
-      "headline": "China's suspended rare-earth/lithium-battery export controls nears Nov. 10 expiry; Beijing has not published renewal text despite US claim of trade truce extension to Jan. 10, 2027",
+      "headline": "Strait of Hormuz tanker attacks escalate through late October; UKMTO (UK maritime trade authority) independently confirms a tanker struck by an unknown projectile on Oct. 22, while Iranian claims of additional mine strikes remain unverified by independent sources",
+      "themes": ["energy", "defense"],
+      "source": "gcaptain.com",
+      "url": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/"
+    },
+    {
+      "headline": "China's suspension of expanded rare-earth/lithium-battery export controls nears Nov. 10 expiry with no renewal announced; Trump-Xi summit left the Nov. 10 deadline intact, keeping supply-chain risk elevated for non-Chinese materials producers",
       "themes": ["materials"],
-      "source": "fxstreet.com",
-      "url": "https://www.fxstreet.com/analysis/chinas-rare-earth-leverage-has-an-expiration-date-november-10-heres-what-beijing-is-deciding-202610141348"
+      "source": "procyonmetals.com",
+      "url": "https://www.procyonmetals.com/en/blog/trump-xi-summit-leaves-china-rare-earth-export-controls-and-the-10-november-deadline-intact"
     },
     {
-      "headline": "Nvidia CEO Jensen Huang defends ties to Megaspeed after NYT report on exec under US spying probe; comes as Nvidia's China data-center chip share fell to ~34% in H1 2026 per IDC data",
+      "headline": "Fed held rates at 3.75%-4.00% on Oct. 28 under Chair Warsh; CME FedWatch-style odds of a December hike sit roughly 78-85%, keeping a hawkish tilt priced into rates markets",
+      "themes": ["financials"],
+      "source": "investinglive.com",
+      "url": "https://investinglive.com/central-banks/much-ado-about-nothing-fed-chair-warsh-talks-up-a-storm-but-december-rate-hike-bets-barely-budge/"
+    },
+    {
+      "headline": "Nvidia CEO Jensen Huang defends ties to Megaspeed after report on an executive under a US spying probe, as Nvidia's China data-center chip market share fell to roughly 34% in H1 2026",
       "themes": ["ai", "semis"],
       "source": "bloomberg.com",
       "url": "https://www.bloomberg.com/news/articles/2026-10-29/nvidia-ceo-says-ties-to-company-under-spying-probe-were-normal"
