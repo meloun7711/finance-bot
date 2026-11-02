@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "params": {
+    "gate": 0.33,
+    "max_positions": 20,
+    "exposure": 1.0
+  },
+  "parent": 2,
+  "activated": "2026-11-02T14:35:39.761392+00:00",
+  "note": "v2 daily P&L -488.11 < parent v1 -66.26 \u2014 rolled back"
+}
