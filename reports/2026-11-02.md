@@ -3,54 +3,52 @@
 _Model output, not advice. Data through 2026-11-02; 243 names. Paper/research signals for review — not auto-executed._
 
 ## News tilt (from headlines, bounded)
-- **energy**: +0.40
-- **defense**: +0.30
-- **materials**: +0.30
-- **semis**: -0.20
-- **financials**: -0.15
-- **ai**: -0.10
+- **energy**: -0.40
+- **ai**: -0.40
+- **semis**: -0.40
+- **tech**: -0.30
+- **financials**: +0.30
+- **industrial_consumer**: +0.20
 
 **Events driving the tilt:**
-- OPEC+ agrees in principle to keep oil output targets steady for December (Nov 1 meeting); Gulf producers already pumping below quotas amid Iran-war disruption to flows → _energy_ (cnbc.com)
-- Strait of Hormuz tanker attacks escalate through late October; UKMTO (UK maritime trade authority) independently confirms a tanker struck by an unknown projectile on Oct. 22, while Iranian claims of additional mine strikes remain unverified by independent sources → _energy, defense_ (gcaptain.com)
-- China's suspension of expanded rare-earth/lithium-battery export controls nears Nov. 10 expiry with no renewal announced; Trump-Xi summit left the Nov. 10 deadline intact, keeping supply-chain risk elevated for non-Chinese materials producers → _materials_ (procyonmetals.com)
-- Fed held rates at 3.75%-4.00% on Oct. 28 under Chair Warsh; CME FedWatch-style odds of a December hike sit roughly 78-85%, keeping a hawkish tilt priced into rates markets → _financials_ (investinglive.com)
-- Nvidia CEO Jensen Huang defends ties to Megaspeed after report on an executive under a US spying probe, as Nvidia's China data-center chip market share fell to roughly 34% in H1 2026 → _ai, semis_ (bloomberg.com)
+- Oil posts sharpest one-day drop in three months (Mon Nov 2): Brent fell 7.6% to $104.77/bbl, WTI fell 7.3% to $96.46/bbl, on a string of Iran headlines raising hopes the conflict ends without further escalation → _energy_ (spectrumlocalnews.com)
+- Nasdaq Composite fell into technical correction territory Tue Nov 3 as AI-capex doubts resurfaced; Marvell dropped ~12% on reported $221B all-stock talks to acquire Lumentum, Oracle fell ~8% on plans to raise $10B in stock and $10B in bonds to fund AI spending → _ai, semis, tech_ (finance.yahoo.com)
+- Dow rose ~0.41% Tue Nov 3 even as S&P 500 (-0.51%) and Nasdaq (-1.07%) fell, as investors rotated into industrial, financial and value stocks away from large-cap AI/tech names ahead of US midterm election results → _financials, industrial_consumer_ (stocktitan.net)
+- Apple shares slipped after fiscal Q4 earnings as iPhone sales beat but Greater China revenue missed estimates, adding to tech-sector weakness → _tech_ (finance.yahoo.com)
 
 ## Top 15 — likely UP (news-adjusted)
 | # | Ticker | Decision | Structural | News | Themes |
 |---|--------|---------:|-----------:|-----:|--------|
-| 1 | **MPC** | +0.72 | +0.66 | +0.40 | energy |
-| 2 | **PSX** | +0.72 | +0.66 | +0.40 | energy |
-| 3 | **TRGP** | +0.71 | +0.65 | +0.40 | energy |
-| 4 | **VLO** | +0.70 | +0.64 | +0.40 | energy |
-| 5 | **NUE** | +0.66 | +0.62 | +0.30 | materials |
-| 6 | **COP** | +0.63 | +0.57 | +0.40 | energy |
-| 7 | **CRWD** | +0.63 | +0.63 | +0.00 | cyber |
-| 8 | **OKTA** | +0.62 | +0.62 | +0.00 | cyber |
-| 9 | **PANW** | +0.61 | +0.61 | +0.00 | tech,cyber |
-| 10 | **DVN** | +0.61 | +0.55 | +0.40 | energy |
-| 11 | **XOM** | +0.60 | +0.54 | +0.40 | energy |
-| 12 | **TXN** | +0.60 | +0.63 | -0.20 | semis |
-| 13 | **EOG** | +0.59 | +0.53 | +0.40 | energy |
-| 14 | **OXY** | +0.59 | +0.53 | +0.40 | energy |
-| 15 | **AMD** | +0.59 | +0.60 | -0.10 | ai,semis |
+| 1 | **CRWD** | +0.63 | +0.63 | +0.00 | cyber |
+| 2 | **NUE** | +0.62 | +0.62 | +0.00 | materials |
+| 3 | **OKTA** | +0.62 | +0.62 | +0.00 | cyber |
+| 4 | **PANW** | +0.61 | +0.61 | +0.00 | tech,cyber |
+| 5 | **TGT** | +0.61 | +0.58 | +0.20 | industrial_consumer |
+| 6 | **MPC** | +0.60 | +0.66 | -0.40 | energy |
+| 7 | **PSX** | +0.60 | +0.66 | -0.40 | energy |
+| 8 | **TRGP** | +0.59 | +0.65 | -0.40 | energy |
+| 9 | **MRNA** | +0.58 | +0.58 | +0.00 | healthcare |
+| 10 | **VLO** | +0.58 | +0.64 | -0.40 | energy |
+| 11 | **FTNT** | +0.58 | +0.58 | +0.00 | cyber |
+| 12 | **TXN** | +0.57 | +0.63 | -0.40 | semis |
+| 13 | **MRK** | +0.56 | +0.56 | +0.00 | healthcare |
+| 14 | **S** | +0.56 | +0.56 | +0.00 | cyber |
+| 15 | **QMCO** | +0.56 | +0.56 | +0.00 | quantum |
 
 ## Bottom 8 — likely DOWN
-- SOUN -0.81 (ai)
+- SOUN -0.86 (ai)
+- BBAI -0.85 (ai)
+- APP -0.84 (ai)
+- CTVA -0.83 (materials)
+- RBLX -0.82 (ai,tech)
+- INDI -0.81 (semis)
 - LAES -0.80 (quantum)
-- BBAI -0.80 (ai)
-- APP -0.80 (ai)
 - JOBY -0.80 (space)
-- RGTI -0.80 (quantum)
-- QBTS -0.79 (quantum)
-- CTVA -0.78 (materials)
 
 ## Dip-in-uptrend (strong long-term, pulling back now)
 - **NET** — 20d -24.5%, -24.8% off recent high
 - **DELL** — 20d -24.2%, -28.9% off recent high
 - **AMD** — 20d -19.5%, -21.7% off recent high
-- **ANET** — 20d -19.1%, -22.7% off recent high
 - **MU** — 20d -16.8%, -19.4% off recent high
 - **DDOG** — 20d -16.5%, -21.4% off recent high
 - **TSM** — 20d -15.4%, -15.4% off recent high
@@ -58,4 +56,3 @@ _Model output, not advice. Data through 2026-11-02; 243 names. Paper/research si
 - **PANW** — 20d -11.0%, -13.9% off recent high
 - **VLO** — 20d -8.6%, -16.6% off recent high
 - **CSCO** — 20d -7.8%, -15.7% off recent high
-- **TEAM** — 20d -3.3%, -16.4% off recent high

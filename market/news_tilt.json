@@ -1,42 +1,36 @@
 {
   "themes": {
-    "energy": 0.4,
-    "defense": 0.3,
-    "materials": 0.3,
-    "financials": -0.15,
-    "semis": -0.2,
-    "ai": -0.1
+    "energy": -0.4,
+    "ai": -0.4,
+    "semis": -0.4,
+    "tech": -0.3,
+    "financials": 0.3,
+    "industrial_consumer": 0.2
   },
   "events": [
     {
-      "headline": "OPEC+ agrees in principle to keep oil output targets steady for December (Nov 1 meeting); Gulf producers already pumping below quotas amid Iran-war disruption to flows",
+      "headline": "Oil posts sharpest one-day drop in three months (Mon Nov 2): Brent fell 7.6% to $104.77/bbl, WTI fell 7.3% to $96.46/bbl, on a string of Iran headlines raising hopes the conflict ends without further escalation",
       "themes": ["energy"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/amp/2026/10/31/opec-oil-output-targets-december.html"
+      "source": "spectrumlocalnews.com",
+      "url": "https://spectrumlocalnews.com/nc/triad/politics/2026/11/02/oil-prices-fall-november-2"
     },
     {
-      "headline": "Strait of Hormuz tanker attacks escalate through late October; UKMTO (UK maritime trade authority) independently confirms a tanker struck by an unknown projectile on Oct. 22, while Iranian claims of additional mine strikes remain unverified by independent sources",
-      "themes": ["energy", "defense"],
-      "source": "gcaptain.com",
-      "url": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/"
+      "headline": "Nasdaq Composite fell into technical correction territory Tue Nov 3 as AI-capex doubts resurfaced; Marvell dropped ~12% on reported $221B all-stock talks to acquire Lumentum, Oracle fell ~8% on plans to raise $10B in stock and $10B in bonds to fund AI spending",
+      "themes": ["ai", "semis", "tech"],
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-3-dow-sp-500-nasdaq-midterms-amd-090846378.html"
     },
     {
-      "headline": "China's suspension of expanded rare-earth/lithium-battery export controls nears Nov. 10 expiry with no renewal announced; Trump-Xi summit left the Nov. 10 deadline intact, keeping supply-chain risk elevated for non-Chinese materials producers",
-      "themes": ["materials"],
-      "source": "procyonmetals.com",
-      "url": "https://www.procyonmetals.com/en/blog/trump-xi-summit-leaves-china-rare-earth-export-controls-and-the-10-november-deadline-intact"
+      "headline": "Dow rose ~0.41% Tue Nov 3 even as S&P 500 (-0.51%) and Nasdaq (-1.07%) fell, as investors rotated into industrial, financial and value stocks away from large-cap AI/tech names ahead of US midterm election results",
+      "themes": ["financials", "industrial_consumer"],
+      "source": "stocktitan.net",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-3-2026"
     },
     {
-      "headline": "Fed held rates at 3.75%-4.00% on Oct. 28 under Chair Warsh; CME FedWatch-style odds of a December hike sit roughly 78-85%, keeping a hawkish tilt priced into rates markets",
-      "themes": ["financials"],
-      "source": "investinglive.com",
-      "url": "https://investinglive.com/central-banks/much-ado-about-nothing-fed-chair-warsh-talks-up-a-storm-but-december-rate-hike-bets-barely-budge/"
-    },
-    {
-      "headline": "Nvidia CEO Jensen Huang defends ties to Megaspeed after report on an executive under a US spying probe, as Nvidia's China data-center chip market share fell to roughly 34% in H1 2026",
-      "themes": ["ai", "semis"],
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-29/nvidia-ceo-says-ties-to-company-under-spying-probe-were-normal"
+      "headline": "Apple shares slipped after fiscal Q4 earnings as iPhone sales beat but Greater China revenue missed estimates, adding to tech-sector weakness",
+      "themes": ["tech"],
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-3-dow-sp-500-nasdaq-midterms-amd-090846378.html"
     }
   ]
 }
