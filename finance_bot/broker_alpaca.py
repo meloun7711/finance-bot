@@ -124,6 +124,22 @@ def rebalance(targets: dict[str, float]) -> dict:
             "errors": len(errs), "error_samples": errs[:3]}
 
 
+def enforce_stops_only() -> dict:
+    """Daily downside check WITHOUT re-selecting the book: close any held name
+    that has fallen past the stop and start its cooldown. Used on non-rebalance
+    days so the -15% stop stays fast even though the book re-selects only weekly."""
+    from finance_bot import exit_rules
+    pos = positions()
+    stop = exit_rules.check_stops(pos)
+    exit_rules.save_cooldown(stop["cooldown"])
+    closed = []
+    for sym in stop["to_close"]:
+        closed.append(_close(sym))
+        time.sleep(0.15)
+    return {"endpoint": "PAPER", "mode": "stops-only (non-rebalance day)",
+            "stopped_out": stop["to_close"], "closed": len(closed)}
+
+
 def summary() -> dict:
     """Readable snapshot of the PAPER account: equity, P&L, and positions."""
     a = account()

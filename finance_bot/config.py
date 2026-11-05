@@ -31,6 +31,13 @@ PRICE_INTERVAL = "1d"
 MAX_TRADE_FRACTION = 0.05   # max 5% of balance per trade, per the brief
 REQUIRE_MANUAL_CONFIRMATION = True   # hard gate; do not change to auto-fire
 
+# --- Rebalance cadence ----------------------------------------------------
+# Backtests are unambiguous: rebalancing WEEKLY (Sharpe ~1.00, +436% / 6yr) beats
+# rebalancing daily (Sharpe ~0.69, +189%) — daily churn chases score noise. The
+# daily cron still runs (refresh data, grade news, enforce stops), but the book is
+# only re-selected once every REBALANCE_MIN_DAYS. State in FNCBOT/last_rebalance.json.
+REBALANCE_MIN_DAYS = 6        # ~weekly, robust to holidays
+
 # --- Exit rule (prototype) ------------------------------------------------
 # Diagnosed weakness: losers were left to run (worst trades −30% to −47%) while
 # winners were cut. Fix, chosen by a 6-year cross-regime sweep (see
