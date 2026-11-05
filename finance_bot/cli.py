@@ -140,6 +140,26 @@ def _cmd_decide(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_news_score(args: argparse.Namespace) -> int:
+    """Log today's news calls, grade any that have matured, update outlet reliability."""
+    import json
+    import pandas as pd
+    from finance_bot import config, news_log
+    from finance_bot.analyze.decide import _load_news_tilt
+    market = config.ROOT / "market" / "close.parquet"
+    if not market.exists():
+        print("no market/close.parquet — run export-market first")
+        return 1
+    C = pd.read_parquet(market)
+    asof = str(C.index[-1].date())
+    added = news_log.log_calls(_load_news_tilt(), asof)
+    summ = news_log.resolve_due(C, asof)
+    print(f"news-score @ {asof}: logged {added} new calls, resolved {summ['resolved_now']}, "
+          f"{summ['open_calls']} still open")
+    print(news_log.report())
+    return 0
+
+
 def _cmd_account(args: argparse.Namespace) -> int:
     import json
     from finance_bot import broker_alpaca
@@ -149,14 +169,39 @@ def _cmd_account(args: argparse.Namespace) -> int:
 
 def _cmd_trade_paper(args: argparse.Namespace) -> int:
     import json
+    from datetime import date
+    from finance_bot import config, broker_alpaca
     from finance_bot.analyze.decide import target_book
-    from finance_bot import broker_alpaca
+
+    # ── weekly cadence: full re-selection only every REBALANCE_MIN_DAYS ──────
+    state = config.ROOT / "FNCBOT" / "last_rebalance.json"
+    today = date.today()
+    last = None
+    if state.exists():
+        try:
+            last = date.fromisoformat(json.loads(state.read_text())["date"])
+        except Exception:
+            last = None
+    due = args.force or last is None or (today - last).days >= config.REBALANCE_MIN_DAYS
+
+    if not due:
+        # not a rebalance day: still enforce the -15% stop so downside stays fast
+        out = broker_alpaca.enforce_stops_only()
+        days = (today - last).days
+        print(f"weekly cadence: last rebalance {last} ({days}d ago) < "
+              f"{config.REBALANCE_MIN_DAYS}d — holding the book; stops-only.")
+        print(json.dumps(out, indent=2))
+        return 0
+
     targets, asof = target_book()
-    print(f"Target book from bot predictions (as-of {asof}): {len(targets)} names @ "
-          f"{list(targets.values())[0]*100:.1f}% each" if targets else "no target names")
+    print(f"REBALANCE DAY — target book from predictions (as-of {asof}): {len(targets)} "
+          f"names @ {list(targets.values())[0]*100:.1f}% each" if targets else "no target names")
     if not targets:
         return 0
     result = broker_alpaca.rebalance(targets)          # PAPER endpoint, hard-locked
+    if result.get("errors", 0) == 0:
+        state.parent.mkdir(parents=True, exist_ok=True)
+        state.write_text(json.dumps({"date": today.isoformat(), "asof": asof}))
     print(json.dumps(result, indent=2))
     return 0 if result.get("errors", 0) == 0 else 1
 
@@ -244,7 +289,10 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("export-market", help="Box: dump market/close.parquet for the routine")
     sub.add_parser("decide", help="Routine: read market data (+news tilt) -> reports/latest.md")
-    sub.add_parser("trade-paper", help="Place the predicted book as Alpaca PAPER orders (no real money)")
+    sub.add_parser("news-score", help="Log news calls, grade matured ones, update outlet reliability")
+    tp = sub.add_parser("trade-paper", help="Place the predicted book as Alpaca PAPER orders (no real money)")
+    tp.add_argument("--force", action="store_true",
+                    help="rebalance now even if inside the weekly cadence window")
     sub.add_parser("account", help="Show the Alpaca PAPER account holdings + P&L")
 
     sc = sub.add_parser("screen", help="Find strong long-term names currently dipping")
@@ -285,6 +333,7 @@ def main(argv: list[str] | None = None) -> int:
         "fncbot": _cmd_fncbot,
         "export-market": _cmd_export_market,
         "decide": _cmd_decide,
+        "news-score": _cmd_news_score,
         "trade-paper": _cmd_trade_paper,
         "account": _cmd_account,
     }[args.command](args)

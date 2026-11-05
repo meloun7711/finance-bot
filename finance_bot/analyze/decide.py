@@ -31,7 +31,9 @@ from finance_bot.backtest.portfolio import score_matrix, UP_GATE
 MARKET_DIR = config.ROOT / "market"
 REPORTS_DIR = config.ROOT / "reports"
 NEWS_TILT = MARKET_DIR / "news_tilt.json"
-NEWS_WEIGHT = 0.15                 # max sway of a full-strength theme tilt on a name's score
+NEWS_WEIGHT = 0.30                 # max sway of a full-strength theme tilt on a name's score
+                                   # (each theme is further scaled by the reliability of
+                                   #  the outlets pushing it — see finance_bot/news_log.py)
 
 
 def export_market() -> str:
@@ -50,13 +52,26 @@ def export_market() -> str:
     return f"exported market/close.parquet — {C.shape[1]} tickers through {C.index[-1].date()}"
 
 
+def _effective_themes(news: dict) -> dict:
+    """Net per-theme tilt in [-1,1]: the reliability- and strength-weighted
+    consensus of each outlet's directional call (news_log.net_theme_tilts).
+    The brain reports who said what; the engine decides the net using the trust
+    it has learned per (outlet x theme). Falls back to the old themes{} map when
+    a feed carries no per-event calls."""
+    from finance_bot import news_log
+    tilts = news_log.net_theme_tilts(news)
+    if tilts:
+        return tilts
+    return {t: float(v) for t, v in (news.get("themes", {}) or {}).items()}
+
+
 def _decision_scores():
     """Return (df sorted by news-adjusted decision desc, as_of). The bot's predictions."""
     C = pd.read_parquet(MARKET_DIR / "close.parquet")
     bench = set(all_tickers()) - set(all_tickers(include_benchmarks=False))
     tradable = [c for c in C.columns if c not in bench]
     scores = score_matrix(C[tradable]).iloc[-1].dropna()
-    themes = (_load_news_tilt().get("themes", {}) or {})
+    themes = _effective_themes(_load_news_tilt())
     rows = []
     for tk, s in scores.items():
         tl = max((float(themes.get(t, 0.0)) for t in theme_of(tk)), default=0.0)
@@ -100,7 +115,15 @@ def decide() -> str:
 
     scores = score_matrix(C[tradable]).iloc[-1].dropna()        # structural, latest day
     news = _load_news_tilt()
-    themes = news.get("themes", {}) if isinstance(news, dict) else {}
+    asof0 = str(C.index[-1].date())
+    # update the accuracy ledger: log today's calls, grade any that have matured
+    try:
+        from finance_bot import news_log
+        news_log.log_calls(news, asof0)
+        news_log.resolve_due(C, asof0)
+    except Exception:
+        pass
+    themes = _effective_themes(news)                            # reliability-weighted
 
     def adj(tk, s):
         tl = max((float(themes.get(t, 0.0)) for t in theme_of(tk)), default=0.0)
@@ -132,14 +155,35 @@ def decide() -> str:
     L.append(f"_Model output, not advice. Data through {asof}; {len(tradable)} names. "
              f"Paper/research signals for review — not auto-executed._\n")
     if themes:
-        L.append("## News tilt (from headlines, bounded)")
+        L.append("## News tilt (reliability-weighted consensus, news weight 0.30)")
+        L.append("Net direction per theme = each outlet's call (up/down × strength) "
+                 "weighted by how reliable that outlet has been on that theme.\n")
+        L.append("| Theme | Net tilt | Applied (×0.30) |")
+        L.append("|-------|---------:|----------------:|")
         for t, v in sorted(themes.items(), key=lambda x: -abs(x[1])):
-            L.append(f"- **{t}**: {v:+.2f}")
+            L.append(f"| {t} | {v:+.2f} | {NEWS_WEIGHT*v:+.3f} |")
         if ev:
-            L.append("\n**Events driving the tilt:**")
+            L.append("\n**Headlines (outlet → calls):**")
             for e in ev[:8]:
-                L.append(f"- {e.get('headline','?')} "
-                         f"→ _{', '.join(e.get('themes',[]))}_ ({e.get('source','?')})")
+                calls = e.get("calls")
+                if calls:
+                    cs = ", ".join(f"{c.get('theme')} {c.get('dir')}/{c.get('strength')}"
+                                   for c in calls)
+                else:
+                    cs = ", ".join(e.get("themes", []))
+                L.append(f"- {e.get('headline','?')} — _{cs}_ ({e.get('source','?')})")
+        # per-(outlet × theme) reliability the bot has learned so far
+        try:
+            from finance_bot import news_log
+            rel = news_log.load_reliability()
+            if rel:
+                L.append("\n**Outlet reliability (learned, per theme):**")
+                for src in sorted(rel):
+                    best = sorted(rel[src].items(), key=lambda x: -x[1]["reliability"])
+                    bits = ", ".join(f"{th} {c['reliability']:.2f}" for th, c in best[:5])
+                    L.append(f"- {src} (overall {news_log.reliability(src):.2f}): {bits}")
+        except Exception:
+            pass
         L.append("")
     L.append("## Top 15 — likely UP (news-adjusted)")
     L.append("| # | Ticker | Decision | Structural | News | Themes |")
