@@ -53,14 +53,16 @@ def export_market() -> str:
 
 
 def _effective_themes(news: dict) -> dict:
-    """Per-theme tilt scaled by how reliable the outlets pushing it have proven.
-    A theme cited only by unproven/unreliable outlets is discounted toward 0;
-    one cited by consistently-right outlets keeps (or exceeds) its weight."""
+    """Net per-theme tilt in [-1,1]: the reliability- and strength-weighted
+    consensus of each outlet's directional call (news_log.net_theme_tilts).
+    The brain reports who said what; the engine decides the net using the trust
+    it has learned per (outlet x theme). Falls back to the old themes{} map when
+    a feed carries no per-event calls."""
     from finance_bot import news_log
-    themes = news.get("themes", {}) if isinstance(news, dict) else {}
-    factor = news_log.theme_reliability_factor(news)
-    # factor defaults to the neutral 0.5 prior when a theme has no attributed outlet
-    return {t: float(v) * factor.get(t, 0.5) for t, v in themes.items()}
+    tilts = news_log.net_theme_tilts(news)
+    if tilts:
+        return tilts
+    return {t: float(v) for t, v in (news.get("themes", {}) or {}).items()}
 
 
 def _decision_scores():
@@ -122,7 +124,6 @@ def decide() -> str:
     except Exception:
         pass
     themes = _effective_themes(news)                            # reliability-weighted
-    raw_themes = news.get("themes", {}) if isinstance(news, dict) else {}
 
     def adj(tk, s):
         tl = max((float(themes.get(t, 0.0)) for t in theme_of(tk)), default=0.0)
@@ -154,26 +155,33 @@ def decide() -> str:
     L.append(f"_Model output, not advice. Data through {asof}; {len(tradable)} names. "
              f"Paper/research signals for review — not auto-executed._\n")
     if themes:
-        L.append("## News tilt (reliability-weighted, news weight 0.30)")
-        L.append("| Theme | Raw call | × reliability | Applied |")
-        L.append("|-------|---------:|--------------:|--------:|")
+        L.append("## News tilt (reliability-weighted consensus, news weight 0.30)")
+        L.append("Net direction per theme = each outlet's call (up/down × strength) "
+                 "weighted by how reliable that outlet has been on that theme.\n")
+        L.append("| Theme | Net tilt | Applied (×0.30) |")
+        L.append("|-------|---------:|----------------:|")
         for t, v in sorted(themes.items(), key=lambda x: -abs(x[1])):
-            rawv = float(raw_themes.get(t, 0.0))
-            fac = (v / rawv) if rawv else 0.0
-            L.append(f"| {t} | {rawv:+.2f} | ×{fac:.2f} | {v:+.2f} |")
+            L.append(f"| {t} | {v:+.2f} | {NEWS_WEIGHT*v:+.3f} |")
         if ev:
-            L.append("\n**Events driving the tilt:**")
+            L.append("\n**Headlines (outlet → calls):**")
             for e in ev[:8]:
-                L.append(f"- {e.get('headline','?')} "
-                         f"→ _{', '.join(e.get('themes',[]))}_ ({e.get('source','?')})")
-        # outlet reliability leaderboard (what the bot has learned so far)
+                calls = e.get("calls")
+                if calls:
+                    cs = ", ".join(f"{c.get('theme')} {c.get('dir')}/{c.get('strength')}"
+                                   for c in calls)
+                else:
+                    cs = ", ".join(e.get("themes", []))
+                L.append(f"- {e.get('headline','?')} — _{cs}_ ({e.get('source','?')})")
+        # per-(outlet × theme) reliability the bot has learned so far
         try:
             from finance_bot import news_log
             rel = news_log.load_reliability()
             if rel:
-                L.append("\n**Outlet reliability (learned from resolved calls):**")
-                for src, s in sorted(rel.items(), key=lambda x: -x[1]["reliability"]):
-                    L.append(f"- {src}: {s['reliability']:.2f}  ({s['hits']}/{s['total']} correct)")
+                L.append("\n**Outlet reliability (learned, per theme):**")
+                for src in sorted(rel):
+                    best = sorted(rel[src].items(), key=lambda x: -x[1]["reliability"])
+                    bits = ", ".join(f"{th} {c['reliability']:.2f}" for th, c in best[:5])
+                    L.append(f"- {src} (overall {news_log.reliability(src):.2f}): {bits}")
         except Exception:
             pass
         L.append("")
