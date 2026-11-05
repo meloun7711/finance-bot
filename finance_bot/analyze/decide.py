@@ -31,7 +31,9 @@ from finance_bot.backtest.portfolio import score_matrix, UP_GATE
 MARKET_DIR = config.ROOT / "market"
 REPORTS_DIR = config.ROOT / "reports"
 NEWS_TILT = MARKET_DIR / "news_tilt.json"
-NEWS_WEIGHT = 0.15                 # max sway of a full-strength theme tilt on a name's score
+NEWS_WEIGHT = 0.30                 # max sway of a full-strength theme tilt on a name's score
+                                   # (each theme is further scaled by the reliability of
+                                   #  the outlets pushing it — see finance_bot/news_log.py)
 
 
 def export_market() -> str:
@@ -50,13 +52,24 @@ def export_market() -> str:
     return f"exported market/close.parquet — {C.shape[1]} tickers through {C.index[-1].date()}"
 
 
+def _effective_themes(news: dict) -> dict:
+    """Per-theme tilt scaled by how reliable the outlets pushing it have proven.
+    A theme cited only by unproven/unreliable outlets is discounted toward 0;
+    one cited by consistently-right outlets keeps (or exceeds) its weight."""
+    from finance_bot import news_log
+    themes = news.get("themes", {}) if isinstance(news, dict) else {}
+    factor = news_log.theme_reliability_factor(news)
+    # factor defaults to the neutral 0.5 prior when a theme has no attributed outlet
+    return {t: float(v) * factor.get(t, 0.5) for t, v in themes.items()}
+
+
 def _decision_scores():
     """Return (df sorted by news-adjusted decision desc, as_of). The bot's predictions."""
     C = pd.read_parquet(MARKET_DIR / "close.parquet")
     bench = set(all_tickers()) - set(all_tickers(include_benchmarks=False))
     tradable = [c for c in C.columns if c not in bench]
     scores = score_matrix(C[tradable]).iloc[-1].dropna()
-    themes = (_load_news_tilt().get("themes", {}) or {})
+    themes = _effective_themes(_load_news_tilt())
     rows = []
     for tk, s in scores.items():
         tl = max((float(themes.get(t, 0.0)) for t in theme_of(tk)), default=0.0)
@@ -100,7 +113,16 @@ def decide() -> str:
 
     scores = score_matrix(C[tradable]).iloc[-1].dropna()        # structural, latest day
     news = _load_news_tilt()
-    themes = news.get("themes", {}) if isinstance(news, dict) else {}
+    asof0 = str(C.index[-1].date())
+    # update the accuracy ledger: log today's calls, grade any that have matured
+    try:
+        from finance_bot import news_log
+        news_log.log_calls(news, asof0)
+        news_log.resolve_due(C, asof0)
+    except Exception:
+        pass
+    themes = _effective_themes(news)                            # reliability-weighted
+    raw_themes = news.get("themes", {}) if isinstance(news, dict) else {}
 
     def adj(tk, s):
         tl = max((float(themes.get(t, 0.0)) for t in theme_of(tk)), default=0.0)
@@ -132,14 +154,28 @@ def decide() -> str:
     L.append(f"_Model output, not advice. Data through {asof}; {len(tradable)} names. "
              f"Paper/research signals for review — not auto-executed._\n")
     if themes:
-        L.append("## News tilt (from headlines, bounded)")
+        L.append("## News tilt (reliability-weighted, news weight 0.30)")
+        L.append("| Theme | Raw call | × reliability | Applied |")
+        L.append("|-------|---------:|--------------:|--------:|")
         for t, v in sorted(themes.items(), key=lambda x: -abs(x[1])):
-            L.append(f"- **{t}**: {v:+.2f}")
+            rawv = float(raw_themes.get(t, 0.0))
+            fac = (v / rawv) if rawv else 0.0
+            L.append(f"| {t} | {rawv:+.2f} | ×{fac:.2f} | {v:+.2f} |")
         if ev:
             L.append("\n**Events driving the tilt:**")
             for e in ev[:8]:
                 L.append(f"- {e.get('headline','?')} "
                          f"→ _{', '.join(e.get('themes',[]))}_ ({e.get('source','?')})")
+        # outlet reliability leaderboard (what the bot has learned so far)
+        try:
+            from finance_bot import news_log
+            rel = news_log.load_reliability()
+            if rel:
+                L.append("\n**Outlet reliability (learned from resolved calls):**")
+                for src, s in sorted(rel.items(), key=lambda x: -x[1]["reliability"]):
+                    L.append(f"- {src}: {s['reliability']:.2f}  ({s['hits']}/{s['total']} correct)")
+        except Exception:
+            pass
         L.append("")
     L.append("## Top 15 — likely UP (news-adjusted)")
     L.append("| # | Ticker | Decision | Structural | News | Themes |")

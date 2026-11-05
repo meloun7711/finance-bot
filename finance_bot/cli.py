@@ -140,6 +140,26 @@ def _cmd_decide(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_news_score(args: argparse.Namespace) -> int:
+    """Log today's news calls, grade any that have matured, update outlet reliability."""
+    import json
+    import pandas as pd
+    from finance_bot import config, news_log
+    from finance_bot.analyze.decide import _load_news_tilt
+    market = config.ROOT / "market" / "close.parquet"
+    if not market.exists():
+        print("no market/close.parquet — run export-market first")
+        return 1
+    C = pd.read_parquet(market)
+    asof = str(C.index[-1].date())
+    added = news_log.log_calls(_load_news_tilt(), asof)
+    summ = news_log.resolve_due(C, asof)
+    print(f"news-score @ {asof}: logged {added} new calls, resolved {summ['resolved_now']}, "
+          f"{summ['open_calls']} still open")
+    print(news_log.report())
+    return 0
+
+
 def _cmd_account(args: argparse.Namespace) -> int:
     import json
     from finance_bot import broker_alpaca
@@ -244,6 +264,7 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("export-market", help="Box: dump market/close.parquet for the routine")
     sub.add_parser("decide", help="Routine: read market data (+news tilt) -> reports/latest.md")
+    sub.add_parser("news-score", help="Log news calls, grade matured ones, update outlet reliability")
     sub.add_parser("trade-paper", help="Place the predicted book as Alpaca PAPER orders (no real money)")
     sub.add_parser("account", help="Show the Alpaca PAPER account holdings + P&L")
 
@@ -285,6 +306,7 @@ def main(argv: list[str] | None = None) -> int:
         "fncbot": _cmd_fncbot,
         "export-market": _cmd_export_market,
         "decide": _cmd_decide,
+        "news-score": _cmd_news_score,
         "trade-paper": _cmd_trade_paper,
         "account": _cmd_account,
     }[args.command](args)

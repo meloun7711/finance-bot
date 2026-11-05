@@ -19,7 +19,8 @@ git checkout -f -B fncbot-state origin/fncbot-state
 
 python3 -m finance_bot.cli download --source alpaca
 python3 -m finance_bot.cli export-market
-python3 -m finance_bot.cli trade-paper || true          # Alpaca PAPER orders from predictions
+python3 -m finance_bot.cli news-score || true           # grade past news calls -> outlet reliability
+python3 -m finance_bot.cli trade-paper || true          # Alpaca PAPER orders (reliability-weighted news)
 python3 -m finance_bot.cli fncbot --run
 
 git add FNCBOT market
