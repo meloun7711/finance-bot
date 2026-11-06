@@ -1,44 +1,37 @@
 {
   "themes": {
-    "energy": -0.4,
-    "defense": -0.2,
-    "semis": -0.5,
-    "ai": -0.35,
-    "tech": -0.2,
-    "healthcare": 0.3,
+    "semis": 0.4,
+    "ai": 0.3,
+    "tech": 0.3,
+    "energy": 0.2,
+    "defense": 0.15,
     "materials": -0.2,
-    "industrial_consumer": 0.2
+    "financials": -0.15
   },
   "events": [
     {
-      "headline": "Democrats swept the Nov. 3 US midterms, flipping both the House (~250 seats) and Senate (~54 seats); VP Vance blamed the Iran war for the GOP loss, which markets read as raising Washington's incentive for an Iran diplomatic deal. AI/data-center and large-cap tech names fell on fears of a data-center cost/regulation crackdown under a Democratic Congress, while healthcare names were flagged as likely beneficiaries",
-      "themes": ["defense", "ai", "semis", "tech", "healthcare"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/11/04/2026-midterm-election-results-live-updates.html"
-    },
-    {
-      "headline": "WTI crude tumbled more than 8% on Nov. 4 to ~$88/bbl (Brent ~$97) on hopes for a US-Iran deal and a possible Strait of Hormuz reopening -- the single biggest driver of Wall Street's ~3% Dow rally. Unconfirmed IRGC reports of tanker/tugboat fires and a mine strike in the Strait add two-sided uncertainty to the de-escalation narrative",
-      "themes": ["energy", "defense"],
-      "source": "xtb.com",
-      "url": "https://www.xtb.com/int/market-analysis/news-and-research/what-drives-the-market-top-morning-news-november-5-2026"
-    },
-    {
-      "headline": "Asian and US chip/AI-infrastructure stocks sold off sharply on renewed AI-capex/bubble concerns: SK Hynix -~9%, Samsung -~6.7%, Advantest -~11.7%, Lasertec -~11.8%, Tokyo Electron -~10% (Kospi -~4.8%, triggering a program-trading halt); Nvidia, AMD, CoreWeave, Nebius and IREN fell on Wall Street on slower data-center spending fears; Qualcomm (-~7.4% after-hours) and Arm (-~2% after-hours) fell on higher capex / softer guidance despite beating estimates",
+      "headline": "Nasdaq 100 futures jumped ~1.4% Friday as chip stocks (Nvidia, AMD, Intel, Broadcom, Micron, up 3.6%-8.2% premarket) rebounded from Thursday's correction-confirming rout, which Reuters tied to fears that the Democratic midterm sweep would bring tougher AI/data-center regulation; VIX eased from its biggest one-day jump in ~19 months",
       "themes": ["semis", "ai", "tech"],
-      "source": "xtb.com",
-      "url": "https://www.xtb.com/int/market-analysis/news-and-research/what-drives-the-market-top-morning-news-november-5-2026"
+      "source": "finance.yahoo.com (Reuters)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nasdaq-futures-rise-steep-ai-094400237.html"
+    },
+    {
+      "headline": "Oil ticked up off post-midterm lows after fresh reports of ship attacks in the Persian Gulf; a senior Iranian official told Reuters that Washington and Tehran remain far from a deal, and Iran's Supreme Leader rejected the idea that the Democratic midterm sweep would soften US policy -- keeping the Strait of Hormuz conflict live even though markets had priced in de-escalation earlier this week",
+      "themes": ["energy", "defense"],
+      "source": "cbsnews.com",
+      "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/"
     },
     {
       "headline": "China's one-year suspension of its expanded October 2025 export controls on rare earths, rare-earth processing equipment and lithium-battery/graphite materials is set to expire Nov. 10, 2026, with no official word yet from the Ministry of Commerce on an extension, narrowing, or lapse -- a near-term supply overhang for materials names",
       "themes": ["materials"],
-      "source": "mining-technology.com",
-      "url": "https://www.mining-technology.com/news/china-rare-earth-export-pause-nears-expiry-amid-persistent-supply-concentration/"
+      "source": "fool.com",
+      "url": "https://www.fool.com/investing/2026/11/05/china-rare-earth-pause-usar-mp-materials/"
     },
     {
-      "headline": "Walmart (+~3%) and other defensive/consumer names led the Dow's ~3% rally (best day since April 2025) as sharply cheaper oil and falling Treasury yields boosted the consumer/goods outlook; gold jumped ~3% to near $4,135/oz on the same lower-oil, weaker-dollar, lower-yield mix",
-      "themes": ["industrial_consumer"],
-      "source": "xtb.com",
-      "url": "https://www.xtb.com/int/market-analysis/news-and-research/what-drives-the-market-top-morning-news-november-5-2026"
+      "headline": "The Fed held its benchmark rate at 3.75%-4% on Oct. 28 (10-2 vote, with two officials dissenting in favor of a hike) and gave no clear signal on December easing; today's October nonfarm payrolls report is the next catalyst that could reignite concerns about prolonged Fed hawkishness",
+      "themes": ["financials"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html"
     }
   ]
 }
