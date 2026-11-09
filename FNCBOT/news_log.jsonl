@@ -5,3 +5,10 @@
 {"date": "2026-11-06", "source": "cbsnews.com", "theme": "defense", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-06T14:35:48.386487+00:00"}
 {"date": "2026-11-06", "source": "fool.com", "theme": "materials", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-06T14:35:48.386500+00:00"}
 {"date": "2026-11-06", "source": "cnbc.com", "theme": "financials", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-06T14:35:48.386506+00:00"}
+{"date": "2026-11-06", "source": "pandaforecast.com / grafa.com / sabq.org", "theme": "energy", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-09T13:49:00.118311+00:00"}
+{"date": "2026-11-06", "source": "pandaforecast.com / grafa.com / sabq.org", "theme": "defense", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-09T13:49:00.118333+00:00"}
+{"date": "2026-11-06", "source": "news.metal.com (smm)", "theme": "materials", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-09T13:49:00.118339+00:00"}
+{"date": "2026-11-06", "source": "zacks.com / foxcarolina.com", "theme": "ai", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-09T13:49:00.118348+00:00"}
+{"date": "2026-11-06", "source": "zacks.com / foxcarolina.com", "theme": "semis", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-09T13:49:00.118352+00:00"}
+{"date": "2026-11-06", "source": "zacks.com / foxcarolina.com", "theme": "tech", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-09T13:49:00.118356+00:00"}
+{"date": "2026-11-06", "source": "ajc.com", "theme": "financials", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-09T13:49:00.118360+00:00"}
