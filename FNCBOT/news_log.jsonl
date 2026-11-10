@@ -25,3 +25,9 @@
 {"date": "2026-11-09", "source": "home.saxo", "theme": "energy", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T13:51:30.954655+00:00"}
 {"date": "2026-11-09", "source": "mining.com", "theme": "materials", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T13:51:30.954661+00:00"}
 {"date": "2026-11-09", "source": "stocktitan.net", "theme": "financials", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T13:51:30.954665+00:00"}
+{"date": "2026-11-10", "source": "home.saxo", "theme": "tech", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T14:35:41.929888+00:00"}
+{"date": "2026-11-10", "source": "home.saxo", "theme": "ai", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T14:35:41.929914+00:00"}
+{"date": "2026-11-10", "source": "home.saxo", "theme": "semis", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T14:35:41.929925+00:00"}
+{"date": "2026-11-10", "source": "home.saxo", "theme": "energy", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T14:35:41.929933+00:00"}
+{"date": "2026-11-10", "source": "mining.com", "theme": "materials", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T14:35:41.929939+00:00"}
+{"date": "2026-11-10", "source": "stocktitan.net", "theme": "financials", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T14:35:41.929944+00:00"}
