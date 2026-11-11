@@ -31,3 +31,7 @@
 {"date": "2026-11-10", "source": "home.saxo", "theme": "energy", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T14:35:41.929933+00:00"}
 {"date": "2026-11-10", "source": "mining.com", "theme": "materials", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T14:35:41.929939+00:00"}
 {"date": "2026-11-10", "source": "stocktitan.net", "theme": "financials", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-10T14:35:41.929944+00:00"}
+{"date": "2026-11-10", "source": "cnbc.com", "theme": "financials", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-11T13:47:54.442385+00:00"}
+{"date": "2026-11-10", "source": "cnbc.com", "theme": "ai", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-11T13:47:54.442407+00:00"}
+{"date": "2026-11-10", "source": "cnbc.com", "theme": "semis", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-11T13:47:54.442411+00:00"}
+{"date": "2026-11-10", "source": "khaleejtimes.com", "theme": "energy", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-11T13:47:54.442418+00:00"}
