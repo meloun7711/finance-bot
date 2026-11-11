@@ -1,64 +1,60 @@
-# FNCBOT Decisions — 2026-11-09
+# FNCBOT Decisions — 2026-11-10
 
-_Model output, not advice. Data through 2026-11-09; 243 names. Paper/research signals for review — not auto-executed._
+_Model output, not advice. Data through 2026-11-10; 243 names. Paper/research signals for review — not auto-executed._
 
 ## News tilt (reliability-weighted consensus, news weight 0.30)
 Net direction per theme = each outlet's call (up/down × strength) weighted by how reliable that outlet has been on that theme.
 
 | Theme | Net tilt | Applied (×0.30) |
 |-------|---------:|----------------:|
-| tech | +1.00 | +0.300 |
-| ai | +1.00 | +0.300 |
-| semis | +1.00 | +0.300 |
-| energy | -1.00 | -0.300 |
-| materials | +1.00 | +0.300 |
 | financials | -1.00 | -0.300 |
+| ai | -1.00 | -0.300 |
+| semis | -1.00 | -0.300 |
+| energy | -1.00 | -0.300 |
 
 **Headlines (outlet → calls):**
-- Wall Street posted its strongest session since April on Nov 9 (Dow +2.15%, S&P 500 +2.35%, Nasdaq +2.74%), led by a sharp rebound in technology names, while the VIX fell 22% to 19.92 -- its lowest close since the post-election rally -- as prior-week AI-valuation/bubble jitters eased heading into Nov 10's CPI print — _tech, ai, semis_ (home.saxo)
-- Brent crude slid below $92/bbl (roughly 91.5, with some feeds showing a sharper intraday drop) on Nov 10 on Middle East peace hopes easing the geopolitical risk premium in oil, continuing last week's pullback from the Nov 3 highs near $103 — _energy_ (home.saxo)
-- China's one-year suspension of its expanded Oct 2025 rare-earth/lithium-battery export controls (MOFCOM Announcement No. 70 of 2025) was due to lapse exactly Nov 10, 2026; multiple trade-press and law-firm sources (SMM, Mining.com, Tom's Hardware, Clark Hill) report it was extended to Jan 10, 2027 following the Trump-Xi summit, though no primary MOFCOM notice was directly verified -- treated as probable but not fully confirmed — _materials_ (mining.com)
-- Markets await the Oct CPI report due Nov 10 (headline expected +0.3% m/m, slowing from Sept's +0.6%); Fed Governor Waller has signaled he leans toward supporting a rate hike at the December meeting, keeping financials exposed to hawkish-surprise risk this week — _financials_ (stocktitan.net)
+- October CPI report (released Nov 10, 2026) came in hotter than expected: headline +0.4% m/m vs +0.3% consensus, core +0.3% vs +0.2% consensus, the third straight month of 0.3% core gains; this raised odds of a Fed rate hike at the Dec 9 FOMC meeting, with Dallas Fed President Lorie Logan saying she sees a need for two more quarter-point increases — _financials_ (cnbc.com)
+- Nvidia's board of directors opened an independent investigation (announced Nov 8) into CEO Jensen Huang after reports he had a personal relationship with an executive at cloud company Megaspeed alleged by US intelligence to be passing information to Beijing; NVDA fell ~4.3% on Nov 9, erasing nearly $200B in market value, and three House committee chairs asked Huang to respond by Nov 11 ahead of Nvidia's Nov 17 earnings — _ai, semis_ (cnbc.com)
+- Oil prices eased to a nearly four-week low amid Iran/Middle East peace talks easing the geopolitical risk premium; Brent traded near $98/bbl on Nov 9 while JPMorgan warned the global oil market is heading toward a supply surplus as Middle East exports recover and non-OPEC production rises — _energy_ (khaleejtimes.com)
 
 ## Top 15 — likely UP (news-adjusted)
 | # | Ticker | Decision | Structural | News | Themes |
 |---|--------|---------:|-----------:|-----:|--------|
-| 1 | **PANW** | +0.89 | +0.59 | +1.00 | tech,cyber |
-| 2 | **TXN** | +0.88 | +0.58 | +1.00 | semis |
-| 3 | **AMD** | +0.87 | +0.57 | +1.00 | ai,semis |
-| 4 | **DELL** | +0.87 | +0.57 | +1.00 | ai |
-| 5 | **TWLO** | +0.85 | +0.55 | +1.00 | ai |
-| 6 | **MU** | +0.85 | +0.55 | +1.00 | semis |
-| 7 | **NUE** | +0.85 | +0.55 | +1.00 | materials |
-| 8 | **MRVL** | +0.85 | +0.55 | +1.00 | semis |
-| 9 | **AEHR** | +0.84 | +0.54 | +1.00 | semis |
-| 10 | **ABNB** | +0.83 | +0.53 | +1.00 | tech |
-| 11 | **STM** | +0.81 | +0.51 | +1.00 | semis |
-| 12 | **ARM** | +0.77 | +0.47 | +1.00 | ai,semis |
-| 13 | **ANET** | +0.77 | +0.47 | +1.00 | tech |
-| 14 | **CSCO** | +0.77 | +0.47 | +1.00 | tech |
-| 15 | **ADI** | +0.76 | +0.46 | +1.00 | semis |
+| 1 | **TGT** | +0.62 | +0.62 | +0.00 | industrial_consumer |
+| 2 | **CRWD** | +0.59 | +0.59 | +0.00 | cyber |
+| 3 | **MRNA** | +0.59 | +0.59 | +0.00 | healthcare |
+| 4 | **OKTA** | +0.59 | +0.59 | +0.00 | cyber |
+| 5 | **PANW** | +0.58 | +0.58 | +0.00 | tech,cyber |
+| 6 | **MRK** | +0.57 | +0.57 | +0.00 | healthcare |
+| 7 | **NUE** | +0.56 | +0.56 | +0.00 | materials |
+| 8 | **QMCO** | +0.56 | +0.56 | +0.00 | quantum |
+| 9 | **S** | +0.53 | +0.53 | +0.00 | cyber |
+| 10 | **FTNT** | +0.52 | +0.52 | +0.00 | cyber |
+| 11 | **TENB** | +0.52 | +0.52 | +0.00 | cyber |
+| 12 | **ABNB** | +0.50 | +0.50 | +0.00 | tech |
+| 13 | **NET** | +0.50 | +0.50 | +0.00 | cyber |
+| 14 | **STLD** | +0.48 | +0.48 | +0.00 | materials |
+| 15 | **JNJ** | +0.48 | +0.48 | +0.00 | healthcare |
 
 ## Bottom 8 — likely DOWN
-- LAES -0.80 (quantum)
+- SOUN -1.00 (ai)
+- INDI -1.00 (semis)
+- BBAI -1.00 (ai)
+- CRWV -0.96 (ai)
+- APP -0.96 (ai)
+- CTVA -0.83 (materials)
+- LAES -0.81 (quantum)
 - JOBY -0.79 (space)
-- AVAV -0.79 (defense)
-- RGTI -0.78 (quantum)
-- QBTS -0.77 (quantum)
-- BSX -0.76 (healthcare)
-- KKR -0.76 (financials)
-- KTOS -0.74 (defense)
 
 ## Dip-in-uptrend (strong long-term, pulling back now)
-- **OKTA** — 20d -25.0%, -26.6% off recent high
-- **SNOW** — 20d -21.9%, -23.7% off recent high
-- **PANW** — 20d -21.3%, -24.3% off recent high
-- **AMD** — 20d -20.8%, -27.6% off recent high
-- **NET** — 20d -18.7%, -21.0% off recent high
-- **GTLB** — 20d -17.4%, -20.2% off recent high
-- **CRWD** — 20d -16.4%, -21.2% off recent high
-- **SHOP** — 20d -16.4%, -16.4% off recent high
-- **ANET** — 20d -14.3%, -16.6% off recent high
-- **S** — 20d -14.1%, -16.1% off recent high
-- **ESTC** — 20d -9.5%, -18.8% off recent high
-- **ADI** — 20d -8.0%, -13.7% off recent high
+- **OKTA** — 20d -23.7%, -25.5% off recent high
+- **MPC** — 20d -20.4%, -21.7% off recent high
+- **PANW** — 20d -19.3%, -23.7% off recent high
+- **SNOW** — 20d -18.8%, -21.3% off recent high
+- **NET** — 20d -15.5%, -18.6% off recent high
+- **CRWD** — 20d -15.3%, -20.6% off recent high
+- **QLYS** — 20d -12.6%, -24.7% off recent high
+- **ANET** — 20d -8.9%, -14.0% off recent high
+- **STLD** — 20d -4.6%, -9.4% off recent high
+- **S** — 20d -4.2%, -12.6% off recent high
+- **NUE** — 20d -1.6%, -10.1% off recent high

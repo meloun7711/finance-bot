@@ -1,36 +1,28 @@
 {
   "themes": {
-    "energy": -0.2,
-    "materials": 0.2,
-    "tech": 0.3,
-    "ai": 0.2,
-    "semis": 0.2,
-    "financials": -0.15
+    "financials": -0.4,
+    "ai": -0.25,
+    "semis": -0.25,
+    "energy": -0.3
   },
   "events": [
     {
-      "headline": "Wall Street posted its strongest session since April on Nov 9 (Dow +2.15%, S&P 500 +2.35%, Nasdaq +2.74%), led by a sharp rebound in technology names, while the VIX fell 22% to 19.92 -- its lowest close since the post-election rally -- as prior-week AI-valuation/bubble jitters eased heading into Nov 10's CPI print",
-      "themes": ["tech", "ai", "semis"],
-      "source": "home.saxo",
-      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---wall-street-rebounds-and-brent-slides-below-usd-92---10-november-2026-10112026"
-    },
-    {
-      "headline": "Brent crude slid below $92/bbl (roughly 91.5, with some feeds showing a sharper intraday drop) on Nov 10 on Middle East peace hopes easing the geopolitical risk premium in oil, continuing last week's pullback from the Nov 3 highs near $103",
-      "themes": ["energy"],
-      "source": "home.saxo",
-      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---wall-street-rebounds-and-brent-slides-below-usd-92---10-november-2026-10112026"
-    },
-    {
-      "headline": "China's one-year suspension of its expanded Oct 2025 rare-earth/lithium-battery export controls (MOFCOM Announcement No. 70 of 2025) was due to lapse exactly Nov 10, 2026; multiple trade-press and law-firm sources (SMM, Mining.com, Tom's Hardware, Clark Hill) report it was extended to Jan 10, 2027 following the Trump-Xi summit, though no primary MOFCOM notice was directly verified -- treated as probable but not fully confirmed",
-      "themes": ["materials"],
-      "source": "mining.com",
-      "url": "https://www.mining.com/china-to-suspend-new-ree-export-controls-for-1-year"
-    },
-    {
-      "headline": "Markets await the Oct CPI report due Nov 10 (headline expected +0.3% m/m, slowing from Sept's +0.6%); Fed Governor Waller has signaled he leans toward supporting a rate hike at the December meeting, keeping financials exposed to hawkish-surprise risk this week",
+      "headline": "October CPI report (released Nov 10, 2026) came in hotter than expected: headline +0.4% m/m vs +0.3% consensus, core +0.3% vs +0.2% consensus, the third straight month of 0.3% core gains; this raised odds of a Fed rate hike at the Dec 9 FOMC meeting, with Dallas Fed President Lorie Logan saying she sees a need for two more quarter-point increases",
       "themes": ["financials"],
-      "source": "stocktitan.net",
-      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-10-2026"
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
+    },
+    {
+      "headline": "Nvidia's board of directors opened an independent investigation (announced Nov 8) into CEO Jensen Huang after reports he had a personal relationship with an executive at cloud company Megaspeed alleged by US intelligence to be passing information to Beijing; NVDA fell ~4.3% on Nov 9, erasing nearly $200B in market value, and three House committee chairs asked Huang to respond by Nov 11 ahead of Nvidia's Nov 17 earnings",
+      "themes": ["ai", "semis"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
+    },
+    {
+      "headline": "Oil prices eased to a nearly four-week low amid Iran/Middle East peace talks easing the geopolitical risk premium; Brent traded near $98/bbl on Nov 9 while JPMorgan warned the global oil market is heading toward a supply surplus as Middle East exports recover and non-OPEC production rises",
+      "themes": ["energy"],
+      "source": "khaleejtimes.com",
+      "url": "https://www.khaleejtimes.com/oil-prices-ease-to-nearly-four-week-low-amid-peace-talks"
     }
   ]
 }
