@@ -39,3 +39,11 @@
 {"date": "2026-11-11", "source": "cnbc.com", "theme": "ai", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-11T14:35:59.177354+00:00"}
 {"date": "2026-11-11", "source": "cnbc.com", "theme": "semis", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-11T14:35:59.177362+00:00"}
 {"date": "2026-11-11", "source": "khaleejtimes.com", "theme": "energy", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-11T14:35:59.177369+00:00"}
+{"date": "2026-11-12", "source": "aljazeera.com", "theme": "defense", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-12T14:35:44.099709+00:00"}
+{"date": "2026-11-12", "source": "aljazeera.com", "theme": "energy", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-12T14:35:44.099735+00:00"}
+{"date": "2026-11-12", "source": "thenationalnews.com", "theme": "materials", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-12T14:35:44.099747+00:00"}
+{"date": "2026-11-12", "source": "cnbc.com", "theme": "financials", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-12T14:35:44.099754+00:00"}
+{"date": "2026-11-12", "source": "finance.yahoo.com", "theme": "ai", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-12T14:35:44.099759+00:00"}
+{"date": "2026-11-12", "source": "finance.yahoo.com", "theme": "semis", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-12T14:35:44.099764+00:00"}
+{"date": "2026-11-12", "source": "datacenterknowledge.com", "theme": "ai", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-12T14:35:44.099769+00:00"}
+{"date": "2026-11-12", "source": "datacenterknowledge.com", "theme": "semis", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-12T14:35:44.099773+00:00"}
