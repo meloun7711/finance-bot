@@ -1,28 +1,42 @@
 {
   "themes": {
-    "financials": -0.4,
-    "ai": -0.25,
-    "semis": -0.25,
-    "energy": -0.3
+    "defense": 0.4,
+    "energy": 0.35,
+    "materials": 0.2,
+    "financials": -0.3,
+    "ai": 0.3,
+    "semis": 0.3
   },
   "events": [
     {
-      "headline": "October CPI report (released Nov 10, 2026) came in hotter than expected: headline +0.4% m/m vs +0.3% consensus, core +0.3% vs +0.2% consensus, the third straight month of 0.3% core gains; this raised odds of a Fed rate hike at the Dec 9 FOMC meeting, with Dallas Fed President Lorie Logan saying she sees a need for two more quarter-point increases",
+      "headline": "Iran-linked attacks on commercial shipping in and around the Strait of Hormuz accelerated through early November 2026 (at least 8 vessels struck since Nov 1, including a VLCC engine-room strike and a tanker fire forcing a 25-person evacuation), with the US and Iran trading strikes on vessels over the Nov 7-8 weekend despite a fragile truce; JMIC data shows ~490 vessels queued outside the strait and Kpler puts flows at ~68% of the pre-war 17.1M bpd baseline",
+      "themes": ["defense", "energy"],
+      "source": "aljazeera.com",
+      "url": "https://www.aljazeera.com/news/2026/10/17/us-and-iran-both-claim-control-of-strait-of-hormuz-amid-attacks-on-vessels"
+    },
+    {
+      "headline": "China's Ministry of Commerce extended (announced Nov 9) its suspension of expanded October-2025 export controls on rare earths, lithium-battery materials and graphite anodes by roughly two months rather than letting it lapse on the original Nov 10 deadline, easing near-term supply-chain disruption risk for materials buyers; note heavier April-2025 licensing rules on elements like dysprosium/terbium/yttrium remain in force",
+      "themes": ["materials"],
+      "source": "thenationalnews.com",
+      "url": "https://www.thenationalnews.com/news/us/2026/11/09/china-extends-pause-on-rare-earth-export-curbs-for-two-months/"
+    },
+    {
+      "headline": "US October CPI (released Nov 10) ran hot for a third straight month — headline +0.4% m/m vs +0.3% consensus, core +0.3% vs +0.2% — lifting priced odds of a Fed hike at the Dec 9 FOMC meeting (one market cited ~85.5% odds of a move) and prompting a Dallas Fed official to call for two more quarter-point increases",
       "themes": ["financials"],
       "source": "cnbc.com",
       "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
     },
     {
-      "headline": "Nvidia's board of directors opened an independent investigation (announced Nov 8) into CEO Jensen Huang after reports he had a personal relationship with an executive at cloud company Megaspeed alleged by US intelligence to be passing information to Beijing; NVDA fell ~4.3% on Nov 9, erasing nearly $200B in market value, and three House committee chairs asked Huang to respond by Nov 11 ahead of Nvidia's Nov 17 earnings",
+      "headline": "Nasdaq and S&P 500 surged on Nov 11 as chip and AI names rebounded sharply — CoreWeave paced a broad AI-infrastructure rally and Nvidia bounced back from its prior-week selloff — even as the hot CPI print above kept Fed-hike odds elevated",
       "themes": ["ai", "semis"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-futures-131247889.html"
     },
     {
-      "headline": "Oil prices eased to a nearly four-week low amid Iran/Middle East peace talks easing the geopolitical risk premium; Brent traded near $98/bbl on Nov 9 while JPMorgan warned the global oil market is heading toward a supply surplus as Middle East exports recover and non-OPEC production rises",
-      "themes": ["energy"],
-      "source": "khaleejtimes.com",
-      "url": "https://www.khaleejtimes.com/oil-prices-ease-to-nearly-four-week-low-amid-peace-talks"
+      "headline": "Nvidia's board-level independent investigation into CEO Jensen Huang's reported ties to an executive accused of passing information to Beijing remains open with no findings yet; three House committee chairs pressed Huang to accept a Nov 18 closed-door briefing date (or propose an alternative by Nov 11), keeping a governance overhang on AI/semis names ahead of Nvidia's Nov 17 earnings even as the stock rebounded",
+      "themes": ["ai", "semis"],
+      "source": "datacenterknowledge.com",
+      "url": "https://datacenterknowledge.com/data-center-chips/nvidia-probes-huang-ties-as-ai-industry-weighs-the-fallout"
     }
   ]
 }
