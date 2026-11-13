@@ -1,0 +1,11 @@
+{
+  "version": 5,
+  "params": {
+    "gate": 0.33,
+    "max_positions": 20,
+    "exposure": 1.0
+  },
+  "parent": 4,
+  "activated": "2026-11-13T20:43:02.563695+00:00",
+  "note": "user set exposure to 1.0 (matches the backtested config); self-tuning frozen for 60 sessions"
+}

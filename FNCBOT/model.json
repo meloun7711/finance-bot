@@ -1,11 +1,11 @@
 {
-  "version": 4,
+  "version": 5,
   "params": {
     "gate": 0.33,
     "max_positions": 20,
-    "exposure": 0.85
+    "exposure": 1.0
   },
-  "parent": 3,
-  "activated": "2026-11-09T14:35:35.853294+00:00",
-  "note": "v3 daily P&L -2429.9 < parent v2 -488.11 \u2014 rolled back"
+  "parent": 4,
+  "activated": "2026-11-13T20:43:02.563695+00:00",
+  "note": "user set exposure to 1.0 (matches the backtested config); self-tuning frozen for 60 sessions"
 }
