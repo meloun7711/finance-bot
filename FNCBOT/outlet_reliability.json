@@ -1,1 +1,88 @@
-{}
+{
+  "ajc.com": {
+    "financials": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    }
+  },
+  "cbsnews.com": {
+    "defense": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.76
+    },
+    "energy": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.704
+    }
+  },
+  "cnbc.com": {
+    "financials": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    }
+  },
+  "finance.yahoo.com (reuters)": {
+    "ai": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.76
+    },
+    "semis": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.704
+    },
+    "tech": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.798
+    }
+  },
+  "fool.com": {
+    "materials": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.704
+    }
+  },
+  "news.metal.com (smm)": {
+    "materials": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    }
+  },
+  "pandaforecast.com / grafa.com / sabq.org": {
+    "defense": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.24
+    },
+    "energy": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    }
+  },
+  "zacks.com / foxcarolina.com": {
+    "ai": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    },
+    "semis": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.24
+    },
+    "tech": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.202
+    }
+  }
+}
