@@ -193,7 +193,11 @@ def _cmd_trade_paper(args: argparse.Namespace) -> int:
         print(json.dumps(out, indent=2))
         return 0
 
-    targets, asof = target_book()
+    from finance_bot import exit_rules
+    pos = broker_alpaca.positions()
+    stop = exit_rules.check_stops(pos)                 # pure: decides stops + cooldown
+    held = [p["symbol"] for p in pos if p["symbol"] not in stop["to_close"]]
+    targets, asof = target_book(held=held, blocked=stop["blocked"])
     print(f"REBALANCE DAY — target book from predictions (as-of {asof}): {len(targets)} "
           f"names @ {list(targets.values())[0]*100:.1f}% each" if targets else "no target names")
     if not targets:

@@ -31,6 +31,7 @@ Old format ({"themes":{...},"events":[{themes,source}]}) is still accepted.
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime, timezone
 
 import numpy as np
@@ -43,8 +44,21 @@ REL_FILE = config.ROOT / "FNCBOT" / "outlet_reliability.json"
 
 HORIZON = 5                     # trading days to judge a call
 PRIOR = 2.0                     # shrinkage strength at each hierarchy level
+MIN_TRACK = 8.0                 # graded call-weight an outlet needs for full say
 DIR = {"up": 1, "down": -1, "flat": 0, "neutral": 0, "": 0}
 STRENGTH = {"strong": 1.0, "moderate": 0.6, "mild": 0.3, "weak": 0.3}
+
+
+_DOMAIN = re.compile(r"[a-z0-9-]+(?:\.[a-z0-9-]+)+")
+
+
+def _norm_source(x) -> str:
+    """One stable id per outlet: the first bare domain in whatever the brain
+    wrote ("finance.yahoo.com (reuters)" / "zacks.com / fox.com" -> first
+    domain). Without this an outlet never accumulates a track record."""
+    s = (x or "unknown").strip().lower()
+    m = _DOMAIN.search(s)
+    return m.group(0).removeprefix("www.") if m else s
 
 
 def _dir(x) -> int:
@@ -70,7 +84,7 @@ def _iter_calls(news: dict):
     events = news.get("events", []) or []
     legacy_themes = news.get("themes", {}) or {}
     for ev in events:
-        src = (ev.get("source") or "unknown").strip().lower()
+        src = _norm_source(ev.get("source"))
         calls = ev.get("calls")
         if calls:                                   # new schema
             for c in calls:
@@ -215,17 +229,37 @@ def resolve_due(close_df, asof: str) -> dict:
     return {"resolved_now": resolved, "open_calls": open_calls}
 
 
+def trust(source: str, theme: str, rel: dict | None = None) -> float:
+    """How much an outlet is allowed to move the book on a theme, in [0,1].
+
+    Zero until earned: skill above a coin flip (2*(reliability-0.5), floored at
+    0) scaled by how much graded history the outlet has (full say only after
+    MIN_TRACK of resolved call-weight). An unproven or coin-flip outlet -> 0.
+    """
+    rel = load_reliability() if rel is None else rel
+    src = rel.get(source)
+    if not src:
+        return 0.0
+    n = sum(c["a"] + c["b"] for c in src.values())
+    skill = max(0.0, 2.0 * (reliability(source, theme, rel) - 0.5))
+    return skill * min(1.0, n / MIN_TRACK)
+
+
 def net_theme_tilts(news: dict, rel: dict | None = None) -> dict:
-    """Reliability- and strength-weighted consensus direction per theme, in
-    [-1,1]. This REPLACES any brain-emitted net tilt: the brain reports who said
-    what, the engine decides the net using learned trust."""
+    """Trust- and strength-weighted direction per theme, in [-1,1].
+
+    tilt = sum(sign * strength * trust) / sum(strength). The denominator has NO
+    trust in it on purpose: the earlier version normalised by trust too, which
+    made the tilt a pure average of signs that saturated at +/-1.0 whenever
+    outlets agreed (and flipped whole themes in and out of the book day to day).
+    Now the size of the tilt is bounded by how much the outlets have earned.
+    """
     rel = load_reliability() if rel is None else rel
     acc: dict[str, list[float]] = {}                # theme -> [num, den]
     for src, th, sign, stg in _iter_calls(news):
-        w = stg * reliability(src, th, rel)
         a = acc.setdefault(th, [0.0, 0.0])
-        a[0] += sign * w
-        a[1] += w
+        a[0] += sign * stg * trust(src, th, rel)
+        a[1] += stg
     return {th: (num / den if den else 0.0) for th, (num, den) in acc.items()}
 
 

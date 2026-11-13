@@ -80,9 +80,48 @@ def _decision_scores():
     return df.sort_values("decision", ascending=False), str(C.index[-1].date()), C
 
 
-def target_book(top_n: int = 20, cap: float = 0.05) -> tuple[dict, str]:
-    """The paper trade targets FROM THE BOT'S PREDICTIONS: top-N news-adjusted
-    names scoring >= gate, equal-weight at the cap x the model's exposure."""
+def select_book(df: pd.DataFrame, held=(), blocked=(), n: int | None = None,
+                exit_rank: int | None = None, theme_cap: int | None = None) -> list[str]:
+    """Pick the book from a decision-ranked frame (best first).
+
+    * keep a HELD name while it still ranks <= exit_rank and clears the gate
+      (rank buffer: a name slipping from 20th to 25th is not a reason to sell);
+    * fill the remaining slots best-first with names that are not blocked
+      (no re-buy for EXIT_COOLDOWN_DAYS after any sale);
+    * never more than theme_cap names sharing a primary theme.
+    """
+    n = config.BOOK_SIZE if n is None else n
+    exit_rank = config.EXIT_RANK if exit_rank is None else exit_rank
+    theme_cap = config.THEME_CAP if theme_cap is None else theme_cap
+    held, blocked = set(held), set(blocked)
+    ranked = list(df.itertuples())
+    primary = lambda tk: (theme_of(tk) or ["?"])[0]
+    book, count = [], {}
+
+    def take(tk) -> bool:
+        th = primary(tk)
+        if len(book) >= n or count.get(th, 0) >= theme_cap:
+            return False
+        book.append(tk); count[th] = count.get(th, 0) + 1
+        return True
+
+    for rank, r in enumerate(ranked, 1):            # 1) keepers, best-ranked first
+        if rank > exit_rank:
+            break
+        if r.ticker in held and r.ticker not in blocked and r.decision >= UP_GATE:
+            take(r.ticker)
+    for r in ranked:                                # 2) fill the open slots
+        if len(book) >= n or r.decision < UP_GATE:
+            break
+        if r.ticker not in book and r.ticker not in blocked:
+            take(r.ticker)
+    return book
+
+
+def target_book(held=(), blocked=()) -> tuple[dict, str]:
+    """The paper trade targets FROM THE BOT'S PREDICTIONS: a buffered,
+    theme-capped book of BOOK_SIZE names at BOOK_WEIGHT x the model's exposure.
+    `held` = symbols currently owned, `blocked` = symbols inside a cooldown."""
     df, asof, _ = _decision_scores()
     exposure = 1.0
     mp = config.ROOT / "FNCBOT" / "model.json"
@@ -91,9 +130,8 @@ def target_book(top_n: int = 20, cap: float = 0.05) -> tuple[dict, str]:
             exposure = float(json.loads(mp.read_text())["params"].get("exposure", 1.0))
         except Exception:
             pass
-    picks = df[df.decision >= UP_GATE].head(top_n)
-    w = cap * exposure
-    return {r.ticker: w for r in picks.itertuples()}, asof
+    w = min(config.BOOK_WEIGHT, config.MAX_TRADE_FRACTION) * exposure
+    return {tk: w for tk in select_book(df, held, blocked)}, asof
 
 
 def _load_news_tilt() -> dict:
