@@ -47,6 +47,10 @@ START_CAPITAL = 100_000.0
 PER_NAME_CAP = config.MAX_TRADE_FRACTION      # 5% hard cap (never exceeded)
 REBALANCE_MIN_DELTA = 0.005
 LEARN_EVERY = 5                                # sessions between learn steps (~weekly)
+# A version must run this many sessions before it can be adjusted or reverted.
+# With the old 5-session window the controller flip-flopped exposure on noise
+# (0.85 -> 1.0 on 2026-11-02, the day before the worst loss, -> 0.85 a week later).
+LEARN_MIN_DAYS = 60
 
 # learnable params + HARD bounds the learner may never cross
 DEFAULT_PARAMS = {"gate": 0.33, "max_positions": 20, "exposure": 1.0}
@@ -135,8 +139,8 @@ def _version_perf(perf: pd.DataFrame, version: int) -> dict | None:
 def maybe_learn(model: dict, perf: pd.DataFrame) -> dict:
     """Evaluate the live version; adjust one knob or revert. Returns model."""
     vperf = _version_perf(perf, model["version"])
-    if vperf is None or vperf["days"] < LEARN_EVERY:
-        return model                                       # not enough data yet
+    if vperf is None or vperf["days"] < LEARN_MIN_DAYS:
+        return model                                       # frozen until a long window
 
     params = dict(model["params"])
     # 1) rollback guard — did this version do worse per-day than its parent?

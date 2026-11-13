@@ -17,8 +17,11 @@ from __future__ import annotations
 
 import os
 import time
+from datetime import date, timedelta
 
 import requests
+
+from finance_bot import config
 
 # ── PAPER ONLY. Do not change this to the live host. Guarded below. ──────────
 BASE = "https://paper-api.alpaca.markets"
@@ -96,7 +99,7 @@ def rebalance(targets: dict[str, float]) -> dict:
 
     # ── EXIT RULE: hard stop-loss + cooldown (prototype, see exit_rules.py) ──
     stop = exit_rules.check_stops(pos)                 # decides stops, refreshes cooldown
-    exit_rules.save_cooldown(stop["cooldown"])
+    cooldown = stop["cooldown"]
     blocked = stop["blocked"]                          # stopped today + still cooling off
     # drop blocked names from the target book so we don't rebuy a falling knife
     tgt_usd = {s: min(w, PER_NAME_CAP) * equity
@@ -104,10 +107,13 @@ def rebalance(targets: dict[str, float]) -> dict:
 
     orders = []
     # 1) exit names no longer in the target book (this closes stopped names too)
+    release = (date.today() + timedelta(days=config.EXIT_COOLDOWN_DAYS)).isoformat()
     for sym in list(held):
         if sym not in tgt_usd:
             orders.append(_close(sym))
+            cooldown.setdefault(sym, release)          # no re-buy after ANY sale
             time.sleep(0.15)
+    exit_rules.save_cooldown(cooldown)
     # 2) adjust target names to their weight
     for sym, want in tgt_usd.items():
         have = held.get(sym, 0.0)
@@ -120,7 +126,7 @@ def rebalance(targets: dict[str, float]) -> dict:
     errs = [o for o in orders if "error" in o]
     return {"endpoint": "PAPER", "equity": round(equity, 2),
             "targets": len(tgt_usd), "orders_sent": len(orders),
-            "stopped_out": stop["to_close"], "blocked_names": len(blocked),
+            "stopped_out": stop["to_close"], "blocked_names": len(cooldown),
             "errors": len(errs), "error_samples": errs[:3]}
 
 

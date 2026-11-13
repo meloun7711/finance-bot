@@ -38,6 +38,19 @@ REQUIRE_MANUAL_CONFIRMATION = True   # hard gate; do not change to auto-fire
 # only re-selected once every REBALANCE_MIN_DAYS. State in FNCBOT/last_rebalance.json.
 REBALANCE_MIN_DAYS = 6        # ~weekly, robust to holidays
 
+# --- Book construction ----------------------------------------------------
+# Post-mortem of the Aug-Nov 2026 loss: 20 concentrated momentum names lost ~19%
+# while the equal-weight universe lost ~6%; semis+AI alone were 70% of the
+# realized loss, and 23 names were bought 4+ times (DELL 0/4, QMCO 0/4).
+# Backtest (6yr): 50 names @ 2% with a per-theme cap and a rank buffer has the
+# best Sharpe of any variant tested (1.20 vs 0.99) and the shallowest drawdown
+# (-25% vs -31%), with a third of the turnover. Known cost: it does worse than
+# the concentrated book in a single-sector year like 2022 (energy).
+BOOK_SIZE = 50                # names held
+BOOK_WEIGHT = 0.02            # weight per name (x model exposure); <= MAX_TRADE_FRACTION
+EXIT_RANK = 100               # hold a name until its rank falls below this (2x book)
+THEME_CAP = 10                # max names sharing a primary theme (20% of the book)
+
 # --- Exit rule (prototype) ------------------------------------------------
 # Diagnosed weakness: losers were left to run (worst trades −30% to −47%) while
 # winners were cut. Fix, chosen by a 6-year cross-regime sweep (see
@@ -46,7 +59,7 @@ REBALANCE_MIN_DAYS = 6        # ~weekly, robust to holidays
 # fires on genuine breakdowns and truncates the worst trade to ~−22%. The −15% /
 # 10-trading-day levels sit on a flat plateau (robust, not an overfit spike).
 STOP_LOSS_PCT = 0.15          # force-close a name down >=15% from entry
-EXIT_COOLDOWN_DAYS = 14       # calendar days a stopped name is blocked (~10 trading days)
+EXIT_COOLDOWN_DAYS = 14       # calendar days (~10 trading) a name is blocked after ANY sale
 NO_TRAILING_STOP = True       # documented: trailing stops hurt returns here
 NO_TAKE_PROFIT = True         # documented: never cap winners (that was the disease)
 
