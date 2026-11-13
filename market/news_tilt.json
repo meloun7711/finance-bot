@@ -1,42 +1,41 @@
 {
   "themes": {
-    "defense": 0.4,
-    "energy": 0.35,
+    "defense": 0.3,
     "materials": 0.2,
-    "financials": -0.3,
-    "ai": 0.3,
-    "semis": 0.3
+    "semis": -0.2,
+    "financials": 0.2,
+    "tech": -0.15
   },
   "events": [
     {
-      "headline": "Iran-linked attacks on commercial shipping in and around the Strait of Hormuz accelerated through early November 2026 (at least 8 vessels struck since Nov 1, including a VLCC engine-room strike and a tanker fire forcing a 25-person evacuation), with the US and Iran trading strikes on vessels over the Nov 7-8 weekend despite a fragile truce; JMIC data shows ~490 vessels queued outside the strait and Kpler puts flows at ~68% of the pre-war 17.1M bpd baseline",
-      "themes": ["defense", "energy"],
-      "source": "aljazeera.com",
-      "url": "https://www.aljazeera.com/news/2026/10/17/us-and-iran-both-claim-control-of-strait-of-hormuz-amid-attacks-on-vessels"
+      "headline": "US-Israel war with Iran continues, reported opening of a second maritime front",
+      "themes": ["defense"],
+      "source": "cfr.org",
+      "url": "https://www.cfr.org/global-conflict-tracker"
     },
     {
-      "headline": "China's Ministry of Commerce extended (announced Nov 9) its suspension of expanded October-2025 export controls on rare earths, lithium-battery materials and graphite anodes by roughly two months rather than letting it lapse on the original Nov 10 deadline, easing near-term supply-chain disruption risk for materials buyers; note heavier April-2025 licensing rules on elements like dysprosium/terbium/yttrium remain in force",
+      "headline": "China extends suspension of export controls on five heavy rare earths (holmium, erbium, thulium, europium, ytterbium) and related lithium-battery/graphite rules from Nov 10 to Jan 10, 2027; April-2025 controls on 7 other rare earths remain active",
       "themes": ["materials"],
-      "source": "thenationalnews.com",
-      "url": "https://www.thenationalnews.com/news/us/2026/11/09/china-extends-pause-on-rare-earth-export-curbs-for-two-months/"
+      "source": "spglobal.com",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/110926-china-extends-rare-earth-export-suspension-to-january-2027"
     },
     {
-      "headline": "US October CPI (released Nov 10) ran hot for a third straight month — headline +0.4% m/m vs +0.3% consensus, core +0.3% vs +0.2% — lifting priced odds of a Fed hike at the Dec 9 FOMC meeting (one market cited ~85.5% odds of a move) and prompting a Dallas Fed official to call for two more quarter-point increases",
+      "headline": "US pressure intensifies for tighter AI chip export curbs to China amid Nvidia probe, creating uncertainty for Samsung/SK Hynix HBM demand",
+      "themes": ["semis"],
+      "source": "digitimes.com",
+      "url": "https://apps.digitimes.com/tag/chips/0023979.html"
+    },
+    {
+      "headline": "Federal Reserve held its key rate steady at ~3.9% on Oct 28 despite elevated inflation; two governors dissented in favor of a hike, markets pricing meaningful odds of a hike at the next meeting",
       "themes": ["financials"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
+      "source": "apnews.com",
+      "url": "https://www.live5news.com/2026/10/28/federal-reserve-keeps-interest-rates-unchanged-ahead-midterms-despite-elevated-inflation/"
     },
     {
-      "headline": "Nasdaq and S&P 500 surged on Nov 11 as chip and AI names rebounded sharply — CoreWeave paced a broad AI-infrastructure rally and Nvidia bounced back from its prior-week selloff — even as the hot CPI print above kept Fed-hike odds elevated",
-      "themes": ["ai", "semis"],
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-futures-131247889.html"
-    },
-    {
-      "headline": "Nvidia's board-level independent investigation into CEO Jensen Huang's reported ties to an executive accused of passing information to Beijing remains open with no findings yet; three House committee chairs pressed Huang to accept a Nov 18 closed-door briefing date (or propose an alternative by Nov 11), keeping a governance overhang on AI/semis names ahead of Nvidia's Nov 17 earnings even as the stock rebounded",
-      "themes": ["ai", "semis"],
-      "source": "datacenterknowledge.com",
-      "url": "https://datacenterknowledge.com/data-center-chips/nvidia-probes-huang-ties-as-ai-industry-weighs-the-fallout"
+      "headline": "EU interim-measures order forcing WhatsApp to reopen to rival AI assistants faces legal scrutiny after Meta challenge, underscoring active EU digital-regulation enforcement against Big Tech",
+      "themes": ["tech"],
+      "source": "globalcompetitionreview.com",
+      "url": "https://globalcompetitionreview.com/article/wrong-call-the-briefing-9-november-2026"
     }
   ]
 }
