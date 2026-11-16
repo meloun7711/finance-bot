@@ -2,8 +2,8 @@
   "ajc.com": {
     "financials": {
       "a": 0.0,
-      "b": 0.6,
-      "reliability": 0.296
+      "b": 1.2,
+      "reliability": 0.195
     }
   },
   "cbsnews.com": {
@@ -49,15 +49,8 @@
       "reliability": 0.704
     }
   },
-  "news.metal.com (smm)": {
-    "materials": {
-      "a": 0.0,
-      "b": 0.6,
-      "reliability": 0.296
-    }
-  },
-  "pandaforecast.com / grafa.com / sabq.org": {
-    "defense": {
+  "home.saxo": {
+    "ai": {
       "a": 0.0,
       "b": 0.6,
       "reliability": 0.24
@@ -65,24 +58,67 @@
     "energy": {
       "a": 0.0,
       "b": 0.6,
+      "reliability": 0.175
+    },
+    "semis": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.202
+    },
+    "tech": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    }
+  },
+  "mining.com": {
+    "materials": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    }
+  },
+  "news.metal.com (smm)": {
+    "materials": {
+      "a": 0.0,
+      "b": 1.2,
+      "reliability": 0.195
+    }
+  },
+  "pandaforecast.com / grafa.com / sabq.org": {
+    "defense": {
+      "a": 0.6,
+      "b": 0.6,
+      "reliability": 0.415
+    },
+    "energy": {
+      "a": 0.0,
+      "b": 1.2,
+      "reliability": 0.164
+    }
+  },
+  "stocktitan.net": {
+    "financials": {
+      "a": 0.0,
+      "b": 0.6,
       "reliability": 0.296
     }
   },
   "zacks.com / foxcarolina.com": {
     "ai": {
-      "a": 0.0,
+      "a": 0.6,
       "b": 0.6,
-      "reliability": 0.296
+      "reliability": 0.415
     },
     "semis": {
-      "a": 0.0,
+      "a": 0.6,
       "b": 0.6,
-      "reliability": 0.24
+      "reliability": 0.462
     },
     "tech": {
-      "a": 0.0,
+      "a": 0.6,
       "b": 0.6,
-      "reliability": 0.202
+      "reliability": 0.5
     }
   }
 }
