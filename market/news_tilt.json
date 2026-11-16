@@ -1,41 +1,35 @@
 {
   "themes": {
-    "defense": 0.3,
-    "materials": 0.2,
-    "semis": -0.2,
-    "financials": 0.2,
-    "tech": -0.15
+    "defense": 0.2,
+    "energy": 0.3,
+    "materials": -0.2,
+    "ai": -0.2,
+    "semis": -0.3
   },
   "events": [
     {
-      "headline": "US-Israel war with Iran continues, reported opening of a second maritime front",
-      "themes": ["defense"],
-      "source": "cfr.org",
-      "url": "https://www.cfr.org/global-conflict-tracker"
+      "headline": "Iran seizes tanker, Hormuz ship attacks intensify as US naval blockade on Iranian oil exports continues",
+      "themes": ["defense", "energy"],
+      "source": "lloydslist.com",
+      "url": "https://www.lloydslist.com/LL1155514/Iran-confirms-seizure-of-oil-tanker-in-Gulf-of-Oman"
     },
     {
-      "headline": "China extends suspension of export controls on five heavy rare earths (holmium, erbium, thulium, europium, ytterbium) and related lithium-battery/graphite rules from Nov 10 to Jan 10, 2027; April-2025 controls on 7 other rare earths remain active",
+      "headline": "OPEC+ holds December output targets steady for a third month as Hormuz disruption persists",
+      "themes": ["energy"],
+      "source": "investinglive.com",
+      "url": "https://investinglive.com/commodities/opec-holds-december-targets-steady-for-third-month-as-hormuz-disruption-persists/"
+    },
+    {
+      "headline": "China extends suspension of expanded rare earth, lithium battery and graphite export controls to January 2027",
       "themes": ["materials"],
       "source": "spglobal.com",
       "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/110926-china-extends-rare-earth-export-suspension-to-january-2027"
     },
     {
-      "headline": "US pressure intensifies for tighter AI chip export curbs to China amid Nvidia probe, creating uncertainty for Samsung/SK Hynix HBM demand",
-      "themes": ["semis"],
-      "source": "digitimes.com",
-      "url": "https://apps.digitimes.com/tag/chips/0023979.html"
-    },
-    {
-      "headline": "Federal Reserve held its key rate steady at ~3.9% on Oct 28 despite elevated inflation; two governors dissented in favor of a hike, markets pricing meaningful odds of a hike at the next meeting",
-      "themes": ["financials"],
-      "source": "apnews.com",
-      "url": "https://www.live5news.com/2026/10/28/federal-reserve-keeps-interest-rates-unchanged-ahead-midterms-despite-elevated-inflation/"
-    },
-    {
-      "headline": "EU interim-measures order forcing WhatsApp to reopen to rival AI assistants faces legal scrutiny after Meta challenge, underscoring active EU digital-regulation enforcement against Big Tech",
-      "themes": ["tech"],
-      "source": "globalcompetitionreview.com",
-      "url": "https://globalcompetitionreview.com/article/wrong-call-the-briefing-9-november-2026"
+      "headline": "US lawmakers push for tighter AI chip export controls on China; Nvidia shares fall over 4% amid scrutiny",
+      "themes": ["ai", "semis"],
+      "source": "newsonair.gov.in",
+      "url": "https://newsonair.gov.in/us-lawmakers-push-for-tighter-ai-chip-export-controls-on-china/"
     }
   ]
 }
