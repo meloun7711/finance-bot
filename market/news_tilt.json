@@ -1,35 +1,39 @@
 {
-  "themes": {
-    "defense": 0.2,
-    "energy": 0.3,
-    "materials": -0.2,
-    "ai": -0.2,
-    "semis": -0.3
-  },
+  "as_of": "2026-11-17",
   "events": [
     {
-      "headline": "Iran seizes tanker, Hormuz ship attacks intensify as US naval blockade on Iranian oil exports continues",
-      "themes": ["defense", "energy"],
-      "source": "lloydslist.com",
-      "url": "https://www.lloydslist.com/LL1155514/Iran-confirms-seizure-of-oil-tanker-in-Gulf-of-Oman"
+      "headline": "Nvidia CEO Jensen Huang resigned amid a personal-conduct controversy; CFO Colette Kress is interim CEO, stock down ~35% from its October peak (worst since June 2025), at least 10 analysts cut to Hold citing no clear successor; Q3 FY2027 earnings due after close today",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/markets/article/massive-shoes-to-fill--wall-street-weighs-nvidia-stock-amid-ceo-fallout-131854664.html",
+      "calls": [
+        {"theme": "ai", "dir": "down", "strength": "strong"},
+        {"theme": "semis", "dir": "down", "strength": "strong"}
+      ]
     },
     {
-      "headline": "OPEC+ holds December output targets steady for a third month as Hormuz disruption persists",
-      "themes": ["energy"],
-      "source": "investinglive.com",
-      "url": "https://investinglive.com/commodities/opec-holds-december-targets-steady-for-third-month-as-hormuz-disruption-persists/"
+      "headline": "CBS News: Iranian claims of tankers striking mines near Strait of Hormuz are largely unverified/disputed (CENTCOM called one claim 'FALSE', Trump accuses Iran of fabricating to raise oil prices); UKMTO independently confirms separate projectile strikes on tankers continue, and the US naval blockade on Iranian oil ports remains in place",
+      "source": "cbsnews.com",
+      "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/",
+      "calls": [
+        {"theme": "defense", "dir": "up", "strength": "moderate"},
+        {"theme": "energy", "dir": "up", "strength": "moderate"}
+      ]
     },
     {
-      "headline": "China extends suspension of expanded rare earth, lithium battery and graphite export controls to January 2027",
-      "themes": ["materials"],
-      "source": "spglobal.com",
-      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/110926-china-extends-rare-earth-export-suspension-to-january-2027"
+      "headline": "China's rare-earth export-control pause (covering holmium, erbium, thulium, europium, ytterbium and related processing tech) was set to expire Nov 10; as of early Nov it had not yet been formally re-extended, leaving legal status of the suspension uncertain even as other reporting claims a Jan 10, 2027 extension was announced",
+      "source": "fool.com",
+      "url": "https://www.fool.com/investing/2026/11/05/china-rare-earth-export-pause-usar-mp-materials/",
+      "calls": [
+        {"theme": "materials", "dir": "down", "strength": "mild"}
+      ]
     },
     {
-      "headline": "US lawmakers push for tighter AI chip export controls on China; Nvidia shares fall over 4% amid scrutiny",
-      "themes": ["ai", "semis"],
-      "source": "newsonair.gov.in",
-      "url": "https://newsonair.gov.in/us-lawmakers-push-for-tighter-ai-chip-export-controls-on-china/"
+      "headline": "CNBC: St. Louis Fed's Musalem says the Fed may need up to four more rate hikes; Chicago Fed's Goolsbee called October's hotter-than-expected CPI 'borderline disturbing'; CME FedWatch shows fed funds futures unanimously pricing a December hike after October's hold (two governors dissented in favor of hiking then)",
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
+      "calls": [
+        {"theme": "financials", "dir": "down", "strength": "moderate"}
+      ]
     }
   ]
 }
