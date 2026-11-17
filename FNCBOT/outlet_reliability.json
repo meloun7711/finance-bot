@@ -19,10 +19,20 @@
     }
   },
   "cnbc.com": {
+    "ai": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.676
+    },
     "financials": {
-      "a": 0.0,
+      "a": 0.6,
       "b": 0.6,
-      "reliability": 0.296
+      "reliability": 0.5
+    },
+    "semis": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.72
     }
   },
   "finance.yahoo.com (reuters)": {
@@ -52,20 +62,27 @@
   "home.saxo": {
     "ai": {
       "a": 0.0,
-      "b": 0.6,
-      "reliability": 0.24
+      "b": 1.2,
+      "reliability": 0.112
     },
     "energy": {
       "a": 0.0,
-      "b": 0.6,
-      "reliability": 0.175
+      "b": 1.2,
+      "reliability": 0.092
     },
     "semis": {
       "a": 0.0,
-      "b": 0.6,
-      "reliability": 0.202
+      "b": 1.2,
+      "reliability": 0.101
     },
     "tech": {
+      "a": 0.0,
+      "b": 1.2,
+      "reliability": 0.125
+    }
+  },
+  "khaleejtimes.com": {
+    "energy": {
       "a": 0.0,
       "b": 0.6,
       "reliability": 0.296
@@ -74,8 +91,8 @@
   "mining.com": {
     "materials": {
       "a": 0.0,
-      "b": 0.6,
-      "reliability": 0.296
+      "b": 1.2,
+      "reliability": 0.195
     }
   },
   "news.metal.com (smm)": {
@@ -99,9 +116,9 @@
   },
   "stocktitan.net": {
     "financials": {
-      "a": 0.0,
+      "a": 0.6,
       "b": 0.6,
-      "reliability": 0.296
+      "reliability": 0.5
     }
   },
   "zacks.com / foxcarolina.com": {
