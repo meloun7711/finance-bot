@@ -20,19 +20,19 @@
   },
   "cnbc.com": {
     "ai": {
-      "a": 0.6,
+      "a": 1.2,
       "b": 0.0,
-      "reliability": 0.676
+      "reliability": 0.821
     },
     "financials": {
-      "a": 0.6,
+      "a": 1.2,
       "b": 0.6,
-      "reliability": 0.5
+      "reliability": 0.674
     },
     "semis": {
-      "a": 0.6,
+      "a": 1.2,
       "b": 0.0,
-      "reliability": 0.72
+      "reliability": 0.839
     }
   },
   "finance.yahoo.com (reuters)": {
@@ -83,9 +83,9 @@
   },
   "khaleejtimes.com": {
     "energy": {
-      "a": 0.0,
+      "a": 0.6,
       "b": 0.6,
-      "reliability": 0.296
+      "reliability": 0.5
     }
   },
   "mining.com": {
