@@ -1,38 +1,38 @@
 {
-  "as_of": "2026-11-17",
+  "as_of": "2026-11-18",
   "events": [
     {
-      "headline": "Nvidia CEO Jensen Huang resigned amid a personal-conduct controversy; CFO Colette Kress is interim CEO, stock down ~35% from its October peak (worst since June 2025), at least 10 analysts cut to Hold citing no clear successor; Q3 FY2027 earnings due after close today",
-      "source": "finance.yahoo.com",
-      "url": "https://finance.yahoo.com/markets/article/massive-shoes-to-fill--wall-street-weighs-nvidia-stock-amid-ceo-fallout-131854664.html",
+      "headline": "Nvidia board unanimously accepted Jensen Huang's Nov 12 resignation (personal-conduct scandal) and on the Nov 17 earnings call ruled out reinstating him; interim CEO/CFO Colette Kress reported Q3 revenue up sharply YoY with strong Q4 guidance, but shares remain well off October highs amid the unresolved leadership vacuum and no permanent-successor timeline",
+      "source": "cnn.com",
+      "url": "https://www.cnn.com/2026/11/17/tech/nvidia-earnings-jensen-huang-exit",
       "calls": [
-        {"theme": "ai", "dir": "down", "strength": "strong"},
-        {"theme": "semis", "dir": "down", "strength": "strong"}
+        {"theme": "ai", "dir": "down", "strength": "moderate"},
+        {"theme": "semis", "dir": "down", "strength": "moderate"}
       ]
     },
     {
-      "headline": "CBS News: Iranian claims of tankers striking mines near Strait of Hormuz are largely unverified/disputed (CENTCOM called one claim 'FALSE', Trump accuses Iran of fabricating to raise oil prices); UKMTO independently confirms separate projectile strikes on tankers continue, and the US naval blockade on Iranian oil ports remains in place",
-      "source": "cbsnews.com",
-      "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/",
+      "headline": "St. Louis Fed's Musalem said up to four more rate hikes may be needed after October CPI ran hotter than expected (headline +0.4%, core +0.3%); Chicago Fed's Goolsbee called the report 'borderline disturbing'; futures price a ~90%+ probability of a 25bp December hike, while NY Fed's Williams ruled out a jumbo 50bp move",
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
       "calls": [
-        {"theme": "defense", "dir": "up", "strength": "moderate"},
-        {"theme": "energy", "dir": "up", "strength": "moderate"}
+        {"theme": "financials", "dir": "down", "strength": "moderate"}
       ]
     },
     {
-      "headline": "China's rare-earth export-control pause (covering holmium, erbium, thulium, europium, ytterbium and related processing tech) was set to expire Nov 10; as of early Nov it had not yet been formally re-extended, leaving legal status of the suspension uncertain even as other reporting claims a Jan 10, 2027 extension was announced",
-      "source": "fool.com",
-      "url": "https://www.fool.com/investing/2026/11/05/china-rare-earth-export-pause-usar-mp-materials/",
+      "headline": "China's Ministry of Commerce extended its suspension of the expanded rare-earth/lithium-battery export controls by two months to Jan 10, 2027, easing near-term supply-disruption risk; separate April 2025 licensing curbs on seven medium/heavy rare earths remain in force",
+      "source": "regfollower.com",
+      "url": "https://regfollower.com/china-extends-suspension-of-rare-earth-export-controls-until-january-2027/",
       "calls": [
         {"theme": "materials", "dir": "down", "strength": "mild"}
       ]
     },
     {
-      "headline": "CNBC: St. Louis Fed's Musalem says the Fed may need up to four more rate hikes; Chicago Fed's Goolsbee called October's hotter-than-expected CPI 'borderline disturbing'; CME FedWatch shows fed funds futures unanimously pricing a December hike after October's hold (two governors dissented in favor of hiking then)",
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
+      "headline": "Tanker attacks and seizures continued in the Strait of Hormuz through mid-November (UKMTO-confirmed strike Nov 15-16, Iran claims of mine strikes and a seized Marshall Islands-flagged tanker on Nov 14); many specifics are Iran-sourced and unverified, but the disruption pattern itself is corroborated by UKMTO and maritime trade press",
+      "source": "gcaptain.com",
+      "url": "https://gcaptain.com/iran-says-tanker-carrying-lng-hit-mine-suffered-explosion-in-hormuz/",
       "calls": [
-        {"theme": "financials", "dir": "down", "strength": "moderate"}
+        {"theme": "defense", "dir": "up", "strength": "moderate"},
+        {"theme": "energy", "dir": "up", "strength": "moderate"}
       ]
     }
   ]
