@@ -1,39 +1,35 @@
 {
-  "as_of": "2026-11-18",
+  "themes": {
+    "defense": -0.3,
+    "energy": -0.3,
+    "materials": -0.2,
+    "ai": 0.2,
+    "semis": 0.2
+  },
   "events": [
     {
-      "headline": "Nvidia board unanimously accepted Jensen Huang's Nov 12 resignation (personal-conduct scandal) and on the Nov 17 earnings call ruled out reinstating him; interim CEO/CFO Colette Kress reported Q3 revenue up sharply YoY with strong Q4 guidance, but shares remain well off October highs amid the unresolved leadership vacuum and no permanent-successor timeline",
-      "source": "cnn.com",
-      "url": "https://www.cnn.com/2026/11/17/tech/nvidia-earnings-jensen-huang-exit",
-      "calls": [
-        {"theme": "ai", "dir": "down", "strength": "moderate"},
-        {"theme": "semis", "dir": "down", "strength": "moderate"}
-      ]
+      "headline": "Russia-Ukraine talks show 'serious progress'; Kremlin says it wants lasting peace, not a temporary ceasefire, as fighting continues",
+      "themes": ["defense"],
+      "source": "aljazeera.com",
+      "url": "https://www.aljazeera.com/amp/news/2026/11/17/ukraine-holds-peace-talks-with-us-europe-as-conflict-escalates"
     },
     {
-      "headline": "St. Louis Fed's Musalem said up to four more rate hikes may be needed after October CPI ran hotter than expected (headline +0.4%, core +0.3%); Chicago Fed's Goolsbee called the report 'borderline disturbing'; futures price a ~90%+ probability of a 25bp December hike, while NY Fed's Williams ruled out a jumbo 50bp move",
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
-      "calls": [
-        {"theme": "financials", "dir": "down", "strength": "moderate"}
-      ]
+      "headline": "Oil heads for weekly losses as IEA flags a growing 2026 supply surplus, though Hormuz tanker-attack reports and Gulf export tensions provide some floor",
+      "themes": ["energy"],
+      "source": "oilprice.com",
+      "url": "https://boereport.com/2026/11/15/oil-prices-fall-on-expectations-of-coming-supply-surplus/amp/"
     },
     {
-      "headline": "China's Ministry of Commerce extended its suspension of the expanded rare-earth/lithium-battery export controls by two months to Jan 10, 2027, easing near-term supply-disruption risk; separate April 2025 licensing curbs on seven medium/heavy rare earths remain in force",
-      "source": "regfollower.com",
-      "url": "https://regfollower.com/china-extends-suspension-of-rare-earth-export-controls-until-january-2027/",
-      "calls": [
-        {"theme": "materials", "dir": "down", "strength": "mild"}
-      ]
+      "themes": ["materials"],
+      "headline": "China's Ministry of Commerce extends suspension of expanded rare-earth, lithium-battery and graphite export controls to Jan 10, 2027, easing a supply-chain flashpoint",
+      "source": "scmp.com",
+      "url": "https://www.scmp.com/economy/china-economy/article/3373924/china-extends-rare-earth-controls-pause-pricing-and-financing-hold-back-eu-supply-push"
     },
     {
-      "headline": "Tanker attacks and seizures continued in the Strait of Hormuz through mid-November (UKMTO-confirmed strike Nov 15-16, Iran claims of mine strikes and a seized Marshall Islands-flagged tanker on Nov 14); many specifics are Iran-sourced and unverified, but the disruption pattern itself is corroborated by UKMTO and maritime trade press",
-      "source": "gcaptain.com",
-      "url": "https://gcaptain.com/iran-says-tanker-carrying-lng-hit-mine-suffered-explosion-in-hormuz/",
-      "calls": [
-        {"theme": "defense", "dir": "up", "strength": "moderate"},
-        {"theme": "energy", "dir": "up", "strength": "moderate"}
-      ]
+      "headline": "Broadcom rallies and chip stocks rebound on AI-chip supply-constraint narrative, even as Nvidia slides on an unrelated CEO governance investigation",
+      "themes": ["ai", "semis"],
+      "source": "investinglive.com",
+      "url": "https://investinglive.com/stocks/nvidia-stock-plunges-8-6-but-amd-and-broadcom-rally-which-chip-stocks-are-worth-buying/"
     }
   ]
 }
