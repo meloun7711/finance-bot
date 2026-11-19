@@ -6,6 +6,18 @@
       "reliability": 0.195
     }
   },
+  "aljazeera.com": {
+    "defense": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    },
+    "energy": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.24
+    }
+  },
   "cbsnews.com": {
     "defense": {
       "a": 0.6,
@@ -25,14 +37,38 @@
       "reliability": 0.821
     },
     "financials": {
-      "a": 1.2,
+      "a": 1.7999999999999998,
       "b": 0.6,
-      "reliability": 0.674
+      "reliability": 0.757
     },
     "semis": {
       "a": 1.2,
       "b": 0.0,
       "reliability": 0.839
+    }
+  },
+  "datacenterknowledge.com": {
+    "ai": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    },
+    "semis": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.24
+    }
+  },
+  "finance.yahoo.com": {
+    "ai": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    },
+    "semis": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.24
     }
   },
   "finance.yahoo.com (reuters)": {
@@ -119,6 +155,13 @@
       "a": 0.6,
       "b": 0.6,
       "reliability": 0.5
+    }
+  },
+  "thenationalnews.com": {
+    "materials": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
     }
   },
   "zacks.com / foxcarolina.com": {
