@@ -1,35 +1,43 @@
 {
   "themes": {
-    "defense": -0.3,
+    "defense": 0.4,
     "energy": -0.3,
-    "materials": -0.2,
-    "ai": 0.2,
-    "semis": 0.2
+    "materials": 0.3,
+    "ai": -0.5,
+    "semis": -0.5,
+    "tech": -0.3,
+    "financials": -0.2
   },
   "events": [
     {
-      "headline": "Russia-Ukraine talks show 'serious progress'; Kremlin says it wants lasting peace, not a temporary ceasefire, as fighting continues",
-      "themes": ["defense"],
-      "source": "aljazeera.com",
-      "url": "https://www.aljazeera.com/amp/news/2026/11/17/ukraine-holds-peace-talks-with-us-europe-as-conflict-escalates"
+      "headline": "Nvidia CEO Jensen Huang resigns abruptly amid affair/espionage-linked scandal; CFO Colette Kress named interim CEO",
+      "themes": ["ai", "semis", "tech"],
+      "source": "reuters.com (via NBC News, Washington Post, Nvidia 8-K)",
+      "url": "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-resigns-reports-extramarital-relationships-rcna608402"
     },
     {
-      "headline": "Oil heads for weekly losses as IEA flags a growing 2026 supply surplus, though Hormuz tanker-attack reports and Gulf export tensions provide some floor",
-      "themes": ["energy"],
-      "source": "oilprice.com",
-      "url": "https://boereport.com/2026/11/15/oil-prices-fall-on-expectations-of-coming-supply-surplus/amp/"
+      "headline": "Wall Street AI-stock selloff deepens; S&P 500 hits lowest close since July as Nvidia and peers swing lower",
+      "themes": ["ai", "semis", "tech"],
+      "source": "apnews.com (via wfsb.com, stocktitan.net)",
+      "url": "https://www.wfsb.com/2026/11/17/another-wipeout-hits-wall-street-nvidia-other-jittery-ai-stocks-swing-lower/"
     },
     {
+      "headline": "Iran steps up tanker attacks in Strait of Hormuz as US forces conduct 'defensive strikes' on Qeshm Island; oil prices sliding on supply glut despite conflict",
+      "themes": ["defense", "energy"],
+      "source": "oilprice.com / japantimes.co.jp / cbsnews.com",
+      "url": "https://www.japantimes.co.jp/news/2026/11/20/world/iran-hormuz-attacks-oil-prices/"
+    },
+    {
+      "headline": "China extends suspension of rare earth/battery-material export controls to January 10, 2027, easing supply-chain disruption risk",
       "themes": ["materials"],
-      "headline": "China's Ministry of Commerce extends suspension of expanded rare-earth, lithium-battery and graphite export controls to Jan 10, 2027, easing a supply-chain flashpoint",
-      "source": "scmp.com",
-      "url": "https://www.scmp.com/economy/china-economy/article/3373924/china-extends-rare-earth-controls-pause-pricing-and-financing-hold-back-eu-supply-push"
+      "source": "reuters.com (via thenationalnews.com, techtimes.com)",
+      "url": "https://www.thenationalnews.com/news/us/2026/11/09/china-extends-pause-on-rare-earth-export-curbs-for-two-months/"
     },
     {
-      "headline": "Broadcom rallies and chip stocks rebound on AI-chip supply-constraint narrative, even as Nvidia slides on an unrelated CEO governance investigation",
-      "themes": ["ai", "semis"],
-      "source": "investinglive.com",
-      "url": "https://investinglive.com/stocks/nvidia-stock-plunges-8-6-but-amd-and-broadcom-rally-which-chip-stocks-are-worth-buying/"
+      "headline": "Fed held rates steady at Oct 28 meeting despite 'elevated' inflation; markets now price only ~10% odds of a December cut",
+      "themes": ["financials"],
+      "source": "apnews.com (via ajc.com, wamc.org)",
+      "url": "https://www.ajc.com/news/2026/10/federal-reserve-keeps-rates-unchanged-despite-elevated-inflation/"
     }
   ]
 }
