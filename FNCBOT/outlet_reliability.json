@@ -18,6 +18,13 @@
       "reliability": 0.24
     }
   },
+  "apnews.com": {
+    "financials": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    }
+  },
   "cbsnews.com": {
     "defense": {
       "a": 0.6,
@@ -28,6 +35,13 @@
       "a": 0.6,
       "b": 0.0,
       "reliability": 0.704
+    }
+  },
+  "cfr.org": {
+    "defense": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
     }
   },
   "cnbc.com": {
@@ -57,6 +71,13 @@
       "a": 0.0,
       "b": 0.6,
       "reliability": 0.24
+    }
+  },
+  "digitimes.com": {
+    "semis": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.704
     }
   },
   "finance.yahoo.com": {
@@ -90,6 +111,13 @@
   },
   "fool.com": {
     "materials": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.704
+    }
+  },
+  "globalcompetitionreview.com": {
+    "tech": {
       "a": 0.6,
       "b": 0.0,
       "reliability": 0.704
@@ -148,6 +176,13 @@
       "a": 0.0,
       "b": 1.2,
       "reliability": 0.164
+    }
+  },
+  "spglobal.com": {
+    "materials": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
     }
   },
   "stocktitan.net": {
