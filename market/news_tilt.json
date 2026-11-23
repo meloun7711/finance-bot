@@ -10,34 +10,34 @@
   },
   "events": [
     {
-      "headline": "Nvidia CEO Jensen Huang resigns abruptly amid affair/espionage-linked scandal; CFO Colette Kress named interim CEO",
+      "headline": "Nvidia CEO Jensen Huang resigns amid board scandal; CFO Colette Kress named interim CEO, shares fall sharply",
       "themes": ["ai", "semis", "tech"],
-      "source": "reuters.com (via NBC News, Washington Post, Nvidia 8-K)",
-      "url": "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-resigns-reports-extramarital-relationships-rcna608402"
+      "source": "aljazeera.com",
+      "url": "https://aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal"
     },
     {
-      "headline": "Wall Street AI-stock selloff deepens; S&P 500 hits lowest close since July as Nvidia and peers swing lower",
+      "headline": "US tightens AI-chip export rule blocking remote access via Southeast Asian data centers as Nvidia halts China H200 shipments; AI-stock selloff deepens, S&P 500 near lowest close since July",
       "themes": ["ai", "semis", "tech"],
-      "source": "apnews.com (via wfsb.com, stocktitan.net)",
-      "url": "https://www.wfsb.com/2026/11/17/another-wipeout-hits-wall-street-nvidia-other-jittery-ai-stocks-swing-lower/"
+      "source": "aljazeera.com",
+      "url": "https://aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal"
     },
     {
-      "headline": "Iran steps up tanker attacks in Strait of Hormuz as US forces conduct 'defensive strikes' on Qeshm Island; oil prices sliding on supply glut despite conflict",
-      "themes": ["defense", "energy"],
-      "source": "oilprice.com / japantimes.co.jp / cbsnews.com",
-      "url": "https://www.japantimes.co.jp/news/2026/11/20/world/iran-hormuz-attacks-oil-prices/"
+      "headline": "Oil prices fall as Strait of Hormuz flows recover; IEA now forecasts a Q4 2026 supply surplus of ~1.7m bpd despite continued (unverified) Iranian tanker/mine incidents",
+      "themes": ["energy", "defense"],
+      "source": "oilprice.com",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Slide-as-Global-Glut-Fears-Eclipse-Hormuz-Attacks.html"
     },
     {
-      "headline": "China extends suspension of rare earth/battery-material export controls to January 10, 2027, easing supply-chain disruption risk",
+      "headline": "China extends suspension of rare-earth and battery-material export controls to January 10, 2027, easing US/EU supply-chain risk",
       "themes": ["materials"],
-      "source": "reuters.com (via thenationalnews.com, techtimes.com)",
-      "url": "https://www.thenationalnews.com/news/us/2026/11/09/china-extends-pause-on-rare-earth-export-curbs-for-two-months/"
+      "source": "spglobal.com",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/110926-china-extends-rare-earth-export-suspension-to-january-2027"
     },
     {
-      "headline": "Fed held rates steady at Oct 28 meeting despite 'elevated' inflation; markets now price only ~10% odds of a December cut",
+      "headline": "FOMC minutes show officials leaning toward a December rate hike amid elevated inflation; markets price ~90% odds of a hike at the Dec 8-9 meeting",
       "themes": ["financials"],
-      "source": "apnews.com (via ajc.com, wamc.org)",
-      "url": "https://www.ajc.com/news/2026/10/federal-reserve-keeps-rates-unchanged-despite-elevated-inflation/"
+      "source": "foxbusiness.com",
+      "url": "https://www.foxbusiness.com/economy/december-interest-rate-cut-doubt-fed-minutes-show-policymakers-divided"
     }
   ]
 }
