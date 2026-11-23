@@ -145,11 +145,30 @@
       "reliability": 0.125
     }
   },
+  "investinglive.com": {
+    "energy": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    }
+  },
   "khaleejtimes.com": {
     "energy": {
       "a": 0.6,
       "b": 0.6,
       "reliability": 0.5
+    }
+  },
+  "lloydslist.com": {
+    "defense": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    },
+    "energy": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.24
     }
   },
   "mining.com": {
@@ -166,6 +185,18 @@
       "reliability": 0.195
     }
   },
+  "newsonair.gov.in": {
+    "ai": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.704
+    },
+    "semis": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.76
+    }
+  },
   "pandaforecast.com / grafa.com / sabq.org": {
     "defense": {
       "a": 0.6,
@@ -180,9 +211,9 @@
   },
   "spglobal.com": {
     "materials": {
-      "a": 0.0,
+      "a": 0.6,
       "b": 0.6,
-      "reliability": 0.296
+      "reliability": 0.5
     }
   },
   "stocktitan.net": {
