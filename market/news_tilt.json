@@ -1,43 +1,28 @@
 {
   "themes": {
-    "defense": 0.4,
-    "energy": -0.3,
-    "materials": 0.3,
-    "ai": -0.5,
-    "semis": -0.5,
-    "tech": -0.3,
-    "financials": -0.2
+    "ai": 0.5,
+    "semis": 0.5,
+    "materials": 0.4,
+    "tech": 0.3
   },
   "events": [
     {
-      "headline": "Nvidia CEO Jensen Huang resigns amid board scandal; CFO Colette Kress named interim CEO, shares fall sharply",
+      "headline": "Nvidia board reinstates Jensen Huang as CEO after Trump pressure; shares jump 31%",
       "themes": ["ai", "semis", "tech"],
-      "source": "aljazeera.com",
-      "url": "https://aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal"
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"
     },
     {
-      "headline": "US tightens AI-chip export rule blocking remote access via Southeast Asian data centers as Nvidia halts China H200 shipments; AI-stock selloff deepens, S&P 500 near lowest close since July",
-      "themes": ["ai", "semis", "tech"],
-      "source": "aljazeera.com",
-      "url": "https://aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal"
+      "headline": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "themes": ["ai", "semis"],
+      "source": "nvidianews.nvidia.com",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
     },
     {
-      "headline": "Oil prices fall as Strait of Hormuz flows recover; IEA now forecasts a Q4 2026 supply surplus of ~1.7m bpd despite continued (unverified) Iranian tanker/mine incidents",
-      "themes": ["energy", "defense"],
-      "source": "oilprice.com",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Slide-as-Global-Glut-Fears-Eclipse-Hormuz-Attacks.html"
-    },
-    {
-      "headline": "China extends suspension of rare-earth and battery-material export controls to January 10, 2027, easing US/EU supply-chain risk",
-      "themes": ["materials"],
+      "headline": "China extends suspension of expanded rare earth and lithium-battery export controls to January 10, 2027",
+      "themes": ["materials", "semis", "tech"],
       "source": "spglobal.com",
       "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/110926-china-extends-rare-earth-export-suspension-to-january-2027"
-    },
-    {
-      "headline": "FOMC minutes show officials leaning toward a December rate hike amid elevated inflation; markets price ~90% odds of a hike at the Dec 8-9 meeting",
-      "themes": ["financials"],
-      "source": "foxbusiness.com",
-      "url": "https://www.foxbusiness.com/economy/december-interest-rate-cut-doubt-fed-minutes-show-policymakers-divided"
     }
   ]
 }
