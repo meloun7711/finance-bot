@@ -28,13 +28,13 @@
   "cbsnews.com": {
     "defense": {
       "a": 0.6,
-      "b": 0.0,
-      "reliability": 0.76
+      "b": 0.6,
+      "reliability": 0.549
     },
     "energy": {
       "a": 0.6,
-      "b": 0.0,
-      "reliability": 0.704
+      "b": 0.6,
+      "reliability": 0.5
     }
   },
   "cfr.org": {
@@ -51,9 +51,9 @@
       "reliability": 0.821
     },
     "financials": {
-      "a": 1.7999999999999998,
+      "a": 2.4,
       "b": 0.6,
-      "reliability": 0.757
+      "reliability": 0.794
     },
     "semis": {
       "a": 1.2,
@@ -82,14 +82,14 @@
   },
   "finance.yahoo.com": {
     "ai": {
-      "a": 0.0,
+      "a": 1.0,
       "b": 0.6,
-      "reliability": 0.296
+      "reliability": 0.542
     },
     "semis": {
-      "a": 0.0,
+      "a": 1.0,
       "b": 0.6,
-      "reliability": 0.24
+      "reliability": 0.598
     }
   },
   "finance.yahoo.com (reuters)": {
@@ -111,9 +111,9 @@
   },
   "fool.com": {
     "materials": {
-      "a": 0.6,
+      "a": 0.8999999999999999,
       "b": 0.0,
-      "reliability": 0.704
+      "reliability": 0.762
     }
   },
   "globalcompetitionreview.com": {
