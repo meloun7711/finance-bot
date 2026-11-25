@@ -51,14 +51,26 @@
       "reliability": 0.821
     },
     "financials": {
-      "a": 2.4,
+      "a": 3.0,
       "b": 0.6,
-      "reliability": 0.794
+      "reliability": 0.821
     },
     "semis": {
       "a": 1.2,
       "b": 0.0,
       "reliability": 0.839
+    }
+  },
+  "cnn.com": {
+    "ai": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.704
+    },
+    "semis": {
+      "a": 0.6,
+      "b": 0.0,
+      "reliability": 0.76
     }
   },
   "datacenterknowledge.com": {
@@ -114,6 +126,18 @@
       "a": 0.8999999999999999,
       "b": 0.0,
       "reliability": 0.762
+    }
+  },
+  "gcaptain.com": {
+    "defense": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.296
+    },
+    "energy": {
+      "a": 0.0,
+      "b": 0.6,
+      "reliability": 0.24
     }
   },
   "globalcompetitionreview.com": {
@@ -207,6 +231,13 @@
       "a": 0.0,
       "b": 1.2,
       "reliability": 0.164
+    }
+  },
+  "regfollower.com": {
+    "materials": {
+      "a": 0.3,
+      "b": 0.0,
+      "reliability": 0.622
     }
   },
   "spglobal.com": {
