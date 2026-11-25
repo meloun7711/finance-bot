@@ -1,28 +1,34 @@
 {
   "themes": {
-    "ai": 0.5,
-    "semis": 0.5,
-    "materials": 0.4,
-    "tech": 0.3
+    "ai": -0.5,
+    "semis": -0.5,
+    "tech": -0.3,
+    "energy": -0.2
   },
   "events": [
     {
-      "headline": "Nvidia board reinstates Jensen Huang as CEO after Trump pressure; shares jump 31%",
+      "headline": "AI selloff spreads from Wall Street to Asia; Nvidia, Samsung, SK Hynix, TSMC, Kioxia, SoftBank, Tokyo Electron tumble amid AI profitability/ROI doubts",
       "themes": ["ai", "semis", "tech"],
       "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"
+      "url": "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html"
     },
     {
-      "headline": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "headline": "Asian stocks slide as AI selloff deepens; Kospi, Kioxia, Advantest among steepest decliners",
+      "themes": ["ai", "semis", "tech"],
+      "source": "finance.yahoo.com",
+      "url": "https://uk.finance.yahoo.com/news/asian-stocks-slide-ai-selloff-040615839.html"
+    },
+    {
+      "headline": "Oil prices fall toward three-month lows as supply glut concerns offset Middle East/Strait of Hormuz disruption fears",
+      "themes": ["energy"],
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/amp/2026/11/25/oil-wti-brent-hormuz-middle-east.html"
+    },
+    {
+      "headline": "Nvidia board reinstates Jensen Huang as President/CEO/director after US government input and Trump pressure (Nov 23); shares' initial ~30% pop has since partly unwound in the broader AI-sector selloff",
       "themes": ["ai", "semis"],
       "source": "nvidianews.nvidia.com",
       "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
-    },
-    {
-      "headline": "China extends suspension of expanded rare earth and lithium-battery export controls to January 10, 2027",
-      "themes": ["materials", "semis", "tech"],
-      "source": "spglobal.com",
-      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/110926-china-extends-rare-earth-export-suspension-to-january-2027"
     }
   ]
 }
