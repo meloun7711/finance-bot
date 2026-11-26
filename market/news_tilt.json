@@ -1,34 +1,41 @@
 {
   "themes": {
-    "ai": -0.5,
-    "semis": -0.5,
-    "tech": -0.3,
-    "energy": -0.2
+    "energy": 0.4,
+    "defense": 0.4,
+    "semis": -0.3,
+    "ai": -0.2,
+    "financials": 0.2
   },
   "events": [
     {
-      "headline": "AI selloff spreads from Wall Street to Asia; Nvidia, Samsung, SK Hynix, TSMC, Kioxia, SoftBank, Tokyo Electron tumble amid AI profitability/ROI doubts",
-      "themes": ["ai", "semis", "tech"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html"
-    },
-    {
-      "headline": "Asian stocks slide as AI selloff deepens; Kospi, Kioxia, Advantest among steepest decliners",
-      "themes": ["ai", "semis", "tech"],
-      "source": "finance.yahoo.com",
-      "url": "https://uk.finance.yahoo.com/news/asian-stocks-slide-ai-selloff-040615839.html"
-    },
-    {
-      "headline": "Oil prices fall toward three-month lows as supply glut concerns offset Middle East/Strait of Hormuz disruption fears",
+      "headline": "Oil prices rally as Middle East supply fears return ahead of Nov 29 OPEC+ meeting (Ras Tanura attack reported, Brent ~$94.50)",
       "themes": ["energy"],
-      "source": "cnbc.com",
-      "url": "https://www.cnbc.com/amp/2026/11/25/oil-wti-brent-hormuz-middle-east.html"
+      "source": "finscans.com",
+      "url": "https://finscans.com/news/2026/11/26/oil-prices-rally-as-middle-east-supply-fears-return-ahead"
     },
     {
-      "headline": "Nvidia board reinstates Jensen Huang as President/CEO/director after US government input and Trump pressure (Nov 23); shares' initial ~30% pop has since partly unwound in the broader AI-sector selloff",
-      "themes": ["ai", "semis"],
-      "source": "nvidianews.nvidia.com",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+      "headline": "Nvidia halts AI chip server shipments to Malaysia, Singapore, Thailand and Indonesia amid US export crackdown on compute-rental bypass routes",
+      "themes": ["semis", "ai"],
+      "source": "thenationalnews.com",
+      "url": "https://www.thenationalnews.com/future/technology/2026/11/26/nvidia-halts-chip-shipments-to-south-east-asia-amid-us-crackdown/"
+    },
+    {
+      "headline": "Dow, S&P 500, Nasdaq futures fall after Treasury Secretary Bessent unveils fresh Iran sanctions and Strait of Hormuz warnings",
+      "themes": ["defense", "energy"],
+      "source": "benzinga.com",
+      "url": "https://www.benzinga.com/markets/equities/26/11/63569914/stock-market-today-dow-sp-500-futures-fall-after-scott-bessent-unveils-fresh-iran-sanctions-hormuz-warnings-hpe-smtc-dell-in-focus"
+    },
+    {
+      "headline": "Traders raise bets on a December Fed rate hike as inflation stays elevated; Dow/S&P/Nasdaq futures slip",
+      "themes": ["financials"],
+      "source": "tradingview.com",
+      "url": "https://www.tradingview.com/news/benzinga:094e6c1f9094b:0-stock-market-today-dow-jones-s-p-500-futures-fall-as-traders-bet-on-december-fed-hike-trump-tells-huang-to-just-tell-the-truth-dell-wday-adsk-in-focus/"
+    },
+    {
+      "headline": "Russia-Ukraine peace talks stall after Abu Dhabi round; Kremlin sets no date for next round, rouble and Russian stocks fall",
+      "themes": ["defense"],
+      "source": "newsweek.com",
+      "url": "https://www.newsweek.com/the-russia-ukraine-wars-dangerous-divergence-12762737"
     }
   ]
 }
