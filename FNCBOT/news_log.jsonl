@@ -109,3 +109,10 @@
 {"date": "2026-11-25", "source": "cnbc.com", "theme": "energy", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-25T14:35:14.915880+00:00"}
 {"date": "2026-11-25", "source": "nvidianews.nvidia.com", "theme": "ai", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-25T14:35:14.915887+00:00"}
 {"date": "2026-11-25", "source": "nvidianews.nvidia.com", "theme": "semis", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-25T14:35:14.915891+00:00"}
+{"date": "2026-11-25", "source": "finscans.com", "theme": "energy", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-26T14:35:14.496100+00:00"}
+{"date": "2026-11-25", "source": "thenationalnews.com", "theme": "semis", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-26T14:35:14.496129+00:00"}
+{"date": "2026-11-25", "source": "thenationalnews.com", "theme": "ai", "sign": -1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-26T14:35:14.496138+00:00"}
+{"date": "2026-11-25", "source": "benzinga.com", "theme": "defense", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-26T14:35:14.496146+00:00"}
+{"date": "2026-11-25", "source": "benzinga.com", "theme": "energy", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-26T14:35:14.496151+00:00"}
+{"date": "2026-11-25", "source": "tradingview.com", "theme": "financials", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-26T14:35:14.496158+00:00"}
+{"date": "2026-11-25", "source": "newsweek.com", "theme": "defense", "sign": 1, "strength": 0.6, "horizon": 5, "resolved": false, "ret": null, "correct": null, "logged": "2026-11-26T14:35:14.496164+00:00"}
