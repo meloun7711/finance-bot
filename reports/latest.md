@@ -7,18 +7,20 @@ Net direction per theme = each outlet's call (up/down × strength) weighted by h
 
 | Theme | Net tilt | Applied (×0.30) |
 |-------|---------:|----------------:|
-| energy | +0.00 | +0.000 |
+| ai | -0.04 | -0.012 |
+| financials | -0.03 | -0.009 |
+| energy | +0.03 | +0.008 |
+| defense | +0.02 | +0.006 |
 | semis | +0.00 | +0.000 |
-| ai | +0.00 | +0.000 |
-| defense | +0.00 | +0.000 |
-| financials | +0.00 | +0.000 |
+| materials | +0.00 | +0.000 |
 
 **Headlines (outlet → calls):**
-- Oil prices rally as Middle East supply fears return ahead of Nov 29 OPEC+ meeting (Ras Tanura attack reported, Brent ~$94.50) — _energy_ (finscans.com)
-- Nvidia halts AI chip server shipments to Malaysia, Singapore, Thailand and Indonesia amid US export crackdown on compute-rental bypass routes — _semis, ai_ (thenationalnews.com)
-- Dow, S&P 500, Nasdaq futures fall after Treasury Secretary Bessent unveils fresh Iran sanctions and Strait of Hormuz warnings — _defense, energy_ (benzinga.com)
-- Traders raise bets on a December Fed rate hike as inflation stays elevated; Dow/S&P/Nasdaq futures slip — _financials_ (tradingview.com)
-- Russia-Ukraine peace talks stall after Abu Dhabi round; Kremlin sets no date for next round, rouble and Russian stocks fall — _defense_ (newsweek.com)
+- Houthis claim drone strike on Saudi Aramco's Ras Tanura refinery/export terminal; satellite imagery shows large fire, oil loadings suspended, Brent tops $93 — _energy, defense_ (cnn.com)
+- Treasury (Bessent) sanctions two dozen+ Iranian 'shadow banking' exchange houses/front companies tied to UAE, Turkey, Hong Kong; warns Singapore and Malaysia on secondary sanctions risk as Tehran threatens tanker traffic through Strait of Hormuz — _energy, defense, financials_ (benzinga.com)
+- US Commerce/BIS adds Singapore, Malaysia, Indonesia, Thailand and Brazil to 'unacceptable risk of diversion' list, requiring licenses for advanced AI chip shipments there, to block Chinese remote access to Nvidia GPUs amid Megaspeed diversion scandal — _semis, ai_ (aljazeera.com)
+- China's Ministry of Commerce extends suspension of expanded rare-earth/lithium-battery export controls from Nov 10 to Jan 10 2027, easing near-term scarcity premium for Western rare-earth producers even as April-2025 curbs on heavy rare earths stay in force — _materials_ (spglobal.com)
+- US stock indexes slid in mid-November on worries the AI capex boom may be peaking, even as Anthropic's stock debut drew strong demand; futures markets lean toward a December Fed rate hike (not a cut) as inflation stays elevated under new Chair Warsh — _ai, financials_ (finance.yahoo.com)
+- US-mediated Russia-Ukraine peace talks (Abu Dhabi round) remain stalled over territory and security guarantees, with no date set for a next round, keeping geopolitical risk premium elevated — _defense_ (pbs.org)
 
 **Outlet reliability (learned, per theme):**
 - ajc.com (overall 0.31): financials 0.20
@@ -52,42 +54,42 @@ Net direction per theme = each outlet's call (up/down × strength) weighted by h
 ## Top 15 — likely UP (news-adjusted)
 | # | Ticker | Decision | Structural | News | Themes |
 |---|--------|---------:|-----------:|-----:|--------|
-| 1 | **TGT** | +0.63 | +0.63 | +0.00 | industrial_consumer |
-| 2 | **PANW** | +0.62 | +0.62 | +0.00 | tech,cyber |
-| 3 | **OKTA** | +0.61 | +0.61 | +0.00 | cyber |
-| 4 | **SAIC** | +0.61 | +0.61 | +0.00 | defense |
-| 5 | **VRNS** | +0.60 | +0.60 | +0.00 | cyber |
-| 6 | **TENB** | +0.60 | +0.60 | +0.00 | cyber |
-| 7 | **MPC** | +0.59 | +0.59 | +0.00 | energy |
-| 8 | **CRWD** | +0.59 | +0.59 | +0.00 | cyber |
-| 9 | **VLO** | +0.58 | +0.58 | +0.00 | energy |
-| 10 | **PSX** | +0.58 | +0.58 | +0.00 | energy |
-| 11 | **MRNA** | +0.57 | +0.57 | +0.00 | healthcare |
-| 12 | **S** | +0.57 | +0.57 | +0.00 | cyber |
-| 13 | **DELL** | +0.56 | +0.56 | +0.00 | ai |
-| 14 | **AMD** | +0.55 | +0.55 | +0.00 | ai,semis |
-| 15 | **FTNT** | +0.54 | +0.54 | +0.00 | cyber |
+| 1 | **PANW** | +0.63 | +0.63 | +0.00 | tech,cyber |
+| 2 | **TGT** | +0.63 | +0.63 | +0.00 | industrial_consumer |
+| 3 | **SAIC** | +0.62 | +0.62 | +0.02 | defense |
+| 4 | **OKTA** | +0.62 | +0.62 | +0.00 | cyber |
+| 5 | **TENB** | +0.61 | +0.61 | +0.00 | cyber |
+| 6 | **VRNS** | +0.61 | +0.61 | +0.00 | cyber |
+| 7 | **MPC** | +0.60 | +0.59 | +0.03 | energy |
+| 8 | **CRWD** | +0.60 | +0.60 | +0.00 | cyber |
+| 9 | **PSX** | +0.59 | +0.58 | +0.03 | energy |
+| 10 | **VLO** | +0.59 | +0.58 | +0.03 | energy |
+| 11 | **S** | +0.58 | +0.58 | +0.00 | cyber |
+| 12 | **MRNA** | +0.57 | +0.57 | +0.00 | healthcare |
+| 13 | **AMD** | +0.56 | +0.56 | +0.00 | ai,semis |
+| 14 | **QLYS** | +0.56 | +0.56 | +0.00 | cyber |
+| 15 | **FTNT** | +0.56 | +0.56 | +0.00 | cyber |
 
 ## Bottom 8 — likely DOWN
+- SOUN -0.81 (ai)
+- BBAI -0.81 (ai)
 - JOBY -0.80 (space)
-- SOUN -0.80 (ai)
-- BBAI -0.80 (ai)
 - LAES -0.80 (quantum)
 - AVAV -0.78 (defense)
 - RGTI -0.78 (quantum)
-- INDI -0.77 (semis)
 - QBTS -0.77 (quantum)
+- INDI -0.77 (semis)
 
 ## Dip-in-uptrend (strong long-term, pulling back now)
-- **GTLB** — 20d -24.6%, -24.6% off recent high
-- **CRWD** — 20d -23.9%, -27.2% off recent high
-- **MPC** — 20d -21.8%, -28.9% off recent high
-- **PSX** — 20d -14.8%, -21.6% off recent high
-- **OKTA** — 20d -14.4%, -18.0% off recent high
-- **NET** — 20d -14.4%, -24.4% off recent high
-- **PANW** — 20d -12.5%, -17.9% off recent high
-- **NUE** — 20d -11.5%, -13.5% off recent high
-- **S** — 20d -9.4%, -11.7% off recent high
-- **SWKS** — 20d -8.9%, -13.2% off recent high
-- **COP** — 20d -8.7%, -11.6% off recent high
-- **EOG** — 20d -8.5%, -11.1% off recent high
+- **GTLB** — 20d -22.2%, -22.2% off recent high
+- **ESTC** — 20d -22.1%, -22.1% off recent high
+- **CRWD** — 20d -21.5%, -24.9% off recent high
+- **MPC** — 20d -21.2%, -28.4% off recent high
+- **SNOW** — 20d -21.2%, -27.5% off recent high
+- **VLO** — 20d -16.6%, -29.5% off recent high
+- **PSX** — 20d -13.3%, -20.2% off recent high
+- **TXN** — 20d -12.4%, -13.6% off recent high
+- **NET** — 20d -11.1%, -21.5% off recent high
+- **PANW** — 20d -9.7%, -15.2% off recent high
+- **COP** — 20d -8.8%, -11.8% off recent high
+- **NUE** — 20d -8.6%, -10.6% off recent high

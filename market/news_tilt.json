@@ -1,41 +1,48 @@
 {
   "themes": {
-    "energy": 0.4,
+    "energy": 0.5,
     "defense": 0.4,
     "semis": -0.3,
-    "ai": -0.2,
-    "financials": 0.2
+    "ai": -0.3,
+    "financials": -0.2,
+    "materials": -0.2
   },
   "events": [
     {
-      "headline": "Oil prices rally as Middle East supply fears return ahead of Nov 29 OPEC+ meeting (Ras Tanura attack reported, Brent ~$94.50)",
-      "themes": ["energy"],
-      "source": "finscans.com",
-      "url": "https://finscans.com/news/2026/11/26/oil-prices-rally-as-middle-east-supply-fears-return-ahead"
+      "headline": "Houthis claim drone strike on Saudi Aramco's Ras Tanura refinery/export terminal; satellite imagery shows large fire, oil loadings suspended, Brent tops $93",
+      "themes": ["energy", "defense"],
+      "source": "cnn.com",
+      "url": "https://www.cnn.com/2026/11/26/middleeast/houthi-saudi-oil-refinery-strike-satellite-imagery-intl"
     },
     {
-      "headline": "Nvidia halts AI chip server shipments to Malaysia, Singapore, Thailand and Indonesia amid US export crackdown on compute-rental bypass routes",
-      "themes": ["semis", "ai"],
-      "source": "thenationalnews.com",
-      "url": "https://www.thenationalnews.com/future/technology/2026/11/26/nvidia-halts-chip-shipments-to-south-east-asia-amid-us-crackdown/"
-    },
-    {
-      "headline": "Dow, S&P 500, Nasdaq futures fall after Treasury Secretary Bessent unveils fresh Iran sanctions and Strait of Hormuz warnings",
-      "themes": ["defense", "energy"],
+      "headline": "Treasury (Bessent) sanctions two dozen+ Iranian 'shadow banking' exchange houses/front companies tied to UAE, Turkey, Hong Kong; warns Singapore and Malaysia on secondary sanctions risk as Tehran threatens tanker traffic through Strait of Hormuz",
+      "themes": ["energy", "defense", "financials"],
       "source": "benzinga.com",
-      "url": "https://www.benzinga.com/markets/equities/26/11/63569914/stock-market-today-dow-sp-500-futures-fall-after-scott-bessent-unveils-fresh-iran-sanctions-hormuz-warnings-hpe-smtc-dell-in-focus"
+      "url": "https://www.benzinga.com/news/politics/26/11/63568282/scott-bessent-unleashes-fresh-iran-sanctions-as-tehran-warns-tankers-against-using-strait-of-hormuz-crude-oil-prices-continue-to-cool"
     },
     {
-      "headline": "Traders raise bets on a December Fed rate hike as inflation stays elevated; Dow/S&P/Nasdaq futures slip",
-      "themes": ["financials"],
-      "source": "tradingview.com",
-      "url": "https://www.tradingview.com/news/benzinga:094e6c1f9094b:0-stock-market-today-dow-jones-s-p-500-futures-fall-as-traders-bet-on-december-fed-hike-trump-tells-huang-to-just-tell-the-truth-dell-wday-adsk-in-focus/"
+      "headline": "US Commerce/BIS adds Singapore, Malaysia, Indonesia, Thailand and Brazil to 'unacceptable risk of diversion' list, requiring licenses for advanced AI chip shipments there, to block Chinese remote access to Nvidia GPUs amid Megaspeed diversion scandal",
+      "themes": ["semis", "ai"],
+      "source": "aljazeera.com",
+      "url": "https://www.aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal"
     },
     {
-      "headline": "Russia-Ukraine peace talks stall after Abu Dhabi round; Kremlin sets no date for next round, rouble and Russian stocks fall",
+      "headline": "China's Ministry of Commerce extends suspension of expanded rare-earth/lithium-battery export controls from Nov 10 to Jan 10 2027, easing near-term scarcity premium for Western rare-earth producers even as April-2025 curbs on heavy rare earths stay in force",
+      "themes": ["materials"],
+      "source": "spglobal.com",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/110926-china-extends-rare-earth-export-suspension-to-january-2027"
+    },
+    {
+      "headline": "US stock indexes slid in mid-November on worries the AI capex boom may be peaking, even as Anthropic's stock debut drew strong demand; futures markets lean toward a December Fed rate hike (not a cut) as inflation stays elevated under new Chair Warsh",
+      "themes": ["ai", "financials"],
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-dow-rise-to-end-a-rocky-month-nasdaq-snaps-7-month-win-streak-180355656.html"
+    },
+    {
+      "headline": "US-mediated Russia-Ukraine peace talks (Abu Dhabi round) remain stalled over territory and security guarantees, with no date set for a next round, keeping geopolitical risk premium elevated",
       "themes": ["defense"],
-      "source": "newsweek.com",
-      "url": "https://www.newsweek.com/the-russia-ukraine-wars-dangerous-divergence-12762737"
+      "source": "pbs.org",
+      "url": "https://www.pbs.org/newshour/world/russia-says-u-s-peace-plan-talks-for-ukraine-are-proceeding-constructively"
     }
   ]
 }
